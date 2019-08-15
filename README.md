@@ -39,4 +39,5 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
   pages={558--567},
   year={2019}
 }
+[Gluoncv model_zoo](https://gluon-cv.mxnet.io/model_zoo/classification.html)
 ```
