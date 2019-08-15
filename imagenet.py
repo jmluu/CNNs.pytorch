@@ -12,8 +12,10 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
-from misc.transform import RandomLighting
-from misc.lrscheduler import LRScheduler, LRSequential
+from misc import RandomLighting
+from misc import LRScheduler, LRSequential
+from misc import SGD 
+from misc import CrossEntropyLoss_LS
 from tensorboardX import SummaryWriter
 
 model_names = sorted(name for name in models.__dict__
@@ -71,9 +73,14 @@ def parse_args():
                         help='starting warmup learning rate. default is 0.0.')
     parser.add_argument('--warmup-epochs', type=int, default=0,
                         help='number of warmup epochs.')
-
+    
+    parser.add_argument('--no-wd', action='store_true',
+                        help='whether to remove weight decay on bias, and beta/gamma for batchnorm layers.')
+    parser.add_argument('--label-smoothing', action='store_true',
+                        help='use label smoothing or not in training. default is false.')
     parser.add_argument('--visual', dest='visual', action='store_true', default=False,
                         help='whether to visualize traning using tensorboardX')
+
 
     args = parser.parse_args()
     return args
@@ -163,12 +170,17 @@ def main_worker(ngpus_per_node, args):
         offset=args.start_epoch * num_batches)
 
     # define loss function (criterion) and optimizer
-    criterion = nn.CrossEntropyLoss().cuda(args.gpu)
+    if args.label_smoothing is False:
+        criterion = nn.CrossEntropyLoss().cuda(args.gpu)
+    else :
+        criterion = CrossEntropyLoss_LS().cuda(args.gpu)
 
-    optimizer = torch.optim.SGD(model.parameters(), args.lr,
-                                momentum=args.momentum,
-                                nesterov=True,
-                                weight_decay=args.weight_decay)
+
+    optimizer = SGD(model.parameters(), args.lr,
+                    momentum=args.momentum,
+                    nesterov=True,
+                    weight_decay=args.weight_decay,
+                    no_wd=args.no_wd)
 
     # optionally resume from a checkpoint
     if args.resume:
