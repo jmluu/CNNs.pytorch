@@ -30,9 +30,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
 	--no-wd --label-smoothing 
 ```
 # Cite 
-
-```
 [Gluoncv model_zoo](https://gluon-cv.mxnet.io/model_zoo/classification.html)
+```
 @inproceedings{he2019bag,
   title={Bag of tricks for image classification with convolutional neural networks},
   author={He, Tong and Zhang, Zhi and Zhang, Hang and Zhang, Zhongyue and Xie, Junyuan and Li, Mu},
