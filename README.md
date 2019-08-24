@@ -9,7 +9,7 @@
 - CUDA >= 9.0
 
 # Experiment Results
-
+## ImageNet 
 **ResNet-18:**   acc1 = 71.02
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
@@ -29,6 +29,17 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
 	--warmup-epochs 5  --weight-decay 0.00004 \
 	--no-wd --label-smoothing 
 ```
+
+## Cifar10 
+**cifar_resnet20:** acc = 92.21
+```
+CUDA_VISIBLE_DEVICES=0  python cifar10.py \
+	--arch cifar_resnet20 \
+	--lr 0.1 --epoch 200 --batch-size 128  -j 2 \
+	--lr-decay 0.1 --lr-decay-epoch 100,150 \
+	--weight-decay 0.0001 
+```
+
 # Cite 
 [Gluoncv model_zoo](https://gluon-cv.mxnet.io/model_zoo/classification.html)
 ```
