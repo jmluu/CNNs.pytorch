@@ -78,6 +78,8 @@ def parse_args():
                         help='whether to remove weight decay on bias, and beta/gamma for batchnorm layers.')
     parser.add_argument('--label-smoothing', action='store_true',
                         help='use label smoothing or not in training. default is false.')
+    parser.add_argument('--last-gamma', action='store_true',
+                        help='whether to init gamma of the last BN layer in each bottleneck to 0.')
     parser.add_argument('--visual', dest='visual', action='store_true', default=False,
                         help='whether to visualize traning using tensorboardX')
 
@@ -135,7 +137,10 @@ def main_worker(ngpus_per_node, args):
         model = models.__dict__[args.arch](pretrained=True)
     else:
         print("=> creating model '{}'".format(args.arch))
-        model = models.__dict__[args.arch]()
+        if 'resnet' in args.arch:
+            model = models.__dict__[args.arch](zero_init_residual=args.last_gamma)
+        else :
+            model = models.__dict__[args.arch]()
     if args.gpu is not None:
         torch.cuda.set_device(args.gpu)
         model = model.cuda(args.gpu)
@@ -148,26 +153,6 @@ def main_worker(ngpus_per_node, args):
             model = torch.nn.DataParallel(model).cuda()
     logger.info(model)
 
-    # define lrschedular
-    num_training_samples = 1281167
-    lr_decay = args.lr_decay
-    lr_decay_period = args.lr_decay_period
-    if args.lr_decay_period > 0:
-        lr_decay_epoch = list(range(lr_decay_period, args.epochs, lr_decay_period))
-    else:
-        lr_decay_epoch = [int(i) for i in args.lr_decay_epoch.split(',')]
-    lr_decay_epoch = [e - args.warmup_epochs for e in lr_decay_epoch]
-    num_batches = num_training_samples // args.batch_size
-    lr_scheduler = LRSequential([
-        LRScheduler('linear', base_lr=0.0, target_lr=args.lr,
-                    nepochs=args.warmup_epochs, iters_per_epoch=num_batches),
-        LRScheduler(args.lr_mode, base_lr=args.lr, target_lr=0,
-                    nepochs=args.epochs - args.warmup_epochs,
-                    iters_per_epoch=num_batches,
-                    step_epoch=lr_decay_epoch,
-                    step_factor=lr_decay, power=2)
-    ],
-        offset=args.start_epoch * num_batches)
 
     # define loss function (criterion) and optimizer
     if args.label_smoothing is False:
@@ -198,6 +183,27 @@ def main_worker(ngpus_per_node, args):
             logger.info("=> no checkpoint found at '{}'".format(args.resume))
 
     cudnn.benchmark = True
+
+    # define lrschedular
+    num_training_samples = 1281167
+    lr_decay = args.lr_decay
+    lr_decay_period = args.lr_decay_period
+    if args.lr_decay_period > 0:
+        lr_decay_epoch = list(range(lr_decay_period, args.epochs, lr_decay_period))
+    else:
+        lr_decay_epoch = [int(i) for i in args.lr_decay_epoch.split(',')]
+    lr_decay_epoch = [e - args.warmup_epochs for e in lr_decay_epoch]
+    num_batches = num_training_samples // args.batch_size
+    lr_scheduler = LRSequential([
+        LRScheduler('linear', base_lr=0.0, target_lr=args.lr,
+                    nepochs=args.warmup_epochs, iters_per_epoch=num_batches),
+        LRScheduler(args.lr_mode, base_lr=args.lr, target_lr=0,
+                    nepochs=args.epochs - args.warmup_epochs,
+                    iters_per_epoch=num_batches,
+                    step_epoch=lr_decay_epoch,
+                    step_factor=lr_decay, power=2)
+    ],
+        offset=args.start_epoch * num_batches)
 
     # Data loading 
     traindir = os.path.join(args.data, 'train')
@@ -287,7 +293,6 @@ def train(train_loader, model, criterion, optimizer, lr_scheduler, epoch):
 
         # compute gradient, do SGD step, and adjust learning rate
         lr = lr_scheduler.step()
-        # lr = 0.1
         adjust_learning_rate(optimizer, lr)
         optimizer.zero_grad()
         loss.backward()

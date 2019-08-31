@@ -20,6 +20,17 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
 
 
 ```
+**ResNet-50:**   acc1 = 77.75
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
+	--data /imagenet-dir \
+	--arch resnet50 \
+	--lr 0.2 --lr-mode cosine --epoch 120 --batch-size 512  -j 60 \
+	--warmup-epochs 5  --weight-decay 0.0001 \
+	--no-wd --label-smoothing --last-gamma
+
+```
+
 **MobileNet-V2-1.0:** acc1 = 71.93
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
