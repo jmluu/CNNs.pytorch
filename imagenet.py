@@ -73,7 +73,6 @@ def parse_args():
                         help='starting warmup learning rate. default is 0.0.')
     parser.add_argument('--warmup-epochs', type=int, default=0,
                         help='number of warmup epochs.')
-    
     parser.add_argument('--no-wd', action='store_true',
                         help='whether to remove weight decay on bias, and beta/gamma for batchnorm layers.')
     parser.add_argument('--label-smoothing', action='store_true',

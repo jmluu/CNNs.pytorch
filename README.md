@@ -10,6 +10,17 @@
 
 # Experiment Results
 ## ImageNet 
+**AlexNet**		acc1 = ??? 
+```
+CUDA_VISIBLE_DEVICES=1 python imagenet.py \
+	--data /imagenet-dir \
+	--arch alexnet \
+	--lr 0.01 --lr-mode step --lr-decay-period 40 \
+	--epoch 160 --batch-size 256  -j 8 \
+	--weight-decay 0.00005 
+```
+
+
 **ResNet-18:**   acc1 = 71.02
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet.py \
