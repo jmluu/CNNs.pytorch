@@ -10,7 +10,7 @@
 
 # Experiment Results
 ## ImageNet 
-**AlexNet**		acc1 = ??? 
+**AlexNet**		acc1 = 56.37 
 ```
 CUDA_VISIBLE_DEVICES=1 python imagenet.py \
 	--data /imagenet-dir \
