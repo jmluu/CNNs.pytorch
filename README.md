@@ -62,6 +62,12 @@ CUDA_VISIBLE_DEVICES=0  python cifar10.py \
 	--weight-decay 0.0001 
 ```
 
+## Model Quantization 
+
+- Dynamic Fixed-point;
+- Block Floating-point;
+- Bi-direction Blocking Floating-point;
+
 # Cite 
 [Gluoncv model_zoo](https://gluon-cv.mxnet.io/model_zoo/classification.html)
 ```
