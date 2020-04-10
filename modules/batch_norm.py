@@ -105,13 +105,14 @@ class BatchNormFunction(Function):
             y = input.transpose(0, 1).contiguous() # C x B x H x W
             y = y.view(C, -1)  # C x (BHW)
             sum = y.sum(-1)
+
             mean = sum.div(B*H*W)
             
             square_sum = (y*y).sum(-1)
+
             square_mean = square_sum.div(B*H*W)
 
             var = square_mean - (mean * mean)
-            # var = y.var(-1, unbiased=False)
             
             var2 = y.var(-1, unbiased=True)
           
@@ -124,29 +125,25 @@ class BatchNormFunction(Function):
             mean = running_mean 
             var  = running_var
 
-        rsqrt_var = torch.rsqrt(var.view(1, -1, 1, 1)+eps)
+        rsqrt_var = torch.rsqrt(var.view(1, -1, 1, 1)+eps)    
+
         out =(input-mean.view(1,-1,1,1)) * rsqrt_var
- 
+
         ctx.weight = weight
-        ctx.bias   = bias
         ctx.rsqrt  = rsqrt_var
-        # ctx.mean   = mean 
         ctx.xhat   = out
 
         if affine :
             out = out * weight.view(1, -1, 1, 1)
             out = out + bias.view(1, -1, 1, 1)
-
-
             
         return out 
 
     @staticmethod
     def backward(ctx, grad_output):
-        weight    = ctx.weight 
-        bias      = ctx.bias 
-        rsqrt_var = ctx.rsqrt
-        xhat      = ctx.xhat
+        weight    = ctx.weight                                              
+        rsqrt_var = ctx.rsqrt                                               
+        xhat      = ctx.xhat                                                
 
         if grad_output.dim() == 2 : # linear
             grad_output = grad_output.unsqueeze(-1,).unsqueeze(-1)
@@ -160,17 +157,13 @@ class BatchNormFunction(Function):
         grad_weight = (grad_output_r * xhat_r).sum(-1)
 
         # grad_input 
-
         gamma_istd =  (weight.view(1, -1, 1, 1) * rsqrt_var)
 
         grad_output_mean = grad_output_r.mean(-1).view(1, -1, 1, 1)
+        grad_weight_mean = grad_weight.mean(-1).view(1, -1, 1, 1)
+
         grad_output_delta = grad_output - grad_output_mean 
-        grad_input = gamma_istd * (grad_output_delta 
-                - xhat * grad_weight.view(1, -1, 1, 1).div(B*H*W))
 
-
-
-        # distd = weight.view(1, -1, 1, 1) *  
-        # print(grad_input.shape)
-
+        grad_input = gamma_istd * (grad_output_delta - xhat * grad_weight_mean )
+       
         return grad_input, None, None, grad_weight, grad_bias,  None, None, None, None
