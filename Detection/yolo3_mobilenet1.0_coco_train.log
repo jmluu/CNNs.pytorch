@@ -1,0 +1,1992 @@
+Namespace(amp=False, batch_size=8, data_shape=416, datapath='/home/datadisk2/dataset/COCO/', dataset='coco', epochs=10, gpus='0', horovod=False, label_smooth=False, log_interval=100, lr=0.001, lr_decay=0.1, lr_decay_epoch='5,8', lr_decay_period=0, lr_mode='step', mixup=False, momentum=0.9, network='mobilenet1.0', no_mixup_epochs=20, no_random_shape=False, no_wd=False, num_samples=82081, num_workers=4, resume='', save_interval=10, save_prefix='yolo3_mobilenet1.0_coco', seed=233, start_epoch=0, syncbn=False, val_interval=1, warmup_epochs=2, warmup_lr=0.0, wd=0.0005)
+Start training from [Epoch 0]
+[Epoch 0][Batch 99], LR: 4.87E-06, Speed: 51.684 samples/sec, ObjLoss=1560.707, BoxCenterLoss=18.115, BoxScaleLoss=16.785, ClassLoss=368.272
+[Epoch 0][Batch 199], LR: 9.75E-06, Speed: 7.503 samples/sec, ObjLoss=818.979, BoxCenterLoss=18.210, BoxScaleLoss=15.382, ClassLoss=350.057
+[Epoch 0][Batch 299], LR: 1.46E-05, Speed: 18.029 samples/sec, ObjLoss=565.329, BoxCenterLoss=18.042, BoxScaleLoss=14.725, ClassLoss=306.467
+[Epoch 0][Batch 399], LR: 1.95E-05, Speed: 43.408 samples/sec, ObjLoss=436.780, BoxCenterLoss=17.787, BoxScaleLoss=14.166, ClassLoss=260.518
+[Epoch 0][Batch 499], LR: 2.44E-05, Speed: 25.975 samples/sec, ObjLoss=358.561, BoxCenterLoss=17.707, BoxScaleLoss=13.780, ClassLoss=223.474
+[Epoch 0][Batch 599], LR: 2.92E-05, Speed: 46.219 samples/sec, ObjLoss=305.595, BoxCenterLoss=17.518, BoxScaleLoss=13.266, ClassLoss=195.433
+[Epoch 0][Batch 699], LR: 3.41E-05, Speed: 38.021 samples/sec, ObjLoss=267.709, BoxCenterLoss=17.396, BoxScaleLoss=12.902, ClassLoss=173.978
+[Epoch 0][Batch 799], LR: 3.90E-05, Speed: 44.682 samples/sec, ObjLoss=238.697, BoxCenterLoss=17.164, BoxScaleLoss=12.480, ClassLoss=156.674
+[Epoch 0][Batch 899], LR: 4.39E-05, Speed: 26.357 samples/sec, ObjLoss=216.247, BoxCenterLoss=16.997, BoxScaleLoss=12.100, ClassLoss=142.763
+[Epoch 0][Batch 999], LR: 4.87E-05, Speed: 22.738 samples/sec, ObjLoss=198.031, BoxCenterLoss=16.856, BoxScaleLoss=11.797, ClassLoss=131.491
+[Epoch 0][Batch 1099], LR: 5.36E-05, Speed: 14.696 samples/sec, ObjLoss=183.308, BoxCenterLoss=16.773, BoxScaleLoss=11.585, ClassLoss=122.470
+[Epoch 0][Batch 1199], LR: 5.85E-05, Speed: 36.510 samples/sec, ObjLoss=171.031, BoxCenterLoss=16.743, BoxScaleLoss=11.399, ClassLoss=114.747
+[Epoch 0][Batch 1299], LR: 6.34E-05, Speed: 26.211 samples/sec, ObjLoss=160.618, BoxCenterLoss=16.708, BoxScaleLoss=11.188, ClassLoss=108.203
+[Epoch 0][Batch 1399], LR: 6.82E-05, Speed: 53.247 samples/sec, ObjLoss=151.818, BoxCenterLoss=16.756, BoxScaleLoss=11.051, ClassLoss=102.622
+[Epoch 0][Batch 1499], LR: 7.31E-05, Speed: 39.010 samples/sec, ObjLoss=143.931, BoxCenterLoss=16.705, BoxScaleLoss=10.915, ClassLoss=97.590
+[Epoch 0][Batch 1599], LR: 7.80E-05, Speed: 27.495 samples/sec, ObjLoss=137.174, BoxCenterLoss=16.676, BoxScaleLoss=10.743, ClassLoss=93.378
+[Epoch 0][Batch 1699], LR: 8.29E-05, Speed: 13.774 samples/sec, ObjLoss=131.104, BoxCenterLoss=16.601, BoxScaleLoss=10.619, ClassLoss=89.494
+[Epoch 0][Batch 1799], LR: 8.77E-05, Speed: 35.785 samples/sec, ObjLoss=125.709, BoxCenterLoss=16.560, BoxScaleLoss=10.511, ClassLoss=86.004
+[Epoch 0][Batch 1899], LR: 9.26E-05, Speed: 50.682 samples/sec, ObjLoss=120.743, BoxCenterLoss=16.497, BoxScaleLoss=10.405, ClassLoss=82.853
+[Epoch 0][Batch 1999], LR: 9.75E-05, Speed: 3.446 samples/sec, ObjLoss=116.520, BoxCenterLoss=16.522, BoxScaleLoss=10.343, ClassLoss=80.162
+[Epoch 0][Batch 2099], LR: 1.02E-04, Speed: 26.671 samples/sec, ObjLoss=112.510, BoxCenterLoss=16.467, BoxScaleLoss=10.218, ClassLoss=77.546
+[Epoch 0][Batch 2199], LR: 1.07E-04, Speed: 49.330 samples/sec, ObjLoss=108.971, BoxCenterLoss=16.441, BoxScaleLoss=10.122, ClassLoss=75.197
+[Epoch 0][Batch 2299], LR: 1.12E-04, Speed: 12.101 samples/sec, ObjLoss=105.572, BoxCenterLoss=16.357, BoxScaleLoss=10.012, ClassLoss=72.958
+[Epoch 0][Batch 2399], LR: 1.17E-04, Speed: 29.011 samples/sec, ObjLoss=102.577, BoxCenterLoss=16.347, BoxScaleLoss=9.936, ClassLoss=70.990
+[Epoch 0][Batch 2499], LR: 1.22E-04, Speed: 23.398 samples/sec, ObjLoss=99.848, BoxCenterLoss=16.349, BoxScaleLoss=9.896, ClassLoss=69.189
+[Epoch 0][Batch 2599], LR: 1.27E-04, Speed: 38.249 samples/sec, ObjLoss=97.314, BoxCenterLoss=16.320, BoxScaleLoss=9.815, ClassLoss=67.522
+[Epoch 0][Batch 2699], LR: 1.32E-04, Speed: 24.776 samples/sec, ObjLoss=94.925, BoxCenterLoss=16.293, BoxScaleLoss=9.739, ClassLoss=65.961
+[Epoch 0][Batch 2799], LR: 1.36E-04, Speed: 33.062 samples/sec, ObjLoss=92.773, BoxCenterLoss=16.298, BoxScaleLoss=9.696, ClassLoss=64.533
+[Epoch 0][Batch 2899], LR: 1.41E-04, Speed: 50.567 samples/sec, ObjLoss=90.807, BoxCenterLoss=16.313, BoxScaleLoss=9.675, ClassLoss=63.252
+[Epoch 0][Batch 2999], LR: 1.46E-04, Speed: 27.047 samples/sec, ObjLoss=88.908, BoxCenterLoss=16.308, BoxScaleLoss=9.628, ClassLoss=61.992
+[Epoch 0][Batch 3099], LR: 1.51E-04, Speed: 46.587 samples/sec, ObjLoss=87.108, BoxCenterLoss=16.299, BoxScaleLoss=9.603, ClassLoss=60.827
+[Epoch 0][Batch 3199], LR: 1.56E-04, Speed: 5.820 samples/sec, ObjLoss=85.464, BoxCenterLoss=16.313, BoxScaleLoss=9.573, ClassLoss=59.731
+[Epoch 0][Batch 3299], LR: 1.61E-04, Speed: 45.986 samples/sec, ObjLoss=83.877, BoxCenterLoss=16.283, BoxScaleLoss=9.536, ClassLoss=58.669
+[Epoch 0][Batch 3399], LR: 1.66E-04, Speed: 51.117 samples/sec, ObjLoss=82.394, BoxCenterLoss=16.264, BoxScaleLoss=9.505, ClassLoss=57.670
+[Epoch 0][Batch 3499], LR: 1.71E-04, Speed: 47.502 samples/sec, ObjLoss=80.984, BoxCenterLoss=16.262, BoxScaleLoss=9.476, ClassLoss=56.747
+[Epoch 0][Batch 3599], LR: 1.75E-04, Speed: 29.599 samples/sec, ObjLoss=79.663, BoxCenterLoss=16.257, BoxScaleLoss=9.433, ClassLoss=55.857
+[Epoch 0][Batch 3699], LR: 1.80E-04, Speed: 5.790 samples/sec, ObjLoss=78.340, BoxCenterLoss=16.215, BoxScaleLoss=9.395, ClassLoss=54.976
+[Epoch 0][Batch 3799], LR: 1.85E-04, Speed: 41.766 samples/sec, ObjLoss=77.097, BoxCenterLoss=16.202, BoxScaleLoss=9.356, ClassLoss=54.150
+[Epoch 0][Batch 3899], LR: 1.90E-04, Speed: 4.921 samples/sec, ObjLoss=75.956, BoxCenterLoss=16.191, BoxScaleLoss=9.317, ClassLoss=53.388
+[Epoch 0][Batch 3999], LR: 1.95E-04, Speed: 58.028 samples/sec, ObjLoss=74.836, BoxCenterLoss=16.175, BoxScaleLoss=9.302, ClassLoss=52.653
+[Epoch 0][Batch 4099], LR: 2.00E-04, Speed: 39.093 samples/sec, ObjLoss=73.821, BoxCenterLoss=16.170, BoxScaleLoss=9.276, ClassLoss=51.978
+[Epoch 0][Batch 4199], LR: 2.05E-04, Speed: 27.865 samples/sec, ObjLoss=72.817, BoxCenterLoss=16.139, BoxScaleLoss=9.227, ClassLoss=51.276
+[Epoch 0][Batch 4299], LR: 2.10E-04, Speed: 24.310 samples/sec, ObjLoss=71.892, BoxCenterLoss=16.135, BoxScaleLoss=9.198, ClassLoss=50.666
+[Epoch 0][Batch 4399], LR: 2.14E-04, Speed: 13.476 samples/sec, ObjLoss=71.021, BoxCenterLoss=16.142, BoxScaleLoss=9.200, ClassLoss=50.073
+[Epoch 0][Batch 4499], LR: 2.19E-04, Speed: 80.341 samples/sec, ObjLoss=70.157, BoxCenterLoss=16.132, BoxScaleLoss=9.176, ClassLoss=49.494
+[Epoch 0][Batch 4599], LR: 2.24E-04, Speed: 43.512 samples/sec, ObjLoss=69.299, BoxCenterLoss=16.113, BoxScaleLoss=9.146, ClassLoss=48.922
+[Epoch 0][Batch 4699], LR: 2.29E-04, Speed: 17.102 samples/sec, ObjLoss=68.525, BoxCenterLoss=16.108, BoxScaleLoss=9.124, ClassLoss=48.382
+[Epoch 0][Batch 4799], LR: 2.34E-04, Speed: 46.489 samples/sec, ObjLoss=67.740, BoxCenterLoss=16.094, BoxScaleLoss=9.102, ClassLoss=47.870
+[Epoch 0][Batch 4899], LR: 2.39E-04, Speed: 46.158 samples/sec, ObjLoss=67.010, BoxCenterLoss=16.098, BoxScaleLoss=9.101, ClassLoss=47.376
+[Epoch 0][Batch 4999], LR: 2.44E-04, Speed: 12.206 samples/sec, ObjLoss=66.298, BoxCenterLoss=16.080, BoxScaleLoss=9.089, ClassLoss=46.882
+[Epoch 0][Batch 5099], LR: 2.49E-04, Speed: 28.885 samples/sec, ObjLoss=65.666, BoxCenterLoss=16.087, BoxScaleLoss=9.076, ClassLoss=46.435
+[Epoch 0][Batch 5199], LR: 2.53E-04, Speed: 39.546 samples/sec, ObjLoss=64.994, BoxCenterLoss=16.068, BoxScaleLoss=9.053, ClassLoss=45.966
+[Epoch 0][Batch 5299], LR: 2.58E-04, Speed: 33.058 samples/sec, ObjLoss=64.374, BoxCenterLoss=16.058, BoxScaleLoss=9.038, ClassLoss=45.541
+[Epoch 0][Batch 5399], LR: 2.63E-04, Speed: 34.799 samples/sec, ObjLoss=63.793, BoxCenterLoss=16.061, BoxScaleLoss=9.031, ClassLoss=45.142
+[Epoch 0][Batch 5499], LR: 2.68E-04, Speed: 1.620 samples/sec, ObjLoss=63.242, BoxCenterLoss=16.059, BoxScaleLoss=9.027, ClassLoss=44.764
+[Epoch 0][Batch 5599], LR: 2.73E-04, Speed: 3.021 samples/sec, ObjLoss=62.724, BoxCenterLoss=16.064, BoxScaleLoss=9.019, ClassLoss=44.404
+[Epoch 0][Batch 5699], LR: 2.78E-04, Speed: 1.155 samples/sec, ObjLoss=62.208, BoxCenterLoss=16.078, BoxScaleLoss=9.015, ClassLoss=44.061
+[Epoch 0][Batch 5799], LR: 2.83E-04, Speed: 36.611 samples/sec, ObjLoss=61.674, BoxCenterLoss=16.065, BoxScaleLoss=9.000, ClassLoss=43.692
+[Epoch 0][Batch 5899], LR: 2.88E-04, Speed: 39.171 samples/sec, ObjLoss=61.193, BoxCenterLoss=16.076, BoxScaleLoss=8.997, ClassLoss=43.366
+[Epoch 0][Batch 5999], LR: 2.92E-04, Speed: 55.195 samples/sec, ObjLoss=60.673, BoxCenterLoss=16.062, BoxScaleLoss=8.990, ClassLoss=43.017
+[Epoch 0][Batch 6099], LR: 2.97E-04, Speed: 1.346 samples/sec, ObjLoss=60.224, BoxCenterLoss=16.064, BoxScaleLoss=8.972, ClassLoss=42.693
+[Epoch 0][Batch 6199], LR: 3.02E-04, Speed: 3.563 samples/sec, ObjLoss=59.798, BoxCenterLoss=16.072, BoxScaleLoss=8.970, ClassLoss=42.381
+[Epoch 0][Batch 6299], LR: 3.07E-04, Speed: 1.665 samples/sec, ObjLoss=59.386, BoxCenterLoss=16.072, BoxScaleLoss=8.965, ClassLoss=42.078
+[Epoch 0][Batch 6399], LR: 3.12E-04, Speed: 49.712 samples/sec, ObjLoss=58.958, BoxCenterLoss=16.066, BoxScaleLoss=8.953, ClassLoss=41.769
+[Epoch 0][Batch 6499], LR: 3.17E-04, Speed: 54.098 samples/sec, ObjLoss=58.538, BoxCenterLoss=16.058, BoxScaleLoss=8.934, ClassLoss=41.474
+[Epoch 0][Batch 6599], LR: 3.22E-04, Speed: 31.699 samples/sec, ObjLoss=58.116, BoxCenterLoss=16.047, BoxScaleLoss=8.912, ClassLoss=41.178
+[Epoch 0][Batch 6699], LR: 3.27E-04, Speed: 24.956 samples/sec, ObjLoss=57.694, BoxCenterLoss=16.027, BoxScaleLoss=8.890, ClassLoss=40.880
+[Epoch 0][Batch 6799], LR: 3.31E-04, Speed: 29.404 samples/sec, ObjLoss=57.301, BoxCenterLoss=16.019, BoxScaleLoss=8.877, ClassLoss=40.608
+[Epoch 0][Batch 6899], LR: 3.36E-04, Speed: 51.327 samples/sec, ObjLoss=56.957, BoxCenterLoss=16.019, BoxScaleLoss=8.867, ClassLoss=40.340
+[Epoch 0][Batch 6999], LR: 3.41E-04, Speed: 25.703 samples/sec, ObjLoss=56.619, BoxCenterLoss=16.018, BoxScaleLoss=8.857, ClassLoss=40.089
+[Epoch 0][Batch 7099], LR: 3.46E-04, Speed: 50.474 samples/sec, ObjLoss=56.269, BoxCenterLoss=16.007, BoxScaleLoss=8.848, ClassLoss=39.835
+[Epoch 0][Batch 7199], LR: 3.51E-04, Speed: 63.406 samples/sec, ObjLoss=55.904, BoxCenterLoss=15.990, BoxScaleLoss=8.834, ClassLoss=39.572
+[Epoch 0][Batch 7299], LR: 3.56E-04, Speed: 38.360 samples/sec, ObjLoss=55.516, BoxCenterLoss=15.968, BoxScaleLoss=8.810, ClassLoss=39.306
+[Epoch 0][Batch 7399], LR: 3.61E-04, Speed: 29.571 samples/sec, ObjLoss=55.210, BoxCenterLoss=15.974, BoxScaleLoss=8.805, ClassLoss=39.085
+[Epoch 0][Batch 7499], LR: 3.66E-04, Speed: 25.000 samples/sec, ObjLoss=54.904, BoxCenterLoss=15.970, BoxScaleLoss=8.797, ClassLoss=38.856
+[Epoch 0][Batch 7599], LR: 3.70E-04, Speed: 47.092 samples/sec, ObjLoss=54.575, BoxCenterLoss=15.953, BoxScaleLoss=8.781, ClassLoss=38.621
+[Epoch 0][Batch 7699], LR: 3.75E-04, Speed: 31.012 samples/sec, ObjLoss=54.300, BoxCenterLoss=15.955, BoxScaleLoss=8.786, ClassLoss=38.412
+[Epoch 0][Batch 7799], LR: 3.80E-04, Speed: 2.210 samples/sec, ObjLoss=54.022, BoxCenterLoss=15.958, BoxScaleLoss=8.780, ClassLoss=38.212
+[Epoch 0][Batch 7899], LR: 3.85E-04, Speed: 4.885 samples/sec, ObjLoss=53.752, BoxCenterLoss=15.958, BoxScaleLoss=8.764, ClassLoss=38.009
+[Epoch 0][Batch 7999], LR: 3.90E-04, Speed: 3.828 samples/sec, ObjLoss=53.475, BoxCenterLoss=15.950, BoxScaleLoss=8.755, ClassLoss=37.797
+[Epoch 0][Batch 8099], LR: 3.95E-04, Speed: 23.274 samples/sec, ObjLoss=53.222, BoxCenterLoss=15.953, BoxScaleLoss=8.757, ClassLoss=37.606
+[Epoch 0][Batch 8199], LR: 4.00E-04, Speed: 51.881 samples/sec, ObjLoss=52.960, BoxCenterLoss=15.950, BoxScaleLoss=8.749, ClassLoss=37.413
+[Epoch 0][Batch 8299], LR: 4.05E-04, Speed: 51.655 samples/sec, ObjLoss=52.698, BoxCenterLoss=15.944, BoxScaleLoss=8.738, ClassLoss=37.214
+[Epoch 0][Batch 8399], LR: 4.09E-04, Speed: 48.569 samples/sec, ObjLoss=52.436, BoxCenterLoss=15.940, BoxScaleLoss=8.735, ClassLoss=37.024
+[Epoch 0][Batch 8499], LR: 4.14E-04, Speed: 7.548 samples/sec, ObjLoss=52.194, BoxCenterLoss=15.941, BoxScaleLoss=8.736, ClassLoss=36.840
+[Epoch 0][Batch 8599], LR: 4.19E-04, Speed: 33.135 samples/sec, ObjLoss=51.929, BoxCenterLoss=15.931, BoxScaleLoss=8.731, ClassLoss=36.653
+[Epoch 0][Batch 8699], LR: 4.24E-04, Speed: 13.349 samples/sec, ObjLoss=51.681, BoxCenterLoss=15.924, BoxScaleLoss=8.721, ClassLoss=36.463
+[Epoch 0][Batch 8799], LR: 4.29E-04, Speed: 23.930 samples/sec, ObjLoss=51.429, BoxCenterLoss=15.911, BoxScaleLoss=8.711, ClassLoss=36.281
+[Epoch 0][Batch 8899], LR: 4.34E-04, Speed: 51.339 samples/sec, ObjLoss=51.195, BoxCenterLoss=15.906, BoxScaleLoss=8.706, ClassLoss=36.110
+[Epoch 0][Batch 8999], LR: 4.39E-04, Speed: 5.005 samples/sec, ObjLoss=50.987, BoxCenterLoss=15.899, BoxScaleLoss=8.696, ClassLoss=35.940
+[Epoch 0][Batch 9099], LR: 4.43E-04, Speed: 37.121 samples/sec, ObjLoss=50.765, BoxCenterLoss=15.897, BoxScaleLoss=8.694, ClassLoss=35.777
+[Epoch 0][Batch 9199], LR: 4.48E-04, Speed: 23.519 samples/sec, ObjLoss=50.548, BoxCenterLoss=15.896, BoxScaleLoss=8.690, ClassLoss=35.609
+[Epoch 0][Batch 9299], LR: 4.53E-04, Speed: 27.772 samples/sec, ObjLoss=50.322, BoxCenterLoss=15.884, BoxScaleLoss=8.679, ClassLoss=35.441
+[Epoch 0][Batch 9399], LR: 4.58E-04, Speed: 6.970 samples/sec, ObjLoss=50.114, BoxCenterLoss=15.875, BoxScaleLoss=8.671, ClassLoss=35.282
+[Epoch 0][Batch 9499], LR: 4.63E-04, Speed: 26.301 samples/sec, ObjLoss=49.912, BoxCenterLoss=15.870, BoxScaleLoss=8.665, ClassLoss=35.127
+[Epoch 0][Batch 9599], LR: 4.68E-04, Speed: 15.594 samples/sec, ObjLoss=49.735, BoxCenterLoss=15.873, BoxScaleLoss=8.659, ClassLoss=34.983
+[Epoch 0][Batch 9699], LR: 4.73E-04, Speed: 24.946 samples/sec, ObjLoss=49.551, BoxCenterLoss=15.875, BoxScaleLoss=8.657, ClassLoss=34.844
+[Epoch 0][Batch 9799], LR: 4.78E-04, Speed: 46.513 samples/sec, ObjLoss=49.369, BoxCenterLoss=15.874, BoxScaleLoss=8.655, ClassLoss=34.711
+[Epoch 0][Batch 9899], LR: 4.82E-04, Speed: 30.515 samples/sec, ObjLoss=49.210, BoxCenterLoss=15.883, BoxScaleLoss=8.656, ClassLoss=34.590
+[Epoch 0][Batch 9999], LR: 4.87E-04, Speed: 7.535 samples/sec, ObjLoss=49.020, BoxCenterLoss=15.876, BoxScaleLoss=8.653, ClassLoss=34.455
+[Epoch 0][Batch 10099], LR: 4.92E-04, Speed: 12.486 samples/sec, ObjLoss=48.870, BoxCenterLoss=15.886, BoxScaleLoss=8.650, ClassLoss=34.331
+[Epoch 0][Batch 10199], LR: 4.97E-04, Speed: 46.771 samples/sec, ObjLoss=48.707, BoxCenterLoss=15.891, BoxScaleLoss=8.652, ClassLoss=34.209
+[Epoch 0] Training cost: 7575.125, ObjLoss=48.593, BoxCenterLoss=15.883, BoxScaleLoss=8.644, ClassLoss=34.119
+[Epoch 0] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.003
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.010
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.003
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.005
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.010
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.013
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.013
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.011
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.019
+person=3.7
+bicycle=0.1
+car=1.2
+motorcycle=0.2
+airplane=0.3
+bus=2.0
+train=2.2
+truck=0.3
+boat=0.0
+traffic light=0.3
+fire hydrant=0.0
+stop sign=0.0
+parking meter=0.0
+bench=0.0
+bird=0.0
+cat=0.1
+dog=0.1
+horse=0.1
+sheep=0.0
+cow=0.2
+elephant=0.1
+bear=0.0
+zebra=0.6
+giraffe=0.2
+backpack=0.0
+umbrella=0.1
+handbag=0.0
+tie=0.0
+suitcase=0.0
+frisbee=0.0
+skis=0.4
+snowboard=0.1
+sports ball=0.1
+kite=0.0
+baseball bat=0.0
+baseball glove=0.0
+skateboard=0.2
+surfboard=0.0
+tennis racket=0.0
+bottle=0.5
+wine glass=0.0
+cup=1.0
+fork=0.0
+knife=0.0
+spoon=0.0
+bowl=0.7
+banana=0.0
+apple=0.0
+sandwich=0.0
+orange=0.3
+broccoli=0.0
+carrot=0.0
+hot dog=0.0
+pizza=0.9
+donut=0.5
+cake=0.0
+chair=0.8
+couch=0.1
+potted plant=0.0
+bed=0.0
+dining table=3.7
+toilet=0.0
+tv=2.1
+laptop=0.0
+mouse=0.0
+remote=0.0
+keyboard=0.1
+cell phone=0.0
+microwave=0.0
+oven=0.0
+toaster=0.0
+sink=0.8
+refrigerator=0.0
+book=0.3
+clock=0.8
+vase=0.0
+scissors=0.0
+teddy bear=0.0
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=0.3
+[Epoch 1][Batch 99], LR: 5.05E-04, Speed: 39.562 samples/sec, ObjLoss=48.444, BoxCenterLoss=15.889, BoxScaleLoss=8.645, ClassLoss=34.009
+[Epoch 1][Batch 199], LR: 5.10E-04, Speed: 17.982 samples/sec, ObjLoss=48.296, BoxCenterLoss=15.896, BoxScaleLoss=8.645, ClassLoss=33.894
+[Epoch 1][Batch 299], LR: 5.15E-04, Speed: 3.847 samples/sec, ObjLoss=48.126, BoxCenterLoss=15.893, BoxScaleLoss=8.642, ClassLoss=33.769
+[Epoch 1][Batch 399], LR: 5.20E-04, Speed: 1.961 samples/sec, ObjLoss=47.979, BoxCenterLoss=15.894, BoxScaleLoss=8.640, ClassLoss=33.642
+[Epoch 1][Batch 499], LR: 5.24E-04, Speed: 25.231 samples/sec, ObjLoss=47.812, BoxCenterLoss=15.888, BoxScaleLoss=8.638, ClassLoss=33.518
+[Epoch 1][Batch 599], LR: 5.29E-04, Speed: 41.387 samples/sec, ObjLoss=47.654, BoxCenterLoss=15.888, BoxScaleLoss=8.635, ClassLoss=33.405
+[Epoch 1][Batch 699], LR: 5.34E-04, Speed: 29.458 samples/sec, ObjLoss=47.482, BoxCenterLoss=15.879, BoxScaleLoss=8.625, ClassLoss=33.280
+[Epoch 1][Batch 799], LR: 5.39E-04, Speed: 54.510 samples/sec, ObjLoss=47.332, BoxCenterLoss=15.876, BoxScaleLoss=8.617, ClassLoss=33.157
+[Epoch 1][Batch 899], LR: 5.44E-04, Speed: 15.070 samples/sec, ObjLoss=47.173, BoxCenterLoss=15.871, BoxScaleLoss=8.615, ClassLoss=33.040
+[Epoch 1][Batch 999], LR: 5.49E-04, Speed: 12.499 samples/sec, ObjLoss=47.019, BoxCenterLoss=15.861, BoxScaleLoss=8.605, ClassLoss=32.916
+[Epoch 1][Batch 1099], LR: 5.54E-04, Speed: 70.592 samples/sec, ObjLoss=46.885, BoxCenterLoss=15.861, BoxScaleLoss=8.599, ClassLoss=32.806
+[Epoch 1][Batch 1199], LR: 5.59E-04, Speed: 78.564 samples/sec, ObjLoss=46.749, BoxCenterLoss=15.864, BoxScaleLoss=8.598, ClassLoss=32.701
+[Epoch 1][Batch 1299], LR: 5.63E-04, Speed: 26.522 samples/sec, ObjLoss=46.637, BoxCenterLoss=15.867, BoxScaleLoss=8.597, ClassLoss=32.629
+[Epoch 1][Batch 1399], LR: 5.68E-04, Speed: 7.220 samples/sec, ObjLoss=46.547, BoxCenterLoss=15.866, BoxScaleLoss=8.595, ClassLoss=32.546
+[Epoch 1][Batch 1499], LR: 5.73E-04, Speed: 26.429 samples/sec, ObjLoss=46.438, BoxCenterLoss=15.862, BoxScaleLoss=8.588, ClassLoss=32.456
+[Epoch 1][Batch 1599], LR: 5.78E-04, Speed: 34.499 samples/sec, ObjLoss=46.323, BoxCenterLoss=15.854, BoxScaleLoss=8.577, ClassLoss=32.362
+[Epoch 1][Batch 1699], LR: 5.83E-04, Speed: 10.914 samples/sec, ObjLoss=46.209, BoxCenterLoss=15.850, BoxScaleLoss=8.578, ClassLoss=32.269
+[Epoch 1][Batch 1799], LR: 5.88E-04, Speed: 2.382 samples/sec, ObjLoss=46.090, BoxCenterLoss=15.851, BoxScaleLoss=8.574, ClassLoss=32.179
+[Epoch 1][Batch 1899], LR: 5.93E-04, Speed: 24.641 samples/sec, ObjLoss=45.995, BoxCenterLoss=15.855, BoxScaleLoss=8.573, ClassLoss=32.093
+[Epoch 1][Batch 1999], LR: 5.97E-04, Speed: 25.300 samples/sec, ObjLoss=45.881, BoxCenterLoss=15.855, BoxScaleLoss=8.577, ClassLoss=32.006
+[Epoch 1][Batch 2099], LR: 6.02E-04, Speed: 41.351 samples/sec, ObjLoss=45.757, BoxCenterLoss=15.852, BoxScaleLoss=8.576, ClassLoss=31.909
+[Epoch 1][Batch 2199], LR: 6.07E-04, Speed: 37.696 samples/sec, ObjLoss=45.630, BoxCenterLoss=15.846, BoxScaleLoss=8.570, ClassLoss=31.814
+[Epoch 1][Batch 2299], LR: 6.12E-04, Speed: 23.532 samples/sec, ObjLoss=45.537, BoxCenterLoss=15.850, BoxScaleLoss=8.574, ClassLoss=31.735
+[Epoch 1][Batch 2399], LR: 6.17E-04, Speed: 25.371 samples/sec, ObjLoss=45.410, BoxCenterLoss=15.840, BoxScaleLoss=8.566, ClassLoss=31.635
+[Epoch 1][Batch 2499], LR: 6.22E-04, Speed: 13.479 samples/sec, ObjLoss=45.329, BoxCenterLoss=15.837, BoxScaleLoss=8.565, ClassLoss=31.569
+[Epoch 1][Batch 2599], LR: 6.27E-04, Speed: 43.584 samples/sec, ObjLoss=45.281, BoxCenterLoss=15.833, BoxScaleLoss=8.561, ClassLoss=31.525
+[Epoch 1][Batch 2699], LR: 6.32E-04, Speed: 60.778 samples/sec, ObjLoss=45.248, BoxCenterLoss=15.838, BoxScaleLoss=8.560, ClassLoss=31.477
+[Epoch 1][Batch 2799], LR: 6.36E-04, Speed: 4.650 samples/sec, ObjLoss=45.184, BoxCenterLoss=15.836, BoxScaleLoss=8.558, ClassLoss=31.414
+[Epoch 1][Batch 2899], LR: 6.41E-04, Speed: 28.126 samples/sec, ObjLoss=45.150, BoxCenterLoss=15.849, BoxScaleLoss=8.565, ClassLoss=31.373
+[Epoch 1][Batch 2999], LR: 6.46E-04, Speed: 81.947 samples/sec, ObjLoss=45.083, BoxCenterLoss=15.853, BoxScaleLoss=8.565, ClassLoss=31.316
+[Epoch 1][Batch 3099], LR: 6.51E-04, Speed: 40.383 samples/sec, ObjLoss=45.002, BoxCenterLoss=15.848, BoxScaleLoss=8.559, ClassLoss=31.246
+[Epoch 1][Batch 3199], LR: 6.56E-04, Speed: 31.929 samples/sec, ObjLoss=44.926, BoxCenterLoss=15.846, BoxScaleLoss=8.551, ClassLoss=31.176
+[Epoch 1][Batch 3299], LR: 6.61E-04, Speed: 35.278 samples/sec, ObjLoss=44.832, BoxCenterLoss=15.839, BoxScaleLoss=8.545, ClassLoss=31.105
+[Epoch 1][Batch 3399], LR: 6.66E-04, Speed: 20.609 samples/sec, ObjLoss=44.765, BoxCenterLoss=15.840, BoxScaleLoss=8.543, ClassLoss=31.042
+[Epoch 1][Batch 3499], LR: 6.71E-04, Speed: 9.191 samples/sec, ObjLoss=44.676, BoxCenterLoss=15.838, BoxScaleLoss=8.540, ClassLoss=30.972
+[Epoch 1][Batch 3599], LR: 6.75E-04, Speed: 16.646 samples/sec, ObjLoss=44.586, BoxCenterLoss=15.833, BoxScaleLoss=8.533, ClassLoss=30.903
+[Epoch 1][Batch 3699], LR: 6.80E-04, Speed: 52.123 samples/sec, ObjLoss=44.495, BoxCenterLoss=15.830, BoxScaleLoss=8.528, ClassLoss=30.834
+[Epoch 1][Batch 3799], LR: 6.85E-04, Speed: 32.876 samples/sec, ObjLoss=44.438, BoxCenterLoss=15.839, BoxScaleLoss=8.529, ClassLoss=30.779
+[Epoch 1][Batch 3899], LR: 6.90E-04, Speed: 51.687 samples/sec, ObjLoss=44.363, BoxCenterLoss=15.842, BoxScaleLoss=8.525, ClassLoss=30.721
+[Epoch 1][Batch 3999], LR: 6.95E-04, Speed: 36.456 samples/sec, ObjLoss=44.291, BoxCenterLoss=15.842, BoxScaleLoss=8.526, ClassLoss=30.661
+[Epoch 1][Batch 4099], LR: 7.00E-04, Speed: 8.218 samples/sec, ObjLoss=44.222, BoxCenterLoss=15.846, BoxScaleLoss=8.526, ClassLoss=30.600
+[Epoch 1][Batch 4199], LR: 7.05E-04, Speed: 23.557 samples/sec, ObjLoss=44.141, BoxCenterLoss=15.844, BoxScaleLoss=8.519, ClassLoss=30.533
+[Epoch 1][Batch 4299], LR: 7.10E-04, Speed: 24.609 samples/sec, ObjLoss=44.053, BoxCenterLoss=15.837, BoxScaleLoss=8.511, ClassLoss=30.462
+[Epoch 1][Batch 4399], LR: 7.14E-04, Speed: 6.506 samples/sec, ObjLoss=43.992, BoxCenterLoss=15.841, BoxScaleLoss=8.508, ClassLoss=30.404
+[Epoch 1][Batch 4499], LR: 7.19E-04, Speed: 34.908 samples/sec, ObjLoss=43.915, BoxCenterLoss=15.837, BoxScaleLoss=8.500, ClassLoss=30.337
+[Epoch 1][Batch 4599], LR: 7.24E-04, Speed: 57.072 samples/sec, ObjLoss=43.832, BoxCenterLoss=15.838, BoxScaleLoss=8.502, ClassLoss=30.274
+[Epoch 1][Batch 4699], LR: 7.29E-04, Speed: 10.979 samples/sec, ObjLoss=43.776, BoxCenterLoss=15.849, BoxScaleLoss=8.505, ClassLoss=30.227
+[Epoch 1][Batch 4799], LR: 7.34E-04, Speed: 25.584 samples/sec, ObjLoss=43.684, BoxCenterLoss=15.841, BoxScaleLoss=8.498, ClassLoss=30.154
+[Epoch 1][Batch 4899], LR: 7.39E-04, Speed: 26.894 samples/sec, ObjLoss=43.617, BoxCenterLoss=15.845, BoxScaleLoss=8.497, ClassLoss=30.098
+[Epoch 1][Batch 4999], LR: 7.44E-04, Speed: 39.581 samples/sec, ObjLoss=43.543, BoxCenterLoss=15.843, BoxScaleLoss=8.493, ClassLoss=30.039
+[Epoch 1][Batch 5099], LR: 7.49E-04, Speed: 55.583 samples/sec, ObjLoss=43.455, BoxCenterLoss=15.836, BoxScaleLoss=8.486, ClassLoss=29.972
+[Epoch 1][Batch 5199], LR: 7.53E-04, Speed: 3.221 samples/sec, ObjLoss=43.375, BoxCenterLoss=15.831, BoxScaleLoss=8.478, ClassLoss=29.906
+[Epoch 1][Batch 5299], LR: 7.58E-04, Speed: 36.420 samples/sec, ObjLoss=43.301, BoxCenterLoss=15.827, BoxScaleLoss=8.473, ClassLoss=29.843
+[Epoch 1][Batch 5399], LR: 7.63E-04, Speed: 34.621 samples/sec, ObjLoss=43.226, BoxCenterLoss=15.826, BoxScaleLoss=8.470, ClassLoss=29.784
+[Epoch 1][Batch 5499], LR: 7.68E-04, Speed: 31.738 samples/sec, ObjLoss=43.154, BoxCenterLoss=15.821, BoxScaleLoss=8.466, ClassLoss=29.719
+[Epoch 1][Batch 5599], LR: 7.73E-04, Speed: 42.511 samples/sec, ObjLoss=43.103, BoxCenterLoss=15.829, BoxScaleLoss=8.467, ClassLoss=29.675
+[Epoch 1][Batch 5699], LR: 7.78E-04, Speed: 68.097 samples/sec, ObjLoss=43.034, BoxCenterLoss=15.829, BoxScaleLoss=8.466, ClassLoss=29.618
+[Epoch 1][Batch 5799], LR: 7.83E-04, Speed: 55.686 samples/sec, ObjLoss=42.971, BoxCenterLoss=15.831, BoxScaleLoss=8.466, ClassLoss=29.562
+[Epoch 1][Batch 5899], LR: 7.88E-04, Speed: 13.256 samples/sec, ObjLoss=42.893, BoxCenterLoss=15.827, BoxScaleLoss=8.460, ClassLoss=29.504
+[Epoch 1][Batch 5999], LR: 7.92E-04, Speed: 33.213 samples/sec, ObjLoss=42.822, BoxCenterLoss=15.825, BoxScaleLoss=8.458, ClassLoss=29.443
+[Epoch 1][Batch 6099], LR: 7.97E-04, Speed: 36.446 samples/sec, ObjLoss=42.763, BoxCenterLoss=15.828, BoxScaleLoss=8.456, ClassLoss=29.390
+[Epoch 1][Batch 6199], LR: 8.02E-04, Speed: 42.084 samples/sec, ObjLoss=42.686, BoxCenterLoss=15.822, BoxScaleLoss=8.451, ClassLoss=29.329
+[Epoch 1][Batch 6299], LR: 8.07E-04, Speed: 31.352 samples/sec, ObjLoss=42.610, BoxCenterLoss=15.818, BoxScaleLoss=8.445, ClassLoss=29.269
+[Epoch 1][Batch 6399], LR: 8.12E-04, Speed: 8.170 samples/sec, ObjLoss=42.523, BoxCenterLoss=15.810, BoxScaleLoss=8.439, ClassLoss=29.203
+[Epoch 1][Batch 6499], LR: 8.17E-04, Speed: 7.856 samples/sec, ObjLoss=42.446, BoxCenterLoss=15.804, BoxScaleLoss=8.432, ClassLoss=29.142
+[Epoch 1][Batch 6599], LR: 8.22E-04, Speed: 30.577 samples/sec, ObjLoss=42.369, BoxCenterLoss=15.798, BoxScaleLoss=8.424, ClassLoss=29.081
+[Epoch 1][Batch 6699], LR: 8.27E-04, Speed: 6.858 samples/sec, ObjLoss=42.307, BoxCenterLoss=15.797, BoxScaleLoss=8.421, ClassLoss=29.029
+[Epoch 1][Batch 6799], LR: 8.31E-04, Speed: 33.929 samples/sec, ObjLoss=42.238, BoxCenterLoss=15.792, BoxScaleLoss=8.413, ClassLoss=28.974
+[Epoch 1][Batch 6899], LR: 8.36E-04, Speed: 43.218 samples/sec, ObjLoss=42.180, BoxCenterLoss=15.795, BoxScaleLoss=8.411, ClassLoss=28.929
+[Epoch 1][Batch 6999], LR: 8.41E-04, Speed: 14.937 samples/sec, ObjLoss=42.117, BoxCenterLoss=15.795, BoxScaleLoss=8.412, ClassLoss=28.881
+[Epoch 1][Batch 7099], LR: 8.46E-04, Speed: 23.947 samples/sec, ObjLoss=42.056, BoxCenterLoss=15.792, BoxScaleLoss=8.408, ClassLoss=28.832
+[Epoch 1][Batch 7199], LR: 8.51E-04, Speed: 30.350 samples/sec, ObjLoss=42.013, BoxCenterLoss=15.790, BoxScaleLoss=8.404, ClassLoss=28.787
+[Epoch 1][Batch 7299], LR: 8.56E-04, Speed: 57.500 samples/sec, ObjLoss=41.964, BoxCenterLoss=15.794, BoxScaleLoss=8.402, ClassLoss=28.744
+[Epoch 1][Batch 7399], LR: 8.61E-04, Speed: 43.502 samples/sec, ObjLoss=41.900, BoxCenterLoss=15.787, BoxScaleLoss=8.393, ClassLoss=28.690
+[Epoch 1][Batch 7499], LR: 8.66E-04, Speed: 44.374 samples/sec, ObjLoss=41.854, BoxCenterLoss=15.792, BoxScaleLoss=8.395, ClassLoss=28.654
+[Epoch 1][Batch 7599], LR: 8.70E-04, Speed: 27.729 samples/sec, ObjLoss=41.792, BoxCenterLoss=15.789, BoxScaleLoss=8.389, ClassLoss=28.605
+[Epoch 1][Batch 7699], LR: 8.75E-04, Speed: 9.467 samples/sec, ObjLoss=41.751, BoxCenterLoss=15.792, BoxScaleLoss=8.386, ClassLoss=28.563
+[Epoch 1][Batch 7799], LR: 8.80E-04, Speed: 22.491 samples/sec, ObjLoss=41.691, BoxCenterLoss=15.788, BoxScaleLoss=8.380, ClassLoss=28.514
+[Epoch 1][Batch 7899], LR: 8.85E-04, Speed: 40.470 samples/sec, ObjLoss=41.632, BoxCenterLoss=15.787, BoxScaleLoss=8.379, ClassLoss=28.469
+[Epoch 1][Batch 7999], LR: 8.90E-04, Speed: 42.971 samples/sec, ObjLoss=41.570, BoxCenterLoss=15.780, BoxScaleLoss=8.371, ClassLoss=28.414
+[Epoch 1][Batch 8099], LR: 8.95E-04, Speed: 1.827 samples/sec, ObjLoss=41.522, BoxCenterLoss=15.782, BoxScaleLoss=8.368, ClassLoss=28.370
+[Epoch 1][Batch 8199], LR: 9.00E-04, Speed: 70.925 samples/sec, ObjLoss=41.468, BoxCenterLoss=15.784, BoxScaleLoss=8.368, ClassLoss=28.329
+[Epoch 1][Batch 8299], LR: 9.05E-04, Speed: 32.858 samples/sec, ObjLoss=41.413, BoxCenterLoss=15.781, BoxScaleLoss=8.363, ClassLoss=28.283
+[Epoch 1][Batch 8399], LR: 9.09E-04, Speed: 56.174 samples/sec, ObjLoss=41.359, BoxCenterLoss=15.781, BoxScaleLoss=8.360, ClassLoss=28.236
+[Epoch 1][Batch 8499], LR: 9.14E-04, Speed: 36.540 samples/sec, ObjLoss=41.299, BoxCenterLoss=15.779, BoxScaleLoss=8.358, ClassLoss=28.191
+[Epoch 1][Batch 8599], LR: 9.19E-04, Speed: 19.652 samples/sec, ObjLoss=41.243, BoxCenterLoss=15.775, BoxScaleLoss=8.353, ClassLoss=28.140
+[Epoch 1][Batch 8699], LR: 9.24E-04, Speed: 37.306 samples/sec, ObjLoss=41.189, BoxCenterLoss=15.775, BoxScaleLoss=8.349, ClassLoss=28.093
+[Epoch 1][Batch 8799], LR: 9.29E-04, Speed: 1.496 samples/sec, ObjLoss=41.132, BoxCenterLoss=15.770, BoxScaleLoss=8.344, ClassLoss=28.044
+[Epoch 1][Batch 8899], LR: 9.34E-04, Speed: 48.147 samples/sec, ObjLoss=41.090, BoxCenterLoss=15.773, BoxScaleLoss=8.344, ClassLoss=28.004
+[Epoch 1][Batch 8999], LR: 9.39E-04, Speed: 27.526 samples/sec, ObjLoss=41.033, BoxCenterLoss=15.769, BoxScaleLoss=8.339, ClassLoss=27.958
+[Epoch 1][Batch 9099], LR: 9.44E-04, Speed: 29.977 samples/sec, ObjLoss=40.986, BoxCenterLoss=15.771, BoxScaleLoss=8.336, ClassLoss=27.918
+[Epoch 1][Batch 9199], LR: 9.48E-04, Speed: 43.849 samples/sec, ObjLoss=40.923, BoxCenterLoss=15.762, BoxScaleLoss=8.328, ClassLoss=27.868
+[Epoch 1][Batch 9299], LR: 9.53E-04, Speed: 37.950 samples/sec, ObjLoss=40.880, BoxCenterLoss=15.764, BoxScaleLoss=8.324, ClassLoss=27.828
+[Epoch 1][Batch 9399], LR: 9.58E-04, Speed: 44.007 samples/sec, ObjLoss=40.822, BoxCenterLoss=15.761, BoxScaleLoss=8.323, ClassLoss=27.786
+[Epoch 1][Batch 9499], LR: 9.63E-04, Speed: 17.743 samples/sec, ObjLoss=40.768, BoxCenterLoss=15.762, BoxScaleLoss=8.323, ClassLoss=27.744
+[Epoch 1][Batch 9599], LR: 9.68E-04, Speed: 60.151 samples/sec, ObjLoss=40.708, BoxCenterLoss=15.756, BoxScaleLoss=8.319, ClassLoss=27.696
+[Epoch 1][Batch 9699], LR: 9.73E-04, Speed: 24.264 samples/sec, ObjLoss=40.658, BoxCenterLoss=15.756, BoxScaleLoss=8.317, ClassLoss=27.656
+[Epoch 1][Batch 9799], LR: 9.78E-04, Speed: 39.411 samples/sec, ObjLoss=40.599, BoxCenterLoss=15.752, BoxScaleLoss=8.312, ClassLoss=27.608
+[Epoch 1][Batch 9899], LR: 9.83E-04, Speed: 22.200 samples/sec, ObjLoss=40.548, BoxCenterLoss=15.750, BoxScaleLoss=8.310, ClassLoss=27.565
+[Epoch 1][Batch 9999], LR: 9.87E-04, Speed: 5.933 samples/sec, ObjLoss=40.494, BoxCenterLoss=15.747, BoxScaleLoss=8.305, ClassLoss=27.522
+[Epoch 1][Batch 10099], LR: 9.92E-04, Speed: 30.329 samples/sec, ObjLoss=40.454, BoxCenterLoss=15.750, BoxScaleLoss=8.304, ClassLoss=27.483
+[Epoch 1][Batch 10199], LR: 9.97E-04, Speed: 39.940 samples/sec, ObjLoss=40.413, BoxCenterLoss=15.751, BoxScaleLoss=8.304, ClassLoss=27.442
+[Epoch 1] Training cost: 6028.050, ObjLoss=40.391, BoxCenterLoss=15.755, BoxScaleLoss=8.304, ClassLoss=27.423
+[Epoch 1] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.007
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.026
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.007
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.009
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.014
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.020
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.020
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.018
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.028
+person=10.1
+bicycle=0.3
+car=1.9
+motorcycle=1.3
+airplane=2.3
+bus=1.7
+train=1.9
+truck=0.2
+boat=0.3
+traffic light=0.1
+fire hydrant=0.0
+stop sign=1.1
+parking meter=0.0
+bench=0.0
+bird=0.0
+cat=0.5
+dog=0.3
+horse=1.2
+sheep=0.9
+cow=0.4
+elephant=1.3
+bear=0.2
+zebra=3.3
+giraffe=8.9
+backpack=0.0
+umbrella=0.5
+handbag=0.0
+tie=0.6
+suitcase=0.0
+frisbee=0.6
+skis=0.1
+snowboard=0.0
+sports ball=0.8
+kite=1.1
+baseball bat=0.0
+baseball glove=0.0
+skateboard=0.3
+surfboard=0.0
+tennis racket=0.4
+bottle=0.2
+wine glass=0.0
+cup=0.5
+fork=0.0
+knife=0.0
+spoon=0.0
+bowl=0.5
+banana=0.2
+apple=0.0
+sandwich=0.7
+orange=0.1
+broccoli=0.5
+carrot=0.0
+hot dog=0.0
+pizza=4.5
+donut=0.2
+cake=0.0
+chair=0.5
+couch=0.4
+potted plant=0.0
+bed=0.7
+dining table=0.8
+toilet=2.0
+tv=0.7
+laptop=0.1
+mouse=0.0
+remote=0.0
+keyboard=0.0
+cell phone=0.1
+microwave=0.0
+oven=0.0
+toaster=0.0
+sink=0.1
+refrigerator=0.2
+book=0.2
+clock=0.9
+vase=0.3
+scissors=0.0
+teddy bear=0.1
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=0.7
+[Epoch 2][Batch 99], LR: 1.00E-03, Speed: 27.158 samples/sec, ObjLoss=40.344, BoxCenterLoss=15.753, BoxScaleLoss=8.301, ClassLoss=27.380
+[Epoch 2][Batch 199], LR: 1.00E-03, Speed: 27.449 samples/sec, ObjLoss=40.293, BoxCenterLoss=15.753, BoxScaleLoss=8.300, ClassLoss=27.340
+[Epoch 2][Batch 299], LR: 1.00E-03, Speed: 25.788 samples/sec, ObjLoss=40.252, BoxCenterLoss=15.754, BoxScaleLoss=8.299, ClassLoss=27.305
+[Epoch 2][Batch 399], LR: 1.00E-03, Speed: 67.997 samples/sec, ObjLoss=40.200, BoxCenterLoss=15.751, BoxScaleLoss=8.295, ClassLoss=27.266
+[Epoch 2][Batch 499], LR: 1.00E-03, Speed: 45.991 samples/sec, ObjLoss=40.144, BoxCenterLoss=15.749, BoxScaleLoss=8.292, ClassLoss=27.225
+[Epoch 2][Batch 599], LR: 1.00E-03, Speed: 31.201 samples/sec, ObjLoss=40.096, BoxCenterLoss=15.749, BoxScaleLoss=8.290, ClassLoss=27.188
+[Epoch 2][Batch 699], LR: 1.00E-03, Speed: 30.299 samples/sec, ObjLoss=40.052, BoxCenterLoss=15.748, BoxScaleLoss=8.288, ClassLoss=27.152
+[Epoch 2][Batch 799], LR: 1.00E-03, Speed: 46.229 samples/sec, ObjLoss=40.003, BoxCenterLoss=15.745, BoxScaleLoss=8.284, ClassLoss=27.112
+[Epoch 2][Batch 899], LR: 1.00E-03, Speed: 83.961 samples/sec, ObjLoss=39.958, BoxCenterLoss=15.743, BoxScaleLoss=8.278, ClassLoss=27.077
+[Epoch 2][Batch 999], LR: 1.00E-03, Speed: 78.191 samples/sec, ObjLoss=39.909, BoxCenterLoss=15.741, BoxScaleLoss=8.276, ClassLoss=27.039
+[Epoch 2][Batch 1099], LR: 1.00E-03, Speed: 58.200 samples/sec, ObjLoss=39.864, BoxCenterLoss=15.739, BoxScaleLoss=8.273, ClassLoss=26.999
+[Epoch 2][Batch 1199], LR: 1.00E-03, Speed: 40.721 samples/sec, ObjLoss=39.812, BoxCenterLoss=15.735, BoxScaleLoss=8.270, ClassLoss=26.956
+[Epoch 2][Batch 1299], LR: 1.00E-03, Speed: 41.641 samples/sec, ObjLoss=39.767, BoxCenterLoss=15.735, BoxScaleLoss=8.269, ClassLoss=26.918
+[Epoch 2][Batch 1399], LR: 1.00E-03, Speed: 28.758 samples/sec, ObjLoss=39.726, BoxCenterLoss=15.737, BoxScaleLoss=8.267, ClassLoss=26.882
+[Epoch 2][Batch 1499], LR: 1.00E-03, Speed: 45.879 samples/sec, ObjLoss=39.680, BoxCenterLoss=15.737, BoxScaleLoss=8.268, ClassLoss=26.848
+[Epoch 2][Batch 1599], LR: 1.00E-03, Speed: 24.850 samples/sec, ObjLoss=39.631, BoxCenterLoss=15.733, BoxScaleLoss=8.263, ClassLoss=26.811
+[Epoch 2][Batch 1699], LR: 1.00E-03, Speed: 53.094 samples/sec, ObjLoss=39.592, BoxCenterLoss=15.736, BoxScaleLoss=8.265, ClassLoss=26.779
+[Epoch 2][Batch 1799], LR: 1.00E-03, Speed: 30.238 samples/sec, ObjLoss=39.545, BoxCenterLoss=15.733, BoxScaleLoss=8.259, ClassLoss=26.740
+[Epoch 2][Batch 1899], LR: 1.00E-03, Speed: 46.825 samples/sec, ObjLoss=39.505, BoxCenterLoss=15.733, BoxScaleLoss=8.255, ClassLoss=26.706
+[Epoch 2][Batch 1999], LR: 1.00E-03, Speed: 55.794 samples/sec, ObjLoss=39.461, BoxCenterLoss=15.731, BoxScaleLoss=8.252, ClassLoss=26.669
+[Epoch 2][Batch 2099], LR: 1.00E-03, Speed: 31.889 samples/sec, ObjLoss=39.416, BoxCenterLoss=15.727, BoxScaleLoss=8.248, ClassLoss=26.630
+[Epoch 2][Batch 2199], LR: 1.00E-03, Speed: 21.919 samples/sec, ObjLoss=39.373, BoxCenterLoss=15.724, BoxScaleLoss=8.242, ClassLoss=26.591
+[Epoch 2][Batch 2299], LR: 1.00E-03, Speed: 28.077 samples/sec, ObjLoss=39.335, BoxCenterLoss=15.725, BoxScaleLoss=8.240, ClassLoss=26.559
+[Epoch 2][Batch 2399], LR: 1.00E-03, Speed: 9.897 samples/sec, ObjLoss=39.295, BoxCenterLoss=15.727, BoxScaleLoss=8.241, ClassLoss=26.526
+[Epoch 2][Batch 2499], LR: 1.00E-03, Speed: 55.850 samples/sec, ObjLoss=39.244, BoxCenterLoss=15.720, BoxScaleLoss=8.235, ClassLoss=26.486
+[Epoch 2][Batch 2599], LR: 1.00E-03, Speed: 39.560 samples/sec, ObjLoss=39.203, BoxCenterLoss=15.718, BoxScaleLoss=8.229, ClassLoss=26.450
+[Epoch 2][Batch 2699], LR: 1.00E-03, Speed: 16.100 samples/sec, ObjLoss=39.170, BoxCenterLoss=15.721, BoxScaleLoss=8.226, ClassLoss=26.418
+[Epoch 2][Batch 2799], LR: 1.00E-03, Speed: 29.341 samples/sec, ObjLoss=39.128, BoxCenterLoss=15.718, BoxScaleLoss=8.223, ClassLoss=26.382
+[Epoch 2][Batch 2899], LR: 1.00E-03, Speed: 63.548 samples/sec, ObjLoss=39.085, BoxCenterLoss=15.716, BoxScaleLoss=8.220, ClassLoss=26.348
+[Epoch 2][Batch 2999], LR: 1.00E-03, Speed: 50.319 samples/sec, ObjLoss=39.046, BoxCenterLoss=15.716, BoxScaleLoss=8.217, ClassLoss=26.313
+[Epoch 2][Batch 3099], LR: 1.00E-03, Speed: 62.818 samples/sec, ObjLoss=39.001, BoxCenterLoss=15.712, BoxScaleLoss=8.211, ClassLoss=26.279
+[Epoch 2][Batch 3199], LR: 1.00E-03, Speed: 32.715 samples/sec, ObjLoss=38.956, BoxCenterLoss=15.708, BoxScaleLoss=8.208, ClassLoss=26.241
+[Epoch 2][Batch 3299], LR: 1.00E-03, Speed: 51.479 samples/sec, ObjLoss=38.920, BoxCenterLoss=15.708, BoxScaleLoss=8.206, ClassLoss=26.209
+[Epoch 2][Batch 3399], LR: 1.00E-03, Speed: 37.120 samples/sec, ObjLoss=38.896, BoxCenterLoss=15.715, BoxScaleLoss=8.208, ClassLoss=26.181
+[Epoch 2][Batch 3499], LR: 1.00E-03, Speed: 16.191 samples/sec, ObjLoss=38.853, BoxCenterLoss=15.711, BoxScaleLoss=8.203, ClassLoss=26.148
+[Epoch 2][Batch 3599], LR: 1.00E-03, Speed: 27.519 samples/sec, ObjLoss=38.811, BoxCenterLoss=15.709, BoxScaleLoss=8.199, ClassLoss=26.115
+[Epoch 2][Batch 3699], LR: 1.00E-03, Speed: 44.192 samples/sec, ObjLoss=38.780, BoxCenterLoss=15.709, BoxScaleLoss=8.195, ClassLoss=26.086
+[Epoch 2][Batch 3799], LR: 1.00E-03, Speed: 37.171 samples/sec, ObjLoss=38.744, BoxCenterLoss=15.708, BoxScaleLoss=8.191, ClassLoss=26.055
+[Epoch 2][Batch 3899], LR: 1.00E-03, Speed: 13.023 samples/sec, ObjLoss=38.703, BoxCenterLoss=15.706, BoxScaleLoss=8.187, ClassLoss=26.023
+[Epoch 2][Batch 3999], LR: 1.00E-03, Speed: 22.681 samples/sec, ObjLoss=38.667, BoxCenterLoss=15.706, BoxScaleLoss=8.187, ClassLoss=25.992
+[Epoch 2][Batch 4099], LR: 1.00E-03, Speed: 18.231 samples/sec, ObjLoss=38.619, BoxCenterLoss=15.700, BoxScaleLoss=8.180, ClassLoss=25.954
+[Epoch 2][Batch 4199], LR: 1.00E-03, Speed: 80.482 samples/sec, ObjLoss=38.570, BoxCenterLoss=15.695, BoxScaleLoss=8.176, ClassLoss=25.919
+[Epoch 2][Batch 4299], LR: 1.00E-03, Speed: 26.298 samples/sec, ObjLoss=38.538, BoxCenterLoss=15.695, BoxScaleLoss=8.172, ClassLoss=25.890
+[Epoch 2][Batch 4399], LR: 1.00E-03, Speed: 32.085 samples/sec, ObjLoss=38.503, BoxCenterLoss=15.696, BoxScaleLoss=8.170, ClassLoss=25.862
+[Epoch 2][Batch 4499], LR: 1.00E-03, Speed: 7.867 samples/sec, ObjLoss=38.467, BoxCenterLoss=15.694, BoxScaleLoss=8.168, ClassLoss=25.828
+[Epoch 2][Batch 4599], LR: 1.00E-03, Speed: 7.626 samples/sec, ObjLoss=38.434, BoxCenterLoss=15.695, BoxScaleLoss=8.165, ClassLoss=25.800
+[Epoch 2][Batch 4699], LR: 1.00E-03, Speed: 30.279 samples/sec, ObjLoss=38.400, BoxCenterLoss=15.696, BoxScaleLoss=8.163, ClassLoss=25.773
+[Epoch 2][Batch 4799], LR: 1.00E-03, Speed: 15.690 samples/sec, ObjLoss=38.371, BoxCenterLoss=15.699, BoxScaleLoss=8.162, ClassLoss=25.748
+[Epoch 2][Batch 4899], LR: 1.00E-03, Speed: 27.755 samples/sec, ObjLoss=38.347, BoxCenterLoss=15.703, BoxScaleLoss=8.164, ClassLoss=25.722
+[Epoch 2][Batch 4999], LR: 1.00E-03, Speed: 42.875 samples/sec, ObjLoss=38.317, BoxCenterLoss=15.705, BoxScaleLoss=8.161, ClassLoss=25.693
+[Epoch 2][Batch 5099], LR: 1.00E-03, Speed: 26.177 samples/sec, ObjLoss=38.281, BoxCenterLoss=15.702, BoxScaleLoss=8.156, ClassLoss=25.663
+[Epoch 2][Batch 5199], LR: 1.00E-03, Speed: 25.773 samples/sec, ObjLoss=38.250, BoxCenterLoss=15.702, BoxScaleLoss=8.154, ClassLoss=25.635
+[Epoch 2][Batch 5299], LR: 1.00E-03, Speed: 30.537 samples/sec, ObjLoss=38.209, BoxCenterLoss=15.697, BoxScaleLoss=8.148, ClassLoss=25.602
+[Epoch 2][Batch 5399], LR: 1.00E-03, Speed: 40.769 samples/sec, ObjLoss=38.169, BoxCenterLoss=15.695, BoxScaleLoss=8.146, ClassLoss=25.573
+[Epoch 2][Batch 5499], LR: 1.00E-03, Speed: 23.326 samples/sec, ObjLoss=38.138, BoxCenterLoss=15.695, BoxScaleLoss=8.142, ClassLoss=25.541
+[Epoch 2][Batch 5599], LR: 1.00E-03, Speed: 29.401 samples/sec, ObjLoss=38.102, BoxCenterLoss=15.691, BoxScaleLoss=8.138, ClassLoss=25.508
+[Epoch 2][Batch 5699], LR: 1.00E-03, Speed: 6.186 samples/sec, ObjLoss=38.066, BoxCenterLoss=15.689, BoxScaleLoss=8.133, ClassLoss=25.477
+[Epoch 2][Batch 5799], LR: 1.00E-03, Speed: 3.276 samples/sec, ObjLoss=38.034, BoxCenterLoss=15.689, BoxScaleLoss=8.131, ClassLoss=25.449
+[Epoch 2][Batch 5899], LR: 1.00E-03, Speed: 60.746 samples/sec, ObjLoss=37.999, BoxCenterLoss=15.686, BoxScaleLoss=8.128, ClassLoss=25.418
+[Epoch 2][Batch 5999], LR: 1.00E-03, Speed: 38.771 samples/sec, ObjLoss=37.972, BoxCenterLoss=15.689, BoxScaleLoss=8.126, ClassLoss=25.392
+[Epoch 2][Batch 6099], LR: 1.00E-03, Speed: 3.568 samples/sec, ObjLoss=37.938, BoxCenterLoss=15.688, BoxScaleLoss=8.122, ClassLoss=25.364
+[Epoch 2][Batch 6199], LR: 1.00E-03, Speed: 23.743 samples/sec, ObjLoss=37.901, BoxCenterLoss=15.685, BoxScaleLoss=8.117, ClassLoss=25.334
+[Epoch 2][Batch 6299], LR: 1.00E-03, Speed: 29.657 samples/sec, ObjLoss=37.861, BoxCenterLoss=15.681, BoxScaleLoss=8.112, ClassLoss=25.300
+[Epoch 2][Batch 6399], LR: 1.00E-03, Speed: 25.633 samples/sec, ObjLoss=37.832, BoxCenterLoss=15.680, BoxScaleLoss=8.108, ClassLoss=25.273
+[Epoch 2][Batch 6499], LR: 1.00E-03, Speed: 30.894 samples/sec, ObjLoss=37.802, BoxCenterLoss=15.681, BoxScaleLoss=8.105, ClassLoss=25.245
+[Epoch 2][Batch 6599], LR: 1.00E-03, Speed: 35.129 samples/sec, ObjLoss=37.766, BoxCenterLoss=15.678, BoxScaleLoss=8.102, ClassLoss=25.216
+[Epoch 2][Batch 6699], LR: 1.00E-03, Speed: 17.227 samples/sec, ObjLoss=37.733, BoxCenterLoss=15.675, BoxScaleLoss=8.097, ClassLoss=25.188
+[Epoch 2][Batch 6799], LR: 1.00E-03, Speed: 9.130 samples/sec, ObjLoss=37.695, BoxCenterLoss=15.672, BoxScaleLoss=8.093, ClassLoss=25.157
+[Epoch 2][Batch 6899], LR: 1.00E-03, Speed: 8.446 samples/sec, ObjLoss=37.665, BoxCenterLoss=15.673, BoxScaleLoss=8.091, ClassLoss=25.132
+[Epoch 2][Batch 6999], LR: 1.00E-03, Speed: 38.874 samples/sec, ObjLoss=37.630, BoxCenterLoss=15.669, BoxScaleLoss=8.087, ClassLoss=25.103
+[Epoch 2][Batch 7099], LR: 1.00E-03, Speed: 25.105 samples/sec, ObjLoss=37.600, BoxCenterLoss=15.669, BoxScaleLoss=8.084, ClassLoss=25.074
+[Epoch 2][Batch 7199], LR: 1.00E-03, Speed: 47.511 samples/sec, ObjLoss=37.574, BoxCenterLoss=15.671, BoxScaleLoss=8.083, ClassLoss=25.054
+[Epoch 2][Batch 7299], LR: 1.00E-03, Speed: 44.455 samples/sec, ObjLoss=37.542, BoxCenterLoss=15.671, BoxScaleLoss=8.081, ClassLoss=25.026
+[Epoch 2][Batch 7399], LR: 1.00E-03, Speed: 22.713 samples/sec, ObjLoss=37.518, BoxCenterLoss=15.672, BoxScaleLoss=8.078, ClassLoss=25.003
+[Epoch 2][Batch 7499], LR: 1.00E-03, Speed: 51.052 samples/sec, ObjLoss=37.485, BoxCenterLoss=15.671, BoxScaleLoss=8.075, ClassLoss=24.977
+[Epoch 2][Batch 7599], LR: 1.00E-03, Speed: 2.773 samples/sec, ObjLoss=37.452, BoxCenterLoss=15.669, BoxScaleLoss=8.071, ClassLoss=24.952
+[Epoch 2][Batch 7699], LR: 1.00E-03, Speed: 7.682 samples/sec, ObjLoss=37.417, BoxCenterLoss=15.668, BoxScaleLoss=8.070, ClassLoss=24.927
+[Epoch 2][Batch 7799], LR: 1.00E-03, Speed: 1.945 samples/sec, ObjLoss=37.385, BoxCenterLoss=15.666, BoxScaleLoss=8.066, ClassLoss=24.901
+[Epoch 2][Batch 7899], LR: 1.00E-03, Speed: 2.252 samples/sec, ObjLoss=37.353, BoxCenterLoss=15.664, BoxScaleLoss=8.064, ClassLoss=24.874
+[Epoch 2][Batch 7999], LR: 1.00E-03, Speed: 15.242 samples/sec, ObjLoss=37.323, BoxCenterLoss=15.666, BoxScaleLoss=8.063, ClassLoss=24.850
+[Epoch 2][Batch 8099], LR: 1.00E-03, Speed: 38.571 samples/sec, ObjLoss=37.291, BoxCenterLoss=15.662, BoxScaleLoss=8.058, ClassLoss=24.823
+[Epoch 2][Batch 8199], LR: 1.00E-03, Speed: 2.067 samples/sec, ObjLoss=37.254, BoxCenterLoss=15.659, BoxScaleLoss=8.054, ClassLoss=24.794
+[Epoch 2][Batch 8299], LR: 1.00E-03, Speed: 29.936 samples/sec, ObjLoss=37.227, BoxCenterLoss=15.659, BoxScaleLoss=8.052, ClassLoss=24.768
+[Epoch 2][Batch 8399], LR: 1.00E-03, Speed: 13.010 samples/sec, ObjLoss=37.197, BoxCenterLoss=15.659, BoxScaleLoss=8.048, ClassLoss=24.743
+[Epoch 2][Batch 8499], LR: 1.00E-03, Speed: 11.146 samples/sec, ObjLoss=37.169, BoxCenterLoss=15.659, BoxScaleLoss=8.045, ClassLoss=24.718
+[Epoch 2][Batch 8599], LR: 1.00E-03, Speed: 34.059 samples/sec, ObjLoss=37.142, BoxCenterLoss=15.658, BoxScaleLoss=8.043, ClassLoss=24.692
+[Epoch 2][Batch 8699], LR: 1.00E-03, Speed: 11.943 samples/sec, ObjLoss=37.110, BoxCenterLoss=15.655, BoxScaleLoss=8.038, ClassLoss=24.669
+[Epoch 2][Batch 8799], LR: 1.00E-03, Speed: 22.925 samples/sec, ObjLoss=37.077, BoxCenterLoss=15.651, BoxScaleLoss=8.033, ClassLoss=24.639
+[Epoch 2][Batch 8899], LR: 1.00E-03, Speed: 49.784 samples/sec, ObjLoss=37.042, BoxCenterLoss=15.649, BoxScaleLoss=8.028, ClassLoss=24.612
+[Epoch 2][Batch 8999], LR: 1.00E-03, Speed: 27.011 samples/sec, ObjLoss=37.012, BoxCenterLoss=15.645, BoxScaleLoss=8.022, ClassLoss=24.585
+[Epoch 2][Batch 9099], LR: 1.00E-03, Speed: 2.042 samples/sec, ObjLoss=36.987, BoxCenterLoss=15.645, BoxScaleLoss=8.019, ClassLoss=24.560
+[Epoch 2][Batch 9199], LR: 1.00E-03, Speed: 42.531 samples/sec, ObjLoss=36.960, BoxCenterLoss=15.644, BoxScaleLoss=8.016, ClassLoss=24.535
+[Epoch 2][Batch 9299], LR: 1.00E-03, Speed: 24.911 samples/sec, ObjLoss=36.939, BoxCenterLoss=15.646, BoxScaleLoss=8.015, ClassLoss=24.514
+[Epoch 2][Batch 9399], LR: 1.00E-03, Speed: 38.316 samples/sec, ObjLoss=36.911, BoxCenterLoss=15.644, BoxScaleLoss=8.011, ClassLoss=24.490
+[Epoch 2][Batch 9499], LR: 1.00E-03, Speed: 32.440 samples/sec, ObjLoss=36.893, BoxCenterLoss=15.648, BoxScaleLoss=8.011, ClassLoss=24.470
+[Epoch 2][Batch 9599], LR: 1.00E-03, Speed: 36.037 samples/sec, ObjLoss=36.868, BoxCenterLoss=15.648, BoxScaleLoss=8.008, ClassLoss=24.447
+[Epoch 2][Batch 9699], LR: 1.00E-03, Speed: 10.645 samples/sec, ObjLoss=36.837, BoxCenterLoss=15.645, BoxScaleLoss=8.004, ClassLoss=24.423
+[Epoch 2][Batch 9799], LR: 1.00E-03, Speed: 65.555 samples/sec, ObjLoss=36.811, BoxCenterLoss=15.642, BoxScaleLoss=7.999, ClassLoss=24.396
+[Epoch 2][Batch 9899], LR: 1.00E-03, Speed: 40.189 samples/sec, ObjLoss=36.778, BoxCenterLoss=15.639, BoxScaleLoss=7.995, ClassLoss=24.370
+[Epoch 2][Batch 9999], LR: 1.00E-03, Speed: 64.755 samples/sec, ObjLoss=36.750, BoxCenterLoss=15.640, BoxScaleLoss=7.994, ClassLoss=24.349
+[Epoch 2][Batch 10099], LR: 1.00E-03, Speed: 37.509 samples/sec, ObjLoss=36.725, BoxCenterLoss=15.640, BoxScaleLoss=7.991, ClassLoss=24.326
+[Epoch 2][Batch 10199], LR: 1.00E-03, Speed: 35.598 samples/sec, ObjLoss=36.694, BoxCenterLoss=15.636, BoxScaleLoss=7.985, ClassLoss=24.298
+[Epoch 2] Training cost: 5210.673, ObjLoss=36.680, BoxCenterLoss=15.636, BoxScaleLoss=7.984, ClassLoss=24.286
+[Epoch 2] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.020
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.059
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.009
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.004
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.015
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.031
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.037
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.050
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.051
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.008
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.033
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.084
+person=7.7
+bicycle=0.1
+car=3.3
+motorcycle=1.1
+airplane=8.5
+bus=13.7
+train=13.1
+truck=2.7
+boat=0.8
+traffic light=1.0
+fire hydrant=2.1
+stop sign=7.4
+parking meter=0.0
+bench=0.7
+bird=0.3
+cat=6.6
+dog=1.5
+horse=3.0
+sheep=0.9
+cow=1.9
+elephant=6.7
+bear=4.3
+zebra=3.6
+giraffe=10.0
+backpack=0.0
+umbrella=1.7
+handbag=0.0
+tie=0.6
+suitcase=0.3
+frisbee=1.0
+skis=0.4
+snowboard=0.0
+sports ball=1.7
+kite=3.4
+baseball bat=0.0
+baseball glove=0.4
+skateboard=0.2
+surfboard=0.1
+tennis racket=0.7
+bottle=1.2
+wine glass=0.9
+cup=2.8
+fork=0.0
+knife=0.0
+spoon=0.0
+bowl=2.9
+banana=0.0
+apple=0.1
+sandwich=0.2
+orange=0.3
+broccoli=0.5
+carrot=0.0
+hot dog=0.0
+pizza=7.1
+donut=0.6
+cake=0.3
+chair=1.4
+couch=1.4
+potted plant=0.4
+bed=1.2
+dining table=3.8
+toilet=7.6
+tv=3.0
+laptop=4.7
+mouse=0.0
+remote=0.0
+keyboard=0.3
+cell phone=0.7
+microwave=0.1
+oven=0.5
+toaster=0.0
+sink=2.1
+refrigerator=1.0
+book=0.7
+clock=4.0
+vase=0.5
+scissors=0.0
+teddy bear=0.8
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=2.0
+[Epoch 3][Batch 99], LR: 1.00E-03, Speed: 31.816 samples/sec, ObjLoss=36.660, BoxCenterLoss=15.638, BoxScaleLoss=7.982, ClassLoss=24.264
+[Epoch 3][Batch 199], LR: 1.00E-03, Speed: 59.707 samples/sec, ObjLoss=36.632, BoxCenterLoss=15.637, BoxScaleLoss=7.980, ClassLoss=24.241
+[Epoch 3][Batch 299], LR: 1.00E-03, Speed: 12.637 samples/sec, ObjLoss=36.602, BoxCenterLoss=15.635, BoxScaleLoss=7.977, ClassLoss=24.219
+[Epoch 3][Batch 399], LR: 1.00E-03, Speed: 64.742 samples/sec, ObjLoss=36.569, BoxCenterLoss=15.631, BoxScaleLoss=7.972, ClassLoss=24.191
+[Epoch 3][Batch 499], LR: 1.00E-03, Speed: 78.562 samples/sec, ObjLoss=36.548, BoxCenterLoss=15.633, BoxScaleLoss=7.972, ClassLoss=24.171
+[Epoch 3][Batch 599], LR: 1.00E-03, Speed: 30.622 samples/sec, ObjLoss=36.523, BoxCenterLoss=15.632, BoxScaleLoss=7.968, ClassLoss=24.147
+[Epoch 3][Batch 699], LR: 1.00E-03, Speed: 78.296 samples/sec, ObjLoss=36.490, BoxCenterLoss=15.628, BoxScaleLoss=7.964, ClassLoss=24.124
+[Epoch 3][Batch 799], LR: 1.00E-03, Speed: 42.313 samples/sec, ObjLoss=36.470, BoxCenterLoss=15.629, BoxScaleLoss=7.963, ClassLoss=24.103
+[Epoch 3][Batch 899], LR: 1.00E-03, Speed: 11.471 samples/sec, ObjLoss=36.440, BoxCenterLoss=15.625, BoxScaleLoss=7.958, ClassLoss=24.078
+[Epoch 3][Batch 999], LR: 1.00E-03, Speed: 30.224 samples/sec, ObjLoss=36.417, BoxCenterLoss=15.625, BoxScaleLoss=7.955, ClassLoss=24.056
+[Epoch 3][Batch 1099], LR: 1.00E-03, Speed: 30.322 samples/sec, ObjLoss=36.394, BoxCenterLoss=15.625, BoxScaleLoss=7.953, ClassLoss=24.031
+[Epoch 3][Batch 1199], LR: 1.00E-03, Speed: 59.931 samples/sec, ObjLoss=36.367, BoxCenterLoss=15.623, BoxScaleLoss=7.949, ClassLoss=24.009
+[Epoch 3][Batch 1299], LR: 1.00E-03, Speed: 62.217 samples/sec, ObjLoss=36.344, BoxCenterLoss=15.623, BoxScaleLoss=7.946, ClassLoss=23.986
+[Epoch 3][Batch 1399], LR: 1.00E-03, Speed: 74.243 samples/sec, ObjLoss=36.311, BoxCenterLoss=15.616, BoxScaleLoss=7.940, ClassLoss=23.959
+[Epoch 3][Batch 1499], LR: 1.00E-03, Speed: 63.439 samples/sec, ObjLoss=36.285, BoxCenterLoss=15.615, BoxScaleLoss=7.937, ClassLoss=23.936
+[Epoch 3][Batch 1599], LR: 1.00E-03, Speed: 28.004 samples/sec, ObjLoss=36.268, BoxCenterLoss=15.617, BoxScaleLoss=7.934, ClassLoss=23.916
+[Epoch 3][Batch 1699], LR: 1.00E-03, Speed: 27.006 samples/sec, ObjLoss=36.248, BoxCenterLoss=15.618, BoxScaleLoss=7.932, ClassLoss=23.896
+[Epoch 3][Batch 1799], LR: 1.00E-03, Speed: 63.038 samples/sec, ObjLoss=36.219, BoxCenterLoss=15.614, BoxScaleLoss=7.927, ClassLoss=23.871
+[Epoch 3][Batch 1899], LR: 1.00E-03, Speed: 42.910 samples/sec, ObjLoss=36.194, BoxCenterLoss=15.613, BoxScaleLoss=7.925, ClassLoss=23.849
+[Epoch 3][Batch 1999], LR: 1.00E-03, Speed: 29.381 samples/sec, ObjLoss=36.168, BoxCenterLoss=15.611, BoxScaleLoss=7.920, ClassLoss=23.826
+[Epoch 3][Batch 2099], LR: 1.00E-03, Speed: 31.243 samples/sec, ObjLoss=36.145, BoxCenterLoss=15.609, BoxScaleLoss=7.917, ClassLoss=23.806
+[Epoch 3][Batch 2199], LR: 1.00E-03, Speed: 45.020 samples/sec, ObjLoss=36.118, BoxCenterLoss=15.607, BoxScaleLoss=7.914, ClassLoss=23.783
+[Epoch 3][Batch 2299], LR: 1.00E-03, Speed: 17.685 samples/sec, ObjLoss=36.089, BoxCenterLoss=15.603, BoxScaleLoss=7.910, ClassLoss=23.758
+[Epoch 3][Batch 2399], LR: 1.00E-03, Speed: 29.505 samples/sec, ObjLoss=36.067, BoxCenterLoss=15.602, BoxScaleLoss=7.906, ClassLoss=23.737
+[Epoch 3][Batch 2499], LR: 1.00E-03, Speed: 13.552 samples/sec, ObjLoss=36.036, BoxCenterLoss=15.598, BoxScaleLoss=7.903, ClassLoss=23.716
+[Epoch 3][Batch 2599], LR: 1.00E-03, Speed: 14.406 samples/sec, ObjLoss=36.016, BoxCenterLoss=15.600, BoxScaleLoss=7.903, ClassLoss=23.698
+[Epoch 3][Batch 2699], LR: 1.00E-03, Speed: 48.606 samples/sec, ObjLoss=35.992, BoxCenterLoss=15.599, BoxScaleLoss=7.901, ClassLoss=23.679
+[Epoch 3][Batch 2799], LR: 1.00E-03, Speed: 38.123 samples/sec, ObjLoss=35.967, BoxCenterLoss=15.597, BoxScaleLoss=7.897, ClassLoss=23.658
+[Epoch 3][Batch 2899], LR: 1.00E-03, Speed: 24.392 samples/sec, ObjLoss=35.940, BoxCenterLoss=15.593, BoxScaleLoss=7.892, ClassLoss=23.635
+[Epoch 3][Batch 2999], LR: 1.00E-03, Speed: 26.408 samples/sec, ObjLoss=35.916, BoxCenterLoss=15.591, BoxScaleLoss=7.890, ClassLoss=23.612
+[Epoch 3][Batch 3099], LR: 1.00E-03, Speed: 13.437 samples/sec, ObjLoss=35.888, BoxCenterLoss=15.588, BoxScaleLoss=7.886, ClassLoss=23.590
+[Epoch 3][Batch 3199], LR: 1.00E-03, Speed: 10.506 samples/sec, ObjLoss=35.871, BoxCenterLoss=15.587, BoxScaleLoss=7.883, ClassLoss=23.572
+[Epoch 3][Batch 3299], LR: 1.00E-03, Speed: 14.050 samples/sec, ObjLoss=35.843, BoxCenterLoss=15.585, BoxScaleLoss=7.880, ClassLoss=23.549
+[Epoch 3][Batch 3399], LR: 1.00E-03, Speed: 25.039 samples/sec, ObjLoss=35.828, BoxCenterLoss=15.587, BoxScaleLoss=7.880, ClassLoss=23.533
+[Epoch 3][Batch 3499], LR: 1.00E-03, Speed: 28.172 samples/sec, ObjLoss=35.804, BoxCenterLoss=15.585, BoxScaleLoss=7.876, ClassLoss=23.511
+[Epoch 3][Batch 3599], LR: 1.00E-03, Speed: 20.988 samples/sec, ObjLoss=35.784, BoxCenterLoss=15.587, BoxScaleLoss=7.875, ClassLoss=23.494
+[Epoch 3][Batch 3699], LR: 1.00E-03, Speed: 37.872 samples/sec, ObjLoss=35.760, BoxCenterLoss=15.586, BoxScaleLoss=7.872, ClassLoss=23.473
+[Epoch 3][Batch 3799], LR: 1.00E-03, Speed: 33.423 samples/sec, ObjLoss=35.741, BoxCenterLoss=15.585, BoxScaleLoss=7.868, ClassLoss=23.454
+[Epoch 3][Batch 3899], LR: 1.00E-03, Speed: 57.538 samples/sec, ObjLoss=35.721, BoxCenterLoss=15.584, BoxScaleLoss=7.865, ClassLoss=23.437
+[Epoch 3][Batch 3999], LR: 1.00E-03, Speed: 9.630 samples/sec, ObjLoss=35.699, BoxCenterLoss=15.582, BoxScaleLoss=7.861, ClassLoss=23.416
+[Epoch 3][Batch 4099], LR: 1.00E-03, Speed: 64.601 samples/sec, ObjLoss=35.683, BoxCenterLoss=15.586, BoxScaleLoss=7.860, ClassLoss=23.400
+[Epoch 3][Batch 4199], LR: 1.00E-03, Speed: 47.662 samples/sec, ObjLoss=35.658, BoxCenterLoss=15.584, BoxScaleLoss=7.857, ClassLoss=23.378
+[Epoch 3][Batch 4299], LR: 1.00E-03, Speed: 35.921 samples/sec, ObjLoss=35.638, BoxCenterLoss=15.583, BoxScaleLoss=7.854, ClassLoss=23.360
+[Epoch 3][Batch 4399], LR: 1.00E-03, Speed: 6.944 samples/sec, ObjLoss=35.623, BoxCenterLoss=15.585, BoxScaleLoss=7.852, ClassLoss=23.345
+[Epoch 3][Batch 4499], LR: 1.00E-03, Speed: 28.935 samples/sec, ObjLoss=35.600, BoxCenterLoss=15.583, BoxScaleLoss=7.849, ClassLoss=23.325
+[Epoch 3][Batch 4599], LR: 1.00E-03, Speed: 45.671 samples/sec, ObjLoss=35.579, BoxCenterLoss=15.582, BoxScaleLoss=7.846, ClassLoss=23.305
+[Epoch 3][Batch 4699], LR: 1.00E-03, Speed: 14.457 samples/sec, ObjLoss=35.560, BoxCenterLoss=15.583, BoxScaleLoss=7.844, ClassLoss=23.286
+[Epoch 3][Batch 4799], LR: 1.00E-03, Speed: 39.050 samples/sec, ObjLoss=35.543, BoxCenterLoss=15.584, BoxScaleLoss=7.842, ClassLoss=23.268
+[Epoch 3][Batch 4899], LR: 1.00E-03, Speed: 42.750 samples/sec, ObjLoss=35.521, BoxCenterLoss=15.583, BoxScaleLoss=7.839, ClassLoss=23.250
+[Epoch 3][Batch 4999], LR: 1.00E-03, Speed: 28.378 samples/sec, ObjLoss=35.502, BoxCenterLoss=15.581, BoxScaleLoss=7.836, ClassLoss=23.230
+[Epoch 3][Batch 5099], LR: 1.00E-03, Speed: 19.260 samples/sec, ObjLoss=35.480, BoxCenterLoss=15.578, BoxScaleLoss=7.833, ClassLoss=23.211
+[Epoch 3][Batch 5199], LR: 1.00E-03, Speed: 23.351 samples/sec, ObjLoss=35.460, BoxCenterLoss=15.578, BoxScaleLoss=7.830, ClassLoss=23.192
+[Epoch 3][Batch 5299], LR: 1.00E-03, Speed: 39.582 samples/sec, ObjLoss=35.440, BoxCenterLoss=15.578, BoxScaleLoss=7.828, ClassLoss=23.174
+[Epoch 3][Batch 5399], LR: 1.00E-03, Speed: 24.223 samples/sec, ObjLoss=35.421, BoxCenterLoss=15.578, BoxScaleLoss=7.825, ClassLoss=23.156
+[Epoch 3][Batch 5499], LR: 1.00E-03, Speed: 18.208 samples/sec, ObjLoss=35.401, BoxCenterLoss=15.577, BoxScaleLoss=7.822, ClassLoss=23.138
+[Epoch 3][Batch 5599], LR: 1.00E-03, Speed: 48.098 samples/sec, ObjLoss=35.383, BoxCenterLoss=15.578, BoxScaleLoss=7.821, ClassLoss=23.121
+[Epoch 3][Batch 5699], LR: 1.00E-03, Speed: 36.654 samples/sec, ObjLoss=35.364, BoxCenterLoss=15.578, BoxScaleLoss=7.819, ClassLoss=23.104
+[Epoch 3][Batch 5799], LR: 1.00E-03, Speed: 27.204 samples/sec, ObjLoss=35.346, BoxCenterLoss=15.578, BoxScaleLoss=7.816, ClassLoss=23.086
+[Epoch 3][Batch 5899], LR: 1.00E-03, Speed: 34.631 samples/sec, ObjLoss=35.323, BoxCenterLoss=15.576, BoxScaleLoss=7.812, ClassLoss=23.066
+[Epoch 3][Batch 5999], LR: 1.00E-03, Speed: 39.787 samples/sec, ObjLoss=35.302, BoxCenterLoss=15.576, BoxScaleLoss=7.811, ClassLoss=23.049
+[Epoch 3][Batch 6099], LR: 1.00E-03, Speed: 35.019 samples/sec, ObjLoss=35.282, BoxCenterLoss=15.576, BoxScaleLoss=7.809, ClassLoss=23.032
+[Epoch 3][Batch 6199], LR: 1.00E-03, Speed: 26.395 samples/sec, ObjLoss=35.259, BoxCenterLoss=15.574, BoxScaleLoss=7.806, ClassLoss=23.012
+[Epoch 3][Batch 6299], LR: 1.00E-03, Speed: 7.656 samples/sec, ObjLoss=35.241, BoxCenterLoss=15.575, BoxScaleLoss=7.804, ClassLoss=22.995
+[Epoch 3][Batch 6399], LR: 1.00E-03, Speed: 18.301 samples/sec, ObjLoss=35.225, BoxCenterLoss=15.577, BoxScaleLoss=7.802, ClassLoss=22.980
+[Epoch 3][Batch 6499], LR: 1.00E-03, Speed: 30.522 samples/sec, ObjLoss=35.199, BoxCenterLoss=15.574, BoxScaleLoss=7.799, ClassLoss=22.962
+[Epoch 3][Batch 6599], LR: 1.00E-03, Speed: 27.875 samples/sec, ObjLoss=35.182, BoxCenterLoss=15.575, BoxScaleLoss=7.798, ClassLoss=22.946
+[Epoch 3][Batch 6699], LR: 1.00E-03, Speed: 48.486 samples/sec, ObjLoss=35.162, BoxCenterLoss=15.574, BoxScaleLoss=7.797, ClassLoss=22.928
+[Epoch 3][Batch 6799], LR: 1.00E-03, Speed: 49.063 samples/sec, ObjLoss=35.142, BoxCenterLoss=15.573, BoxScaleLoss=7.794, ClassLoss=22.911
+[Epoch 3][Batch 6899], LR: 1.00E-03, Speed: 34.163 samples/sec, ObjLoss=35.126, BoxCenterLoss=15.574, BoxScaleLoss=7.793, ClassLoss=22.894
+[Epoch 3][Batch 6999], LR: 1.00E-03, Speed: 23.920 samples/sec, ObjLoss=35.106, BoxCenterLoss=15.574, BoxScaleLoss=7.791, ClassLoss=22.877
+[Epoch 3][Batch 7099], LR: 1.00E-03, Speed: 58.004 samples/sec, ObjLoss=35.081, BoxCenterLoss=15.571, BoxScaleLoss=7.788, ClassLoss=22.858
+[Epoch 3][Batch 7199], LR: 1.00E-03, Speed: 62.871 samples/sec, ObjLoss=35.067, BoxCenterLoss=15.572, BoxScaleLoss=7.787, ClassLoss=22.844
+[Epoch 3][Batch 7299], LR: 1.00E-03, Speed: 26.407 samples/sec, ObjLoss=35.046, BoxCenterLoss=15.569, BoxScaleLoss=7.783, ClassLoss=22.824
+[Epoch 3][Batch 7399], LR: 1.00E-03, Speed: 46.395 samples/sec, ObjLoss=35.026, BoxCenterLoss=15.568, BoxScaleLoss=7.779, ClassLoss=22.806
+[Epoch 3][Batch 7499], LR: 1.00E-03, Speed: 10.053 samples/sec, ObjLoss=35.006, BoxCenterLoss=15.566, BoxScaleLoss=7.776, ClassLoss=22.789
+[Epoch 3][Batch 7599], LR: 1.00E-03, Speed: 37.140 samples/sec, ObjLoss=34.986, BoxCenterLoss=15.564, BoxScaleLoss=7.773, ClassLoss=22.769
+[Epoch 3][Batch 7699], LR: 1.00E-03, Speed: 8.919 samples/sec, ObjLoss=34.966, BoxCenterLoss=15.563, BoxScaleLoss=7.770, ClassLoss=22.751
+[Epoch 3][Batch 7799], LR: 1.00E-03, Speed: 52.384 samples/sec, ObjLoss=34.943, BoxCenterLoss=15.560, BoxScaleLoss=7.767, ClassLoss=22.733
+[Epoch 3][Batch 7899], LR: 1.00E-03, Speed: 35.180 samples/sec, ObjLoss=34.926, BoxCenterLoss=15.559, BoxScaleLoss=7.765, ClassLoss=22.717
+[Epoch 3][Batch 7999], LR: 1.00E-03, Speed: 1.474 samples/sec, ObjLoss=34.908, BoxCenterLoss=15.558, BoxScaleLoss=7.762, ClassLoss=22.699
+[Epoch 3][Batch 8099], LR: 1.00E-03, Speed: 32.243 samples/sec, ObjLoss=34.889, BoxCenterLoss=15.557, BoxScaleLoss=7.760, ClassLoss=22.683
+[Epoch 3][Batch 8199], LR: 1.00E-03, Speed: 40.619 samples/sec, ObjLoss=34.870, BoxCenterLoss=15.557, BoxScaleLoss=7.757, ClassLoss=22.666
+[Epoch 3][Batch 8299], LR: 1.00E-03, Speed: 56.190 samples/sec, ObjLoss=34.848, BoxCenterLoss=15.554, BoxScaleLoss=7.754, ClassLoss=22.648
+[Epoch 3][Batch 8399], LR: 1.00E-03, Speed: 31.317 samples/sec, ObjLoss=34.830, BoxCenterLoss=15.554, BoxScaleLoss=7.751, ClassLoss=22.631
+[Epoch 3][Batch 8499], LR: 1.00E-03, Speed: 36.643 samples/sec, ObjLoss=34.812, BoxCenterLoss=15.554, BoxScaleLoss=7.750, ClassLoss=22.616
+[Epoch 3][Batch 8599], LR: 1.00E-03, Speed: 26.003 samples/sec, ObjLoss=34.794, BoxCenterLoss=15.553, BoxScaleLoss=7.748, ClassLoss=22.602
+[Epoch 3][Batch 8699], LR: 1.00E-03, Speed: 24.023 samples/sec, ObjLoss=34.775, BoxCenterLoss=15.552, BoxScaleLoss=7.745, ClassLoss=22.585
+[Epoch 3][Batch 8799], LR: 1.00E-03, Speed: 27.573 samples/sec, ObjLoss=34.760, BoxCenterLoss=15.553, BoxScaleLoss=7.744, ClassLoss=22.572
+[Epoch 3][Batch 8899], LR: 1.00E-03, Speed: 24.142 samples/sec, ObjLoss=34.741, BoxCenterLoss=15.551, BoxScaleLoss=7.741, ClassLoss=22.554
+[Epoch 3][Batch 8999], LR: 1.00E-03, Speed: 24.655 samples/sec, ObjLoss=34.721, BoxCenterLoss=15.549, BoxScaleLoss=7.738, ClassLoss=22.537
+[Epoch 3][Batch 9099], LR: 1.00E-03, Speed: 22.789 samples/sec, ObjLoss=34.700, BoxCenterLoss=15.547, BoxScaleLoss=7.735, ClassLoss=22.519
+[Epoch 3][Batch 9199], LR: 1.00E-03, Speed: 26.523 samples/sec, ObjLoss=34.688, BoxCenterLoss=15.548, BoxScaleLoss=7.733, ClassLoss=22.505
+[Epoch 3][Batch 9299], LR: 1.00E-03, Speed: 44.376 samples/sec, ObjLoss=34.671, BoxCenterLoss=15.548, BoxScaleLoss=7.732, ClassLoss=22.490
+[Epoch 3][Batch 9399], LR: 1.00E-03, Speed: 24.462 samples/sec, ObjLoss=34.651, BoxCenterLoss=15.544, BoxScaleLoss=7.727, ClassLoss=22.470
+[Epoch 3][Batch 9499], LR: 1.00E-03, Speed: 22.772 samples/sec, ObjLoss=34.636, BoxCenterLoss=15.545, BoxScaleLoss=7.725, ClassLoss=22.453
+[Epoch 3][Batch 9599], LR: 1.00E-03, Speed: 83.051 samples/sec, ObjLoss=34.618, BoxCenterLoss=15.544, BoxScaleLoss=7.723, ClassLoss=22.438
+[Epoch 3][Batch 9699], LR: 1.00E-03, Speed: 28.714 samples/sec, ObjLoss=34.601, BoxCenterLoss=15.544, BoxScaleLoss=7.722, ClassLoss=22.422
+[Epoch 3][Batch 9799], LR: 1.00E-03, Speed: 59.452 samples/sec, ObjLoss=34.581, BoxCenterLoss=15.543, BoxScaleLoss=7.720, ClassLoss=22.407
+[Epoch 3][Batch 9899], LR: 1.00E-03, Speed: 33.869 samples/sec, ObjLoss=34.562, BoxCenterLoss=15.542, BoxScaleLoss=7.718, ClassLoss=22.391
+[Epoch 3][Batch 9999], LR: 1.00E-03, Speed: 4.607 samples/sec, ObjLoss=34.544, BoxCenterLoss=15.541, BoxScaleLoss=7.717, ClassLoss=22.376
+[Epoch 3][Batch 10099], LR: 1.00E-03, Speed: 27.632 samples/sec, ObjLoss=34.528, BoxCenterLoss=15.541, BoxScaleLoss=7.715, ClassLoss=22.362
+[Epoch 3][Batch 10199], LR: 1.00E-03, Speed: 8.841 samples/sec, ObjLoss=34.508, BoxCenterLoss=15.539, BoxScaleLoss=7.713, ClassLoss=22.346
+[Epoch 3] Training cost: 4468.531, ObjLoss=34.499, BoxCenterLoss=15.540, BoxScaleLoss=7.712, ClassLoss=22.338
+[Epoch 3] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.026
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.081
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.010
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.008
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.036
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.048
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.068
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.070
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.017
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.057
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.100
+person=14.8
+bicycle=1.3
+car=4.9
+motorcycle=6.8
+airplane=3.4
+bus=10.7
+train=11.0
+truck=2.4
+boat=0.9
+traffic light=0.8
+fire hydrant=2.9
+stop sign=10.9
+parking meter=0.3
+bench=1.3
+bird=0.7
+cat=7.0
+dog=2.1
+horse=4.8
+sheep=3.0
+cow=2.7
+elephant=7.9
+bear=5.2
+zebra=7.0
+giraffe=10.6
+backpack=0.1
+umbrella=0.8
+handbag=0.0
+tie=1.6
+suitcase=0.5
+frisbee=2.3
+skis=1.5
+snowboard=0.4
+sports ball=3.4
+kite=5.2
+baseball bat=0.8
+baseball glove=0.3
+skateboard=2.0
+surfboard=0.8
+tennis racket=2.0
+bottle=1.3
+wine glass=1.1
+cup=2.8
+fork=0.0
+knife=0.5
+spoon=0.1
+bowl=2.6
+banana=0.5
+apple=0.1
+sandwich=0.6
+orange=0.5
+broccoli=0.3
+carrot=0.1
+hot dog=0.0
+pizza=9.7
+donut=1.1
+cake=0.6
+chair=2.2
+couch=4.0
+potted plant=1.2
+bed=4.3
+dining table=3.6
+toilet=4.9
+tv=5.3
+laptop=1.1
+mouse=0.0
+remote=0.1
+keyboard=2.1
+cell phone=0.7
+microwave=1.0
+oven=1.8
+toaster=0.0
+sink=1.1
+refrigerator=1.5
+book=0.5
+clock=3.0
+vase=0.3
+scissors=0.0
+teddy bear=1.2
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=2.6
+[Epoch 4][Batch 99], LR: 1.00E-03, Speed: 23.049 samples/sec, ObjLoss=34.482, BoxCenterLoss=15.539, BoxScaleLoss=7.709, ClassLoss=22.322
+[Epoch 4][Batch 199], LR: 1.00E-03, Speed: 40.437 samples/sec, ObjLoss=34.467, BoxCenterLoss=15.539, BoxScaleLoss=7.706, ClassLoss=22.308
+[Epoch 4][Batch 299], LR: 1.00E-03, Speed: 41.694 samples/sec, ObjLoss=34.449, BoxCenterLoss=15.537, BoxScaleLoss=7.703, ClassLoss=22.290
+[Epoch 4][Batch 399], LR: 1.00E-03, Speed: 50.150 samples/sec, ObjLoss=34.433, BoxCenterLoss=15.537, BoxScaleLoss=7.699, ClassLoss=22.275
+[Epoch 4][Batch 499], LR: 1.00E-03, Speed: 5.869 samples/sec, ObjLoss=34.419, BoxCenterLoss=15.537, BoxScaleLoss=7.697, ClassLoss=22.260
+[Epoch 4][Batch 599], LR: 1.00E-03, Speed: 34.799 samples/sec, ObjLoss=34.403, BoxCenterLoss=15.538, BoxScaleLoss=7.696, ClassLoss=22.246
+[Epoch 4][Batch 699], LR: 1.00E-03, Speed: 14.347 samples/sec, ObjLoss=34.388, BoxCenterLoss=15.538, BoxScaleLoss=7.695, ClassLoss=22.231
+[Epoch 4][Batch 799], LR: 1.00E-03, Speed: 8.048 samples/sec, ObjLoss=34.376, BoxCenterLoss=15.539, BoxScaleLoss=7.694, ClassLoss=22.218
+[Epoch 4][Batch 899], LR: 1.00E-03, Speed: 27.398 samples/sec, ObjLoss=34.363, BoxCenterLoss=15.540, BoxScaleLoss=7.692, ClassLoss=22.206
+[Epoch 4][Batch 999], LR: 1.00E-03, Speed: 40.410 samples/sec, ObjLoss=34.345, BoxCenterLoss=15.539, BoxScaleLoss=7.690, ClassLoss=22.190
+[Epoch 4][Batch 1099], LR: 1.00E-03, Speed: 22.656 samples/sec, ObjLoss=34.333, BoxCenterLoss=15.540, BoxScaleLoss=7.689, ClassLoss=22.177
+[Epoch 4][Batch 1199], LR: 1.00E-03, Speed: 5.319 samples/sec, ObjLoss=34.315, BoxCenterLoss=15.540, BoxScaleLoss=7.687, ClassLoss=22.161
+[Epoch 4][Batch 1299], LR: 1.00E-03, Speed: 54.244 samples/sec, ObjLoss=34.294, BoxCenterLoss=15.536, BoxScaleLoss=7.684, ClassLoss=22.145
+[Epoch 4][Batch 1399], LR: 1.00E-03, Speed: 12.751 samples/sec, ObjLoss=34.279, BoxCenterLoss=15.535, BoxScaleLoss=7.682, ClassLoss=22.129
+[Epoch 4][Batch 1499], LR: 1.00E-03, Speed: 23.182 samples/sec, ObjLoss=34.258, BoxCenterLoss=15.532, BoxScaleLoss=7.679, ClassLoss=22.114
+[Epoch 4][Batch 1599], LR: 1.00E-03, Speed: 46.380 samples/sec, ObjLoss=34.244, BoxCenterLoss=15.533, BoxScaleLoss=7.679, ClassLoss=22.102
+[Epoch 4][Batch 1699], LR: 1.00E-03, Speed: 52.733 samples/sec, ObjLoss=34.225, BoxCenterLoss=15.531, BoxScaleLoss=7.676, ClassLoss=22.085
+[Epoch 4][Batch 1799], LR: 1.00E-03, Speed: 26.306 samples/sec, ObjLoss=34.205, BoxCenterLoss=15.529, BoxScaleLoss=7.674, ClassLoss=22.070
+[Epoch 4][Batch 1899], LR: 1.00E-03, Speed: 29.347 samples/sec, ObjLoss=34.189, BoxCenterLoss=15.529, BoxScaleLoss=7.672, ClassLoss=22.055
+[Epoch 4][Batch 1999], LR: 1.00E-03, Speed: 3.845 samples/sec, ObjLoss=34.172, BoxCenterLoss=15.527, BoxScaleLoss=7.669, ClassLoss=22.039
+[Epoch 4][Batch 2099], LR: 1.00E-03, Speed: 28.065 samples/sec, ObjLoss=34.159, BoxCenterLoss=15.527, BoxScaleLoss=7.667, ClassLoss=22.025
+[Epoch 4][Batch 2199], LR: 1.00E-03, Speed: 35.355 samples/sec, ObjLoss=34.136, BoxCenterLoss=15.522, BoxScaleLoss=7.662, ClassLoss=22.007
+[Epoch 4][Batch 2299], LR: 1.00E-03, Speed: 4.874 samples/sec, ObjLoss=34.119, BoxCenterLoss=15.520, BoxScaleLoss=7.659, ClassLoss=21.991
+[Epoch 4][Batch 2399], LR: 1.00E-03, Speed: 22.410 samples/sec, ObjLoss=34.102, BoxCenterLoss=15.519, BoxScaleLoss=7.657, ClassLoss=21.975
+[Epoch 4][Batch 2499], LR: 1.00E-03, Speed: 50.941 samples/sec, ObjLoss=34.082, BoxCenterLoss=15.517, BoxScaleLoss=7.655, ClassLoss=21.959
+[Epoch 4][Batch 2599], LR: 1.00E-03, Speed: 11.376 samples/sec, ObjLoss=34.067, BoxCenterLoss=15.517, BoxScaleLoss=7.653, ClassLoss=21.945
+[Epoch 4][Batch 2699], LR: 1.00E-03, Speed: 32.395 samples/sec, ObjLoss=34.051, BoxCenterLoss=15.516, BoxScaleLoss=7.651, ClassLoss=21.929
+[Epoch 4][Batch 2799], LR: 1.00E-03, Speed: 23.231 samples/sec, ObjLoss=34.035, BoxCenterLoss=15.515, BoxScaleLoss=7.648, ClassLoss=21.913
+[Epoch 4][Batch 2899], LR: 1.00E-03, Speed: 26.867 samples/sec, ObjLoss=34.023, BoxCenterLoss=15.516, BoxScaleLoss=7.647, ClassLoss=21.899
+[Epoch 4][Batch 2999], LR: 1.00E-03, Speed: 32.438 samples/sec, ObjLoss=34.011, BoxCenterLoss=15.516, BoxScaleLoss=7.646, ClassLoss=21.887
+[Epoch 4][Batch 3099], LR: 1.00E-03, Speed: 6.952 samples/sec, ObjLoss=33.997, BoxCenterLoss=15.517, BoxScaleLoss=7.644, ClassLoss=21.874
+[Epoch 4][Batch 3199], LR: 1.00E-03, Speed: 44.273 samples/sec, ObjLoss=33.978, BoxCenterLoss=15.515, BoxScaleLoss=7.642, ClassLoss=21.859
+[Epoch 4][Batch 3299], LR: 1.00E-03, Speed: 47.384 samples/sec, ObjLoss=33.956, BoxCenterLoss=15.511, BoxScaleLoss=7.638, ClassLoss=21.842
+[Epoch 4][Batch 3399], LR: 1.00E-03, Speed: 15.856 samples/sec, ObjLoss=33.940, BoxCenterLoss=15.509, BoxScaleLoss=7.635, ClassLoss=21.827
+[Epoch 4][Batch 3499], LR: 1.00E-03, Speed: 30.660 samples/sec, ObjLoss=33.927, BoxCenterLoss=15.509, BoxScaleLoss=7.633, ClassLoss=21.815
+[Epoch 4][Batch 3599], LR: 1.00E-03, Speed: 34.952 samples/sec, ObjLoss=33.919, BoxCenterLoss=15.511, BoxScaleLoss=7.632, ClassLoss=21.802
+[Epoch 4][Batch 3699], LR: 1.00E-03, Speed: 56.953 samples/sec, ObjLoss=33.905, BoxCenterLoss=15.511, BoxScaleLoss=7.630, ClassLoss=21.789
+[Epoch 4][Batch 3799], LR: 1.00E-03, Speed: 28.850 samples/sec, ObjLoss=33.890, BoxCenterLoss=15.511, BoxScaleLoss=7.628, ClassLoss=21.775
+[Epoch 4][Batch 3899], LR: 1.00E-03, Speed: 6.389 samples/sec, ObjLoss=33.873, BoxCenterLoss=15.510, BoxScaleLoss=7.627, ClassLoss=21.761
+[Epoch 4][Batch 3999], LR: 1.00E-03, Speed: 25.816 samples/sec, ObjLoss=33.858, BoxCenterLoss=15.509, BoxScaleLoss=7.624, ClassLoss=21.748
+[Epoch 4][Batch 4099], LR: 1.00E-03, Speed: 28.203 samples/sec, ObjLoss=33.845, BoxCenterLoss=15.510, BoxScaleLoss=7.623, ClassLoss=21.735
+[Epoch 4][Batch 4199], LR: 1.00E-03, Speed: 62.163 samples/sec, ObjLoss=33.832, BoxCenterLoss=15.510, BoxScaleLoss=7.623, ClassLoss=21.723
+[Epoch 4][Batch 4299], LR: 1.00E-03, Speed: 22.900 samples/sec, ObjLoss=33.817, BoxCenterLoss=15.510, BoxScaleLoss=7.621, ClassLoss=21.709
+[Epoch 4][Batch 4399], LR: 1.00E-03, Speed: 45.849 samples/sec, ObjLoss=33.808, BoxCenterLoss=15.511, BoxScaleLoss=7.619, ClassLoss=21.698
+[Epoch 4][Batch 4499], LR: 1.00E-03, Speed: 25.961 samples/sec, ObjLoss=33.797, BoxCenterLoss=15.512, BoxScaleLoss=7.616, ClassLoss=21.686
+[Epoch 4][Batch 4599], LR: 1.00E-03, Speed: 25.821 samples/sec, ObjLoss=33.785, BoxCenterLoss=15.513, BoxScaleLoss=7.615, ClassLoss=21.674
+[Epoch 4][Batch 4699], LR: 1.00E-03, Speed: 35.239 samples/sec, ObjLoss=33.771, BoxCenterLoss=15.512, BoxScaleLoss=7.613, ClassLoss=21.659
+[Epoch 4][Batch 4799], LR: 1.00E-03, Speed: 65.381 samples/sec, ObjLoss=33.756, BoxCenterLoss=15.512, BoxScaleLoss=7.612, ClassLoss=21.648
+[Epoch 4][Batch 4899], LR: 1.00E-03, Speed: 59.603 samples/sec, ObjLoss=33.739, BoxCenterLoss=15.510, BoxScaleLoss=7.609, ClassLoss=21.634
+[Epoch 4][Batch 4999], LR: 1.00E-03, Speed: 33.671 samples/sec, ObjLoss=33.723, BoxCenterLoss=15.507, BoxScaleLoss=7.606, ClassLoss=21.619
+[Epoch 4][Batch 5099], LR: 1.00E-03, Speed: 42.461 samples/sec, ObjLoss=33.710, BoxCenterLoss=15.507, BoxScaleLoss=7.603, ClassLoss=21.606
+[Epoch 4][Batch 5199], LR: 1.00E-03, Speed: 46.784 samples/sec, ObjLoss=33.695, BoxCenterLoss=15.506, BoxScaleLoss=7.601, ClassLoss=21.591
+[Epoch 4][Batch 5299], LR: 1.00E-03, Speed: 73.973 samples/sec, ObjLoss=33.681, BoxCenterLoss=15.505, BoxScaleLoss=7.598, ClassLoss=21.578
+[Epoch 4][Batch 5399], LR: 1.00E-03, Speed: 31.975 samples/sec, ObjLoss=33.665, BoxCenterLoss=15.503, BoxScaleLoss=7.596, ClassLoss=21.563
+[Epoch 4][Batch 5499], LR: 1.00E-03, Speed: 17.961 samples/sec, ObjLoss=33.656, BoxCenterLoss=15.505, BoxScaleLoss=7.595, ClassLoss=21.551
+[Epoch 4][Batch 5599], LR: 1.00E-03, Speed: 31.353 samples/sec, ObjLoss=33.644, BoxCenterLoss=15.505, BoxScaleLoss=7.593, ClassLoss=21.538
+[Epoch 4][Batch 5699], LR: 1.00E-03, Speed: 39.088 samples/sec, ObjLoss=33.631, BoxCenterLoss=15.505, BoxScaleLoss=7.591, ClassLoss=21.526
+[Epoch 4][Batch 5799], LR: 1.00E-03, Speed: 9.023 samples/sec, ObjLoss=33.619, BoxCenterLoss=15.506, BoxScaleLoss=7.590, ClassLoss=21.515
+[Epoch 4][Batch 5899], LR: 1.00E-03, Speed: 52.278 samples/sec, ObjLoss=33.603, BoxCenterLoss=15.504, BoxScaleLoss=7.588, ClassLoss=21.501
+[Epoch 4][Batch 5999], LR: 1.00E-03, Speed: 14.967 samples/sec, ObjLoss=33.587, BoxCenterLoss=15.502, BoxScaleLoss=7.584, ClassLoss=21.487
+[Epoch 4][Batch 6099], LR: 1.00E-03, Speed: 26.694 samples/sec, ObjLoss=33.571, BoxCenterLoss=15.500, BoxScaleLoss=7.581, ClassLoss=21.474
+[Epoch 4][Batch 6199], LR: 1.00E-03, Speed: 26.703 samples/sec, ObjLoss=33.560, BoxCenterLoss=15.501, BoxScaleLoss=7.579, ClassLoss=21.464
+[Epoch 4][Batch 6299], LR: 1.00E-03, Speed: 21.326 samples/sec, ObjLoss=33.544, BoxCenterLoss=15.500, BoxScaleLoss=7.578, ClassLoss=21.449
+[Epoch 4][Batch 6399], LR: 1.00E-03, Speed: 11.845 samples/sec, ObjLoss=33.534, BoxCenterLoss=15.501, BoxScaleLoss=7.577, ClassLoss=21.438
+[Epoch 4][Batch 6499], LR: 1.00E-03, Speed: 48.652 samples/sec, ObjLoss=33.522, BoxCenterLoss=15.500, BoxScaleLoss=7.576, ClassLoss=21.425
+[Epoch 4][Batch 6599], LR: 1.00E-03, Speed: 36.947 samples/sec, ObjLoss=33.506, BoxCenterLoss=15.499, BoxScaleLoss=7.573, ClassLoss=21.411
+[Epoch 4][Batch 6699], LR: 1.00E-03, Speed: 54.807 samples/sec, ObjLoss=33.490, BoxCenterLoss=15.496, BoxScaleLoss=7.570, ClassLoss=21.397
+[Epoch 4][Batch 6799], LR: 1.00E-03, Speed: 12.914 samples/sec, ObjLoss=33.473, BoxCenterLoss=15.494, BoxScaleLoss=7.568, ClassLoss=21.383
+[Epoch 4][Batch 6899], LR: 1.00E-03, Speed: 30.230 samples/sec, ObjLoss=33.460, BoxCenterLoss=15.493, BoxScaleLoss=7.566, ClassLoss=21.370
+[Epoch 4][Batch 6999], LR: 1.00E-03, Speed: 30.880 samples/sec, ObjLoss=33.448, BoxCenterLoss=15.495, BoxScaleLoss=7.565, ClassLoss=21.360
+[Epoch 4][Batch 7099], LR: 1.00E-03, Speed: 40.604 samples/sec, ObjLoss=33.436, BoxCenterLoss=15.495, BoxScaleLoss=7.564, ClassLoss=21.348
+[Epoch 4][Batch 7199], LR: 1.00E-03, Speed: 50.998 samples/sec, ObjLoss=33.424, BoxCenterLoss=15.496, BoxScaleLoss=7.562, ClassLoss=21.337
+[Epoch 4][Batch 7299], LR: 1.00E-03, Speed: 42.848 samples/sec, ObjLoss=33.412, BoxCenterLoss=15.496, BoxScaleLoss=7.561, ClassLoss=21.325
+[Epoch 4][Batch 7399], LR: 1.00E-03, Speed: 74.396 samples/sec, ObjLoss=33.397, BoxCenterLoss=15.495, BoxScaleLoss=7.559, ClassLoss=21.313
+[Epoch 4][Batch 7499], LR: 1.00E-03, Speed: 30.566 samples/sec, ObjLoss=33.381, BoxCenterLoss=15.493, BoxScaleLoss=7.557, ClassLoss=21.300
+[Epoch 4][Batch 7599], LR: 1.00E-03, Speed: 41.941 samples/sec, ObjLoss=33.367, BoxCenterLoss=15.492, BoxScaleLoss=7.556, ClassLoss=21.289
+[Epoch 4][Batch 7699], LR: 1.00E-03, Speed: 28.226 samples/sec, ObjLoss=33.356, BoxCenterLoss=15.492, BoxScaleLoss=7.554, ClassLoss=21.277
+[Epoch 4][Batch 7799], LR: 1.00E-03, Speed: 60.912 samples/sec, ObjLoss=33.346, BoxCenterLoss=15.493, BoxScaleLoss=7.553, ClassLoss=21.266
+[Epoch 4][Batch 7899], LR: 1.00E-03, Speed: 36.864 samples/sec, ObjLoss=33.330, BoxCenterLoss=15.490, BoxScaleLoss=7.550, ClassLoss=21.252
+[Epoch 4][Batch 7999], LR: 1.00E-03, Speed: 52.838 samples/sec, ObjLoss=33.315, BoxCenterLoss=15.489, BoxScaleLoss=7.548, ClassLoss=21.239
+[Epoch 4][Batch 8099], LR: 1.00E-03, Speed: 25.825 samples/sec, ObjLoss=33.304, BoxCenterLoss=15.490, BoxScaleLoss=7.547, ClassLoss=21.230
+[Epoch 4][Batch 8199], LR: 1.00E-03, Speed: 22.537 samples/sec, ObjLoss=33.293, BoxCenterLoss=15.489, BoxScaleLoss=7.545, ClassLoss=21.219
+[Epoch 4][Batch 8299], LR: 1.00E-03, Speed: 24.797 samples/sec, ObjLoss=33.281, BoxCenterLoss=15.489, BoxScaleLoss=7.544, ClassLoss=21.208
+[Epoch 4][Batch 8399], LR: 1.00E-03, Speed: 83.814 samples/sec, ObjLoss=33.268, BoxCenterLoss=15.489, BoxScaleLoss=7.542, ClassLoss=21.196
+[Epoch 4][Batch 8499], LR: 1.00E-03, Speed: 18.764 samples/sec, ObjLoss=33.256, BoxCenterLoss=15.489, BoxScaleLoss=7.541, ClassLoss=21.186
+[Epoch 4][Batch 8599], LR: 1.00E-03, Speed: 76.486 samples/sec, ObjLoss=33.240, BoxCenterLoss=15.487, BoxScaleLoss=7.539, ClassLoss=21.172
+[Epoch 4][Batch 8699], LR: 1.00E-03, Speed: 65.263 samples/sec, ObjLoss=33.227, BoxCenterLoss=15.486, BoxScaleLoss=7.537, ClassLoss=21.160
+[Epoch 4][Batch 8799], LR: 1.00E-03, Speed: 50.435 samples/sec, ObjLoss=33.216, BoxCenterLoss=15.485, BoxScaleLoss=7.536, ClassLoss=21.148
+[Epoch 4][Batch 8899], LR: 1.00E-03, Speed: 27.449 samples/sec, ObjLoss=33.202, BoxCenterLoss=15.484, BoxScaleLoss=7.534, ClassLoss=21.136
+[Epoch 4][Batch 8999], LR: 1.00E-03, Speed: 45.052 samples/sec, ObjLoss=33.190, BoxCenterLoss=15.485, BoxScaleLoss=7.532, ClassLoss=21.124
+[Epoch 4][Batch 9099], LR: 1.00E-03, Speed: 23.293 samples/sec, ObjLoss=33.179, BoxCenterLoss=15.484, BoxScaleLoss=7.531, ClassLoss=21.113
+[Epoch 4][Batch 9199], LR: 1.00E-03, Speed: 27.026 samples/sec, ObjLoss=33.167, BoxCenterLoss=15.484, BoxScaleLoss=7.529, ClassLoss=21.100
+[Epoch 4][Batch 9299], LR: 1.00E-03, Speed: 23.109 samples/sec, ObjLoss=33.153, BoxCenterLoss=15.481, BoxScaleLoss=7.527, ClassLoss=21.088
+[Epoch 4][Batch 9399], LR: 1.00E-03, Speed: 38.015 samples/sec, ObjLoss=33.142, BoxCenterLoss=15.481, BoxScaleLoss=7.525, ClassLoss=21.076
+[Epoch 4][Batch 9499], LR: 1.00E-03, Speed: 36.849 samples/sec, ObjLoss=33.128, BoxCenterLoss=15.480, BoxScaleLoss=7.523, ClassLoss=21.064
+[Epoch 4][Batch 9599], LR: 1.00E-03, Speed: 7.141 samples/sec, ObjLoss=33.117, BoxCenterLoss=15.480, BoxScaleLoss=7.521, ClassLoss=21.053
+[Epoch 4][Batch 9699], LR: 1.00E-03, Speed: 2.787 samples/sec, ObjLoss=33.104, BoxCenterLoss=15.478, BoxScaleLoss=7.518, ClassLoss=21.040
+[Epoch 4][Batch 9799], LR: 1.00E-03, Speed: 49.010 samples/sec, ObjLoss=33.091, BoxCenterLoss=15.478, BoxScaleLoss=7.516, ClassLoss=21.027
+[Epoch 4][Batch 9899], LR: 1.00E-03, Speed: 3.472 samples/sec, ObjLoss=33.082, BoxCenterLoss=15.479, BoxScaleLoss=7.515, ClassLoss=21.017
+[Epoch 4][Batch 9999], LR: 1.00E-03, Speed: 49.131 samples/sec, ObjLoss=33.071, BoxCenterLoss=15.478, BoxScaleLoss=7.513, ClassLoss=21.005
+[Epoch 4][Batch 10099], LR: 1.00E-03, Speed: 22.774 samples/sec, ObjLoss=33.061, BoxCenterLoss=15.478, BoxScaleLoss=7.511, ClassLoss=20.994
+[Epoch 4][Batch 10199], LR: 1.00E-03, Speed: 30.873 samples/sec, ObjLoss=33.047, BoxCenterLoss=15.476, BoxScaleLoss=7.508, ClassLoss=20.981
+[Epoch 4] Training cost: 4880.893, ObjLoss=33.040, BoxCenterLoss=15.475, BoxScaleLoss=7.506, ClassLoss=20.974
+[Epoch 4] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.031
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.095
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.011
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.008
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.024
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.048
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.051
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.072
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.073
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.014
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.056
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.114
+person=13.8
+bicycle=0.9
+car=5.5
+motorcycle=5.8
+airplane=9.4
+bus=5.8
+train=11.0
+truck=3.1
+boat=1.5
+traffic light=1.2
+fire hydrant=7.0
+stop sign=12.6
+parking meter=1.2
+bench=1.5
+bird=0.9
+cat=7.2
+dog=2.5
+horse=7.2
+sheep=5.0
+cow=3.6
+elephant=11.9
+bear=7.5
+zebra=12.8
+giraffe=15.3
+backpack=0.1
+umbrella=2.2
+handbag=0.1
+tie=0.7
+suitcase=0.4
+frisbee=2.8
+skis=1.0
+snowboard=0.8
+sports ball=3.6
+kite=3.8
+baseball bat=0.4
+baseball glove=0.3
+skateboard=1.4
+surfboard=0.8
+tennis racket=1.4
+bottle=0.5
+wine glass=1.4
+cup=2.1
+fork=0.1
+knife=0.2
+spoon=0.4
+bowl=3.1
+banana=0.1
+apple=0.3
+sandwich=1.6
+orange=1.0
+broccoli=0.8
+carrot=0.1
+hot dog=0.0
+pizza=7.1
+donut=1.7
+cake=1.0
+chair=2.2
+couch=3.3
+potted plant=0.6
+bed=3.8
+dining table=5.6
+toilet=6.8
+tv=5.4
+laptop=1.8
+mouse=0.0
+remote=0.0
+keyboard=1.0
+cell phone=0.5
+microwave=0.4
+oven=1.5
+toaster=0.0
+sink=3.2
+refrigerator=3.4
+book=0.3
+clock=5.7
+vase=0.5
+scissors=0.0
+teddy bear=2.9
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=3.1
+[Epoch 5][Batch 99], LR: 1.00E-04, Speed: 32.387 samples/sec, ObjLoss=33.031, BoxCenterLoss=15.476, BoxScaleLoss=7.505, ClassLoss=20.963
+[Epoch 5][Batch 199], LR: 1.00E-04, Speed: 29.636 samples/sec, ObjLoss=33.018, BoxCenterLoss=15.475, BoxScaleLoss=7.500, ClassLoss=20.949
+[Epoch 5][Batch 299], LR: 1.00E-04, Speed: 3.558 samples/sec, ObjLoss=33.006, BoxCenterLoss=15.475, BoxScaleLoss=7.496, ClassLoss=20.937
+[Epoch 5][Batch 399], LR: 1.00E-04, Speed: 31.632 samples/sec, ObjLoss=32.993, BoxCenterLoss=15.475, BoxScaleLoss=7.492, ClassLoss=20.925
+[Epoch 5][Batch 499], LR: 1.00E-04, Speed: 2.035 samples/sec, ObjLoss=32.981, BoxCenterLoss=15.475, BoxScaleLoss=7.488, ClassLoss=20.913
+[Epoch 5][Batch 599], LR: 1.00E-04, Speed: 10.855 samples/sec, ObjLoss=32.965, BoxCenterLoss=15.472, BoxScaleLoss=7.483, ClassLoss=20.898
+[Epoch 5][Batch 699], LR: 1.00E-04, Speed: 58.438 samples/sec, ObjLoss=32.948, BoxCenterLoss=15.470, BoxScaleLoss=7.478, ClassLoss=20.884
+[Epoch 5][Batch 799], LR: 1.00E-04, Speed: 30.998 samples/sec, ObjLoss=32.934, BoxCenterLoss=15.469, BoxScaleLoss=7.474, ClassLoss=20.871
+[Epoch 5][Batch 899], LR: 1.00E-04, Speed: 45.083 samples/sec, ObjLoss=32.920, BoxCenterLoss=15.468, BoxScaleLoss=7.469, ClassLoss=20.858
+[Epoch 5][Batch 999], LR: 1.00E-04, Speed: 71.011 samples/sec, ObjLoss=32.904, BoxCenterLoss=15.467, BoxScaleLoss=7.464, ClassLoss=20.845
+[Epoch 5][Batch 1099], LR: 1.00E-04, Speed: 3.627 samples/sec, ObjLoss=32.888, BoxCenterLoss=15.466, BoxScaleLoss=7.460, ClassLoss=20.832
+[Epoch 5][Batch 1199], LR: 1.00E-04, Speed: 44.662 samples/sec, ObjLoss=32.873, BoxCenterLoss=15.464, BoxScaleLoss=7.456, ClassLoss=20.819
+[Epoch 5][Batch 1299], LR: 1.00E-04, Speed: 75.418 samples/sec, ObjLoss=32.861, BoxCenterLoss=15.465, BoxScaleLoss=7.452, ClassLoss=20.807
+[Epoch 5][Batch 1399], LR: 1.00E-04, Speed: 7.700 samples/sec, ObjLoss=32.844, BoxCenterLoss=15.463, BoxScaleLoss=7.448, ClassLoss=20.794
+[Epoch 5][Batch 1499], LR: 1.00E-04, Speed: 25.976 samples/sec, ObjLoss=32.832, BoxCenterLoss=15.465, BoxScaleLoss=7.445, ClassLoss=20.783
+[Epoch 5][Batch 1599], LR: 1.00E-04, Speed: 26.625 samples/sec, ObjLoss=32.818, BoxCenterLoss=15.464, BoxScaleLoss=7.441, ClassLoss=20.770
+[Epoch 5][Batch 1699], LR: 1.00E-04, Speed: 21.966 samples/sec, ObjLoss=32.807, BoxCenterLoss=15.466, BoxScaleLoss=7.437, ClassLoss=20.758
+[Epoch 5][Batch 1799], LR: 1.00E-04, Speed: 12.625 samples/sec, ObjLoss=32.791, BoxCenterLoss=15.464, BoxScaleLoss=7.432, ClassLoss=20.743
+[Epoch 5][Batch 1899], LR: 1.00E-04, Speed: 4.472 samples/sec, ObjLoss=32.777, BoxCenterLoss=15.463, BoxScaleLoss=7.428, ClassLoss=20.731
+[Epoch 5][Batch 1999], LR: 1.00E-04, Speed: 2.426 samples/sec, ObjLoss=32.765, BoxCenterLoss=15.464, BoxScaleLoss=7.425, ClassLoss=20.719
+[Epoch 5][Batch 2099], LR: 1.00E-04, Speed: 4.715 samples/sec, ObjLoss=32.750, BoxCenterLoss=15.463, BoxScaleLoss=7.420, ClassLoss=20.707
+[Epoch 5][Batch 2199], LR: 1.00E-04, Speed: 10.743 samples/sec, ObjLoss=32.735, BoxCenterLoss=15.461, BoxScaleLoss=7.416, ClassLoss=20.693
+[Epoch 5][Batch 2299], LR: 1.00E-04, Speed: 5.007 samples/sec, ObjLoss=32.720, BoxCenterLoss=15.460, BoxScaleLoss=7.411, ClassLoss=20.680
+[Epoch 5][Batch 2399], LR: 1.00E-04, Speed: 48.780 samples/sec, ObjLoss=32.706, BoxCenterLoss=15.459, BoxScaleLoss=7.407, ClassLoss=20.668
+[Epoch 5][Batch 2499], LR: 1.00E-04, Speed: 9.564 samples/sec, ObjLoss=32.691, BoxCenterLoss=15.457, BoxScaleLoss=7.403, ClassLoss=20.655
+[Epoch 5][Batch 2599], LR: 1.00E-04, Speed: 31.319 samples/sec, ObjLoss=32.681, BoxCenterLoss=15.459, BoxScaleLoss=7.399, ClassLoss=20.645
+[Epoch 5][Batch 2699], LR: 1.00E-04, Speed: 3.680 samples/sec, ObjLoss=32.667, BoxCenterLoss=15.457, BoxScaleLoss=7.394, ClassLoss=20.631
+[Epoch 5][Batch 2799], LR: 1.00E-04, Speed: 63.016 samples/sec, ObjLoss=32.654, BoxCenterLoss=15.457, BoxScaleLoss=7.391, ClassLoss=20.619
+[Epoch 5][Batch 2899], LR: 1.00E-04, Speed: 8.093 samples/sec, ObjLoss=32.638, BoxCenterLoss=15.456, BoxScaleLoss=7.387, ClassLoss=20.606
+[Epoch 5][Batch 2999], LR: 1.00E-04, Speed: 31.328 samples/sec, ObjLoss=32.623, BoxCenterLoss=15.455, BoxScaleLoss=7.383, ClassLoss=20.593
+[Epoch 5][Batch 3099], LR: 1.00E-04, Speed: 26.873 samples/sec, ObjLoss=32.609, BoxCenterLoss=15.453, BoxScaleLoss=7.379, ClassLoss=20.580
+[Epoch 5][Batch 3199], LR: 1.00E-04, Speed: 5.844 samples/sec, ObjLoss=32.596, BoxCenterLoss=15.452, BoxScaleLoss=7.374, ClassLoss=20.567
+[Epoch 5][Batch 3299], LR: 1.00E-04, Speed: 15.152 samples/sec, ObjLoss=32.584, BoxCenterLoss=15.452, BoxScaleLoss=7.370, ClassLoss=20.555
+[Epoch 5][Batch 3399], LR: 1.00E-04, Speed: 3.064 samples/sec, ObjLoss=32.569, BoxCenterLoss=15.451, BoxScaleLoss=7.366, ClassLoss=20.541
+[Epoch 5][Batch 3499], LR: 1.00E-04, Speed: 4.221 samples/sec, ObjLoss=32.556, BoxCenterLoss=15.450, BoxScaleLoss=7.362, ClassLoss=20.529
+[Epoch 5][Batch 3599], LR: 1.00E-04, Speed: 3.980 samples/sec, ObjLoss=32.542, BoxCenterLoss=15.449, BoxScaleLoss=7.358, ClassLoss=20.515
+[Epoch 5][Batch 3699], LR: 1.00E-04, Speed: 14.287 samples/sec, ObjLoss=32.530, BoxCenterLoss=15.449, BoxScaleLoss=7.354, ClassLoss=20.503
+[Epoch 5][Batch 3799], LR: 1.00E-04, Speed: 54.932 samples/sec, ObjLoss=32.514, BoxCenterLoss=15.447, BoxScaleLoss=7.349, ClassLoss=20.488
+[Epoch 5][Batch 3899], LR: 1.00E-04, Speed: 30.235 samples/sec, ObjLoss=32.500, BoxCenterLoss=15.447, BoxScaleLoss=7.346, ClassLoss=20.477
+[Epoch 5][Batch 3999], LR: 1.00E-04, Speed: 26.903 samples/sec, ObjLoss=32.485, BoxCenterLoss=15.445, BoxScaleLoss=7.342, ClassLoss=20.464
+[Epoch 5][Batch 4099], LR: 1.00E-04, Speed: 36.799 samples/sec, ObjLoss=32.471, BoxCenterLoss=15.444, BoxScaleLoss=7.337, ClassLoss=20.451
+[Epoch 5][Batch 4199], LR: 1.00E-04, Speed: 42.462 samples/sec, ObjLoss=32.459, BoxCenterLoss=15.443, BoxScaleLoss=7.333, ClassLoss=20.439
+[Epoch 5][Batch 4299], LR: 1.00E-04, Speed: 1.671 samples/sec, ObjLoss=32.445, BoxCenterLoss=15.442, BoxScaleLoss=7.329, ClassLoss=20.426
+[Epoch 5][Batch 4399], LR: 1.00E-04, Speed: 8.149 samples/sec, ObjLoss=32.434, BoxCenterLoss=15.442, BoxScaleLoss=7.325, ClassLoss=20.414
+[Epoch 5][Batch 4499], LR: 1.00E-04, Speed: 27.044 samples/sec, ObjLoss=32.419, BoxCenterLoss=15.440, BoxScaleLoss=7.321, ClassLoss=20.400
+[Epoch 5][Batch 4599], LR: 1.00E-04, Speed: 25.306 samples/sec, ObjLoss=32.403, BoxCenterLoss=15.438, BoxScaleLoss=7.316, ClassLoss=20.388
+[Epoch 5][Batch 4699], LR: 1.00E-04, Speed: 31.396 samples/sec, ObjLoss=32.389, BoxCenterLoss=15.437, BoxScaleLoss=7.312, ClassLoss=20.376
+[Epoch 5][Batch 4799], LR: 1.00E-04, Speed: 23.000 samples/sec, ObjLoss=32.376, BoxCenterLoss=15.436, BoxScaleLoss=7.308, ClassLoss=20.363
+[Epoch 5][Batch 4899], LR: 1.00E-04, Speed: 40.243 samples/sec, ObjLoss=32.362, BoxCenterLoss=15.435, BoxScaleLoss=7.304, ClassLoss=20.350
+[Epoch 5][Batch 4999], LR: 1.00E-04, Speed: 30.070 samples/sec, ObjLoss=32.350, BoxCenterLoss=15.434, BoxScaleLoss=7.300, ClassLoss=20.338
+[Epoch 5][Batch 5099], LR: 1.00E-04, Speed: 38.488 samples/sec, ObjLoss=32.334, BoxCenterLoss=15.432, BoxScaleLoss=7.296, ClassLoss=20.325
+[Epoch 5][Batch 5199], LR: 1.00E-04, Speed: 40.941 samples/sec, ObjLoss=32.323, BoxCenterLoss=15.433, BoxScaleLoss=7.293, ClassLoss=20.313
+[Epoch 5][Batch 5299], LR: 1.00E-04, Speed: 47.180 samples/sec, ObjLoss=32.311, BoxCenterLoss=15.432, BoxScaleLoss=7.289, ClassLoss=20.301
+[Epoch 5][Batch 5399], LR: 1.00E-04, Speed: 51.424 samples/sec, ObjLoss=32.298, BoxCenterLoss=15.432, BoxScaleLoss=7.285, ClassLoss=20.291
+[Epoch 5][Batch 5499], LR: 1.00E-04, Speed: 27.114 samples/sec, ObjLoss=32.286, BoxCenterLoss=15.431, BoxScaleLoss=7.282, ClassLoss=20.279
+[Epoch 5][Batch 5599], LR: 1.00E-04, Speed: 34.000 samples/sec, ObjLoss=32.273, BoxCenterLoss=15.431, BoxScaleLoss=7.278, ClassLoss=20.267
+[Epoch 5][Batch 5699], LR: 1.00E-04, Speed: 27.847 samples/sec, ObjLoss=32.262, BoxCenterLoss=15.431, BoxScaleLoss=7.274, ClassLoss=20.256
+[Epoch 5][Batch 5799], LR: 1.00E-04, Speed: 45.770 samples/sec, ObjLoss=32.248, BoxCenterLoss=15.430, BoxScaleLoss=7.270, ClassLoss=20.243
+[Epoch 5][Batch 5899], LR: 1.00E-04, Speed: 24.655 samples/sec, ObjLoss=32.233, BoxCenterLoss=15.428, BoxScaleLoss=7.267, ClassLoss=20.231
+[Epoch 5][Batch 5999], LR: 1.00E-04, Speed: 40.718 samples/sec, ObjLoss=32.222, BoxCenterLoss=15.428, BoxScaleLoss=7.263, ClassLoss=20.220
+[Epoch 5][Batch 6099], LR: 1.00E-04, Speed: 19.645 samples/sec, ObjLoss=32.210, BoxCenterLoss=15.427, BoxScaleLoss=7.259, ClassLoss=20.209
+[Epoch 5][Batch 6199], LR: 1.00E-04, Speed: 33.929 samples/sec, ObjLoss=32.201, BoxCenterLoss=15.428, BoxScaleLoss=7.256, ClassLoss=20.200
+[Epoch 5][Batch 6299], LR: 1.00E-04, Speed: 46.976 samples/sec, ObjLoss=32.185, BoxCenterLoss=15.426, BoxScaleLoss=7.252, ClassLoss=20.188
+[Epoch 5][Batch 6399], LR: 1.00E-04, Speed: 43.587 samples/sec, ObjLoss=32.172, BoxCenterLoss=15.424, BoxScaleLoss=7.247, ClassLoss=20.174
+[Epoch 5][Batch 6499], LR: 1.00E-04, Speed: 24.759 samples/sec, ObjLoss=32.159, BoxCenterLoss=15.423, BoxScaleLoss=7.244, ClassLoss=20.163
+[Epoch 5][Batch 6599], LR: 1.00E-04, Speed: 3.384 samples/sec, ObjLoss=32.147, BoxCenterLoss=15.422, BoxScaleLoss=7.240, ClassLoss=20.152
+[Epoch 5][Batch 6699], LR: 1.00E-04, Speed: 35.143 samples/sec, ObjLoss=32.133, BoxCenterLoss=15.421, BoxScaleLoss=7.236, ClassLoss=20.140
+[Epoch 5][Batch 6799], LR: 1.00E-04, Speed: 16.904 samples/sec, ObjLoss=32.120, BoxCenterLoss=15.419, BoxScaleLoss=7.231, ClassLoss=20.127
+[Epoch 5][Batch 6899], LR: 1.00E-04, Speed: 49.973 samples/sec, ObjLoss=32.108, BoxCenterLoss=15.419, BoxScaleLoss=7.228, ClassLoss=20.116
+[Epoch 5][Batch 6999], LR: 1.00E-04, Speed: 6.997 samples/sec, ObjLoss=32.095, BoxCenterLoss=15.418, BoxScaleLoss=7.225, ClassLoss=20.104
+[Epoch 5][Batch 7099], LR: 1.00E-04, Speed: 27.610 samples/sec, ObjLoss=32.084, BoxCenterLoss=15.417, BoxScaleLoss=7.221, ClassLoss=20.093
+[Epoch 5][Batch 7199], LR: 1.00E-04, Speed: 42.301 samples/sec, ObjLoss=32.072, BoxCenterLoss=15.418, BoxScaleLoss=7.218, ClassLoss=20.083
+[Epoch 5][Batch 7299], LR: 1.00E-04, Speed: 2.365 samples/sec, ObjLoss=32.060, BoxCenterLoss=15.416, BoxScaleLoss=7.214, ClassLoss=20.073
+[Epoch 5][Batch 7399], LR: 1.00E-04, Speed: 48.647 samples/sec, ObjLoss=32.048, BoxCenterLoss=15.416, BoxScaleLoss=7.211, ClassLoss=20.064
+[Epoch 5][Batch 7499], LR: 1.00E-04, Speed: 40.452 samples/sec, ObjLoss=32.036, BoxCenterLoss=15.415, BoxScaleLoss=7.207, ClassLoss=20.052
+[Epoch 5][Batch 7599], LR: 1.00E-04, Speed: 24.659 samples/sec, ObjLoss=32.026, BoxCenterLoss=15.416, BoxScaleLoss=7.203, ClassLoss=20.041
+[Epoch 5][Batch 7699], LR: 1.00E-04, Speed: 23.608 samples/sec, ObjLoss=32.015, BoxCenterLoss=15.415, BoxScaleLoss=7.199, ClassLoss=20.029
+[Epoch 5][Batch 7799], LR: 1.00E-04, Speed: 55.014 samples/sec, ObjLoss=32.006, BoxCenterLoss=15.416, BoxScaleLoss=7.196, ClassLoss=20.020
+[Epoch 5][Batch 7899], LR: 1.00E-04, Speed: 36.739 samples/sec, ObjLoss=31.993, BoxCenterLoss=15.415, BoxScaleLoss=7.193, ClassLoss=20.009
+[Epoch 5][Batch 7999], LR: 1.00E-04, Speed: 2.102 samples/sec, ObjLoss=31.983, BoxCenterLoss=15.416, BoxScaleLoss=7.190, ClassLoss=19.999
+[Epoch 5][Batch 8099], LR: 1.00E-04, Speed: 34.522 samples/sec, ObjLoss=31.972, BoxCenterLoss=15.416, BoxScaleLoss=7.187, ClassLoss=19.989
+[Epoch 5][Batch 8199], LR: 1.00E-04, Speed: 3.867 samples/sec, ObjLoss=31.962, BoxCenterLoss=15.416, BoxScaleLoss=7.183, ClassLoss=19.978
+[Epoch 5][Batch 8299], LR: 1.00E-04, Speed: 42.409 samples/sec, ObjLoss=31.951, BoxCenterLoss=15.415, BoxScaleLoss=7.180, ClassLoss=19.967
+[Epoch 5][Batch 8399], LR: 1.00E-04, Speed: 57.998 samples/sec, ObjLoss=31.943, BoxCenterLoss=15.417, BoxScaleLoss=7.177, ClassLoss=19.958
+[Epoch 5][Batch 8499], LR: 1.00E-04, Speed: 3.121 samples/sec, ObjLoss=31.930, BoxCenterLoss=15.415, BoxScaleLoss=7.174, ClassLoss=19.946
+[Epoch 5][Batch 8599], LR: 1.00E-04, Speed: 38.934 samples/sec, ObjLoss=31.918, BoxCenterLoss=15.415, BoxScaleLoss=7.170, ClassLoss=19.935
+[Epoch 5][Batch 8699], LR: 1.00E-04, Speed: 15.604 samples/sec, ObjLoss=31.908, BoxCenterLoss=15.415, BoxScaleLoss=7.167, ClassLoss=19.924
+[Epoch 5][Batch 8799], LR: 1.00E-04, Speed: 29.910 samples/sec, ObjLoss=31.895, BoxCenterLoss=15.414, BoxScaleLoss=7.163, ClassLoss=19.913
+[Epoch 5][Batch 8899], LR: 1.00E-04, Speed: 10.405 samples/sec, ObjLoss=31.885, BoxCenterLoss=15.414, BoxScaleLoss=7.160, ClassLoss=19.903
+[Epoch 5][Batch 8999], LR: 1.00E-04, Speed: 39.241 samples/sec, ObjLoss=31.873, BoxCenterLoss=15.412, BoxScaleLoss=7.156, ClassLoss=19.891
+[Epoch 5][Batch 9099], LR: 1.00E-04, Speed: 29.303 samples/sec, ObjLoss=31.863, BoxCenterLoss=15.413, BoxScaleLoss=7.153, ClassLoss=19.880
+[Epoch 5][Batch 9199], LR: 1.00E-04, Speed: 38.637 samples/sec, ObjLoss=31.851, BoxCenterLoss=15.412, BoxScaleLoss=7.150, ClassLoss=19.870
+[Epoch 5][Batch 9299], LR: 1.00E-04, Speed: 64.156 samples/sec, ObjLoss=31.839, BoxCenterLoss=15.411, BoxScaleLoss=7.146, ClassLoss=19.859
+[Epoch 5][Batch 9399], LR: 1.00E-04, Speed: 49.005 samples/sec, ObjLoss=31.827, BoxCenterLoss=15.410, BoxScaleLoss=7.143, ClassLoss=19.847
+[Epoch 5][Batch 9499], LR: 1.00E-04, Speed: 12.773 samples/sec, ObjLoss=31.815, BoxCenterLoss=15.409, BoxScaleLoss=7.139, ClassLoss=19.835
+[Epoch 5][Batch 9599], LR: 1.00E-04, Speed: 34.349 samples/sec, ObjLoss=31.803, BoxCenterLoss=15.408, BoxScaleLoss=7.136, ClassLoss=19.824
+[Epoch 5][Batch 9699], LR: 1.00E-04, Speed: 35.429 samples/sec, ObjLoss=31.793, BoxCenterLoss=15.408, BoxScaleLoss=7.132, ClassLoss=19.814
+[Epoch 5][Batch 9799], LR: 1.00E-04, Speed: 36.925 samples/sec, ObjLoss=31.781, BoxCenterLoss=15.408, BoxScaleLoss=7.129, ClassLoss=19.804
+[Epoch 5][Batch 9899], LR: 1.00E-04, Speed: 49.493 samples/sec, ObjLoss=31.768, BoxCenterLoss=15.406, BoxScaleLoss=7.125, ClassLoss=19.794
+[Epoch 5][Batch 9999], LR: 1.00E-04, Speed: 37.902 samples/sec, ObjLoss=31.758, BoxCenterLoss=15.405, BoxScaleLoss=7.123, ClassLoss=19.784
+[Epoch 5][Batch 10099], LR: 1.00E-04, Speed: 30.352 samples/sec, ObjLoss=31.746, BoxCenterLoss=15.405, BoxScaleLoss=7.120, ClassLoss=19.773
+[Epoch 5][Batch 10199], LR: 1.00E-04, Speed: 7.777 samples/sec, ObjLoss=31.736, BoxCenterLoss=15.405, BoxScaleLoss=7.117, ClassLoss=19.763
+[Epoch 5] Training cost: 7109.765, ObjLoss=31.729, BoxCenterLoss=15.405, BoxScaleLoss=7.115, ClassLoss=19.757
+[Epoch 5] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.077
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.169
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.059
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.019
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.065
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.112
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.104
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.143
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.146
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.037
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.121
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.219
+person=23.4
+bicycle=4.6
+car=11.9
+motorcycle=14.5
+airplane=19.2
+bus=26.6
+train=27.6
+truck=9.0
+boat=2.9
+traffic light=4.5
+fire hydrant=16.0
+stop sign=21.1
+parking meter=3.4
+bench=3.1
+bird=2.6
+cat=18.8
+dog=8.9
+horse=13.1
+sheep=10.2
+cow=8.5
+elephant=21.4
+bear=12.3
+zebra=30.8
+giraffe=31.8
+backpack=0.2
+umbrella=6.1
+handbag=0.3
+tie=4.0
+suitcase=2.0
+frisbee=5.3
+skis=2.5
+snowboard=0.6
+sports ball=10.8
+kite=10.5
+baseball bat=0.9
+baseball glove=2.8
+skateboard=4.9
+surfboard=2.2
+tennis racket=6.9
+bottle=4.4
+wine glass=4.5
+cup=8.2
+fork=0.7
+knife=0.7
+spoon=0.3
+bowl=6.9
+banana=1.1
+apple=1.0
+sandwich=4.5
+orange=3.7
+broccoli=2.7
+carrot=0.2
+hot dog=0.6
+pizza=21.1
+donut=5.1
+cake=2.4
+chair=4.4
+couch=7.7
+potted plant=2.5
+bed=13.3
+dining table=10.7
+toilet=19.8
+tv=15.1
+laptop=12.4
+mouse=0.6
+remote=0.4
+keyboard=8.1
+cell phone=1.9
+microwave=3.9
+oven=3.3
+toaster=0.0
+sink=5.5
+refrigerator=5.5
+book=1.8
+clock=15.2
+vase=1.9
+scissors=0.0
+teddy bear=5.7
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=7.7
+[Epoch 6][Batch 99], LR: 1.00E-04, Speed: 14.692 samples/sec, ObjLoss=31.717, BoxCenterLoss=15.404, BoxScaleLoss=7.111, ClassLoss=19.745
+[Epoch 6][Batch 199], LR: 1.00E-04, Speed: 38.769 samples/sec, ObjLoss=31.707, BoxCenterLoss=15.403, BoxScaleLoss=7.108, ClassLoss=19.734
+[Epoch 6][Batch 299], LR: 1.00E-04, Speed: 54.659 samples/sec, ObjLoss=31.695, BoxCenterLoss=15.403, BoxScaleLoss=7.105, ClassLoss=19.724
+[Epoch 6][Batch 399], LR: 1.00E-04, Speed: 21.916 samples/sec, ObjLoss=31.682, BoxCenterLoss=15.402, BoxScaleLoss=7.102, ClassLoss=19.714
+[Epoch 6][Batch 499], LR: 1.00E-04, Speed: 26.919 samples/sec, ObjLoss=31.672, BoxCenterLoss=15.401, BoxScaleLoss=7.098, ClassLoss=19.703
+[Epoch 6][Batch 599], LR: 1.00E-04, Speed: 64.592 samples/sec, ObjLoss=31.660, BoxCenterLoss=15.400, BoxScaleLoss=7.095, ClassLoss=19.692
+[Epoch 6][Batch 699], LR: 1.00E-04, Speed: 12.613 samples/sec, ObjLoss=31.647, BoxCenterLoss=15.398, BoxScaleLoss=7.092, ClassLoss=19.681
+[Epoch 6][Batch 799], LR: 1.00E-04, Speed: 32.364 samples/sec, ObjLoss=31.635, BoxCenterLoss=15.398, BoxScaleLoss=7.088, ClassLoss=19.671
+[Epoch 6][Batch 899], LR: 1.00E-04, Speed: 21.478 samples/sec, ObjLoss=31.624, BoxCenterLoss=15.397, BoxScaleLoss=7.085, ClassLoss=19.661
+[Epoch 6][Batch 999], LR: 1.00E-04, Speed: 30.736 samples/sec, ObjLoss=31.615, BoxCenterLoss=15.397, BoxScaleLoss=7.082, ClassLoss=19.651
+[Epoch 6][Batch 1099], LR: 1.00E-04, Speed: 22.480 samples/sec, ObjLoss=31.602, BoxCenterLoss=15.395, BoxScaleLoss=7.079, ClassLoss=19.641
+[Epoch 6][Batch 1199], LR: 1.00E-04, Speed: 20.743 samples/sec, ObjLoss=31.591, BoxCenterLoss=15.394, BoxScaleLoss=7.076, ClassLoss=19.630
+[Epoch 6][Batch 1299], LR: 1.00E-04, Speed: 16.265 samples/sec, ObjLoss=31.581, BoxCenterLoss=15.394, BoxScaleLoss=7.073, ClassLoss=19.621
+[Epoch 6][Batch 1399], LR: 1.00E-04, Speed: 42.443 samples/sec, ObjLoss=31.569, BoxCenterLoss=15.393, BoxScaleLoss=7.069, ClassLoss=19.610
+[Epoch 6][Batch 1499], LR: 1.00E-04, Speed: 62.114 samples/sec, ObjLoss=31.558, BoxCenterLoss=15.393, BoxScaleLoss=7.067, ClassLoss=19.601
+[Epoch 6][Batch 1599], LR: 1.00E-04, Speed: 25.182 samples/sec, ObjLoss=31.549, BoxCenterLoss=15.394, BoxScaleLoss=7.064, ClassLoss=19.592
+[Epoch 6][Batch 1699], LR: 1.00E-04, Speed: 4.476 samples/sec, ObjLoss=31.540, BoxCenterLoss=15.393, BoxScaleLoss=7.061, ClassLoss=19.582
+[Epoch 6][Batch 1799], LR: 1.00E-04, Speed: 27.321 samples/sec, ObjLoss=31.532, BoxCenterLoss=15.394, BoxScaleLoss=7.058, ClassLoss=19.573
+[Epoch 6][Batch 1899], LR: 1.00E-04, Speed: 8.779 samples/sec, ObjLoss=31.522, BoxCenterLoss=15.394, BoxScaleLoss=7.055, ClassLoss=19.564
+[Epoch 6][Batch 1999], LR: 1.00E-04, Speed: 25.316 samples/sec, ObjLoss=31.513, BoxCenterLoss=15.394, BoxScaleLoss=7.052, ClassLoss=19.553
+[Epoch 6][Batch 2099], LR: 1.00E-04, Speed: 37.919 samples/sec, ObjLoss=31.503, BoxCenterLoss=15.393, BoxScaleLoss=7.049, ClassLoss=19.543
+[Epoch 6][Batch 2199], LR: 1.00E-04, Speed: 22.973 samples/sec, ObjLoss=31.495, BoxCenterLoss=15.395, BoxScaleLoss=7.047, ClassLoss=19.534
+[Epoch 6][Batch 2299], LR: 1.00E-04, Speed: 35.099 samples/sec, ObjLoss=31.488, BoxCenterLoss=15.396, BoxScaleLoss=7.044, ClassLoss=19.525
+[Epoch 6][Batch 2399], LR: 1.00E-04, Speed: 7.814 samples/sec, ObjLoss=31.478, BoxCenterLoss=15.396, BoxScaleLoss=7.041, ClassLoss=19.516
+[Epoch 6][Batch 2499], LR: 1.00E-04, Speed: 21.441 samples/sec, ObjLoss=31.465, BoxCenterLoss=15.394, BoxScaleLoss=7.038, ClassLoss=19.505
+[Epoch 6][Batch 2599], LR: 1.00E-04, Speed: 36.744 samples/sec, ObjLoss=31.454, BoxCenterLoss=15.393, BoxScaleLoss=7.035, ClassLoss=19.495
+[Epoch 6][Batch 2699], LR: 1.00E-04, Speed: 8.516 samples/sec, ObjLoss=31.443, BoxCenterLoss=15.392, BoxScaleLoss=7.032, ClassLoss=19.484
+[Epoch 6][Batch 2799], LR: 1.00E-04, Speed: 77.937 samples/sec, ObjLoss=31.431, BoxCenterLoss=15.391, BoxScaleLoss=7.029, ClassLoss=19.473
+[Epoch 6][Batch 2899], LR: 1.00E-04, Speed: 41.888 samples/sec, ObjLoss=31.425, BoxCenterLoss=15.392, BoxScaleLoss=7.026, ClassLoss=19.464
+[Epoch 6][Batch 2999], LR: 1.00E-04, Speed: 24.180 samples/sec, ObjLoss=31.414, BoxCenterLoss=15.391, BoxScaleLoss=7.023, ClassLoss=19.453
+[Epoch 6][Batch 3099], LR: 1.00E-04, Speed: 23.561 samples/sec, ObjLoss=31.404, BoxCenterLoss=15.390, BoxScaleLoss=7.019, ClassLoss=19.443
+[Epoch 6][Batch 3199], LR: 1.00E-04, Speed: 35.707 samples/sec, ObjLoss=31.394, BoxCenterLoss=15.389, BoxScaleLoss=7.016, ClassLoss=19.434
+[Epoch 6][Batch 3299], LR: 1.00E-04, Speed: 9.466 samples/sec, ObjLoss=31.381, BoxCenterLoss=15.388, BoxScaleLoss=7.013, ClassLoss=19.424
+[Epoch 6][Batch 3399], LR: 1.00E-04, Speed: 22.857 samples/sec, ObjLoss=31.369, BoxCenterLoss=15.386, BoxScaleLoss=7.009, ClassLoss=19.413
+[Epoch 6][Batch 3499], LR: 1.00E-04, Speed: 12.537 samples/sec, ObjLoss=31.358, BoxCenterLoss=15.385, BoxScaleLoss=7.006, ClassLoss=19.403
+[Epoch 6][Batch 3599], LR: 1.00E-04, Speed: 24.938 samples/sec, ObjLoss=31.346, BoxCenterLoss=15.383, BoxScaleLoss=7.003, ClassLoss=19.393
+[Epoch 6][Batch 3699], LR: 1.00E-04, Speed: 35.257 samples/sec, ObjLoss=31.336, BoxCenterLoss=15.383, BoxScaleLoss=7.000, ClassLoss=19.383
+[Epoch 6][Batch 3799], LR: 1.00E-04, Speed: 18.162 samples/sec, ObjLoss=31.326, BoxCenterLoss=15.383, BoxScaleLoss=6.997, ClassLoss=19.372
+[Epoch 6][Batch 3899], LR: 1.00E-04, Speed: 6.807 samples/sec, ObjLoss=31.316, BoxCenterLoss=15.382, BoxScaleLoss=6.994, ClassLoss=19.363
+[Epoch 6][Batch 3999], LR: 1.00E-04, Speed: 14.064 samples/sec, ObjLoss=31.304, BoxCenterLoss=15.381, BoxScaleLoss=6.991, ClassLoss=19.353
+[Epoch 6][Batch 4099], LR: 1.00E-04, Speed: 25.235 samples/sec, ObjLoss=31.294, BoxCenterLoss=15.379, BoxScaleLoss=6.988, ClassLoss=19.343
+[Epoch 6][Batch 4199], LR: 1.00E-04, Speed: 64.304 samples/sec, ObjLoss=31.285, BoxCenterLoss=15.380, BoxScaleLoss=6.986, ClassLoss=19.335
+[Epoch 6][Batch 4299], LR: 1.00E-04, Speed: 32.033 samples/sec, ObjLoss=31.277, BoxCenterLoss=15.381, BoxScaleLoss=6.984, ClassLoss=19.326
+[Epoch 6][Batch 4399], LR: 1.00E-04, Speed: 30.270 samples/sec, ObjLoss=31.266, BoxCenterLoss=15.380, BoxScaleLoss=6.982, ClassLoss=19.318
+[Epoch 6][Batch 4499], LR: 1.00E-04, Speed: 34.997 samples/sec, ObjLoss=31.257, BoxCenterLoss=15.381, BoxScaleLoss=6.979, ClassLoss=19.308
+[Epoch 6][Batch 4599], LR: 1.00E-04, Speed: 7.075 samples/sec, ObjLoss=31.247, BoxCenterLoss=15.380, BoxScaleLoss=6.976, ClassLoss=19.300
+[Epoch 6][Batch 4699], LR: 1.00E-04, Speed: 33.766 samples/sec, ObjLoss=31.238, BoxCenterLoss=15.380, BoxScaleLoss=6.973, ClassLoss=19.290
+[Epoch 6][Batch 4799], LR: 1.00E-04, Speed: 9.099 samples/sec, ObjLoss=31.230, BoxCenterLoss=15.380, BoxScaleLoss=6.970, ClassLoss=19.280
+[Epoch 6][Batch 4899], LR: 1.00E-04, Speed: 13.692 samples/sec, ObjLoss=31.217, BoxCenterLoss=15.378, BoxScaleLoss=6.967, ClassLoss=19.270
+[Epoch 6][Batch 4999], LR: 1.00E-04, Speed: 11.159 samples/sec, ObjLoss=31.208, BoxCenterLoss=15.379, BoxScaleLoss=6.965, ClassLoss=19.261
+[Epoch 6][Batch 5099], LR: 1.00E-04, Speed: 32.607 samples/sec, ObjLoss=31.198, BoxCenterLoss=15.378, BoxScaleLoss=6.962, ClassLoss=19.253
+[Epoch 6][Batch 5199], LR: 1.00E-04, Speed: 47.692 samples/sec, ObjLoss=31.189, BoxCenterLoss=15.378, BoxScaleLoss=6.959, ClassLoss=19.244
+[Epoch 6][Batch 5299], LR: 1.00E-04, Speed: 16.147 samples/sec, ObjLoss=31.180, BoxCenterLoss=15.378, BoxScaleLoss=6.957, ClassLoss=19.236
+[Epoch 6][Batch 5399], LR: 1.00E-04, Speed: 31.520 samples/sec, ObjLoss=31.169, BoxCenterLoss=15.376, BoxScaleLoss=6.953, ClassLoss=19.225
+[Epoch 6][Batch 5499], LR: 1.00E-04, Speed: 26.827 samples/sec, ObjLoss=31.159, BoxCenterLoss=15.376, BoxScaleLoss=6.951, ClassLoss=19.217
+[Epoch 6][Batch 5599], LR: 1.00E-04, Speed: 55.457 samples/sec, ObjLoss=31.150, BoxCenterLoss=15.376, BoxScaleLoss=6.948, ClassLoss=19.208
+[Epoch 6][Batch 5699], LR: 1.00E-04, Speed: 42.940 samples/sec, ObjLoss=31.142, BoxCenterLoss=15.376, BoxScaleLoss=6.946, ClassLoss=19.200
+[Epoch 6][Batch 5799], LR: 1.00E-04, Speed: 25.263 samples/sec, ObjLoss=31.131, BoxCenterLoss=15.375, BoxScaleLoss=6.943, ClassLoss=19.189
+[Epoch 6][Batch 5899], LR: 1.00E-04, Speed: 32.535 samples/sec, ObjLoss=31.122, BoxCenterLoss=15.375, BoxScaleLoss=6.940, ClassLoss=19.181
+[Epoch 6][Batch 5999], LR: 1.00E-04, Speed: 39.253 samples/sec, ObjLoss=31.113, BoxCenterLoss=15.374, BoxScaleLoss=6.937, ClassLoss=19.172
+[Epoch 6][Batch 6099], LR: 1.00E-04, Speed: 29.468 samples/sec, ObjLoss=31.103, BoxCenterLoss=15.374, BoxScaleLoss=6.934, ClassLoss=19.164
+[Epoch 6][Batch 6199], LR: 1.00E-04, Speed: 8.657 samples/sec, ObjLoss=31.092, BoxCenterLoss=15.372, BoxScaleLoss=6.931, ClassLoss=19.154
+[Epoch 6][Batch 6299], LR: 1.00E-04, Speed: 5.041 samples/sec, ObjLoss=31.082, BoxCenterLoss=15.371, BoxScaleLoss=6.929, ClassLoss=19.145
+[Epoch 6][Batch 6399], LR: 1.00E-04, Speed: 12.164 samples/sec, ObjLoss=31.074, BoxCenterLoss=15.371, BoxScaleLoss=6.926, ClassLoss=19.136
+[Epoch 6][Batch 6499], LR: 1.00E-04, Speed: 22.562 samples/sec, ObjLoss=31.066, BoxCenterLoss=15.371, BoxScaleLoss=6.923, ClassLoss=19.128
+[Epoch 6][Batch 6599], LR: 1.00E-04, Speed: 33.573 samples/sec, ObjLoss=31.058, BoxCenterLoss=15.372, BoxScaleLoss=6.921, ClassLoss=19.121
+[Epoch 6][Batch 6699], LR: 1.00E-04, Speed: 20.700 samples/sec, ObjLoss=31.047, BoxCenterLoss=15.370, BoxScaleLoss=6.918, ClassLoss=19.111
+[Epoch 6][Batch 6799], LR: 1.00E-04, Speed: 22.812 samples/sec, ObjLoss=31.036, BoxCenterLoss=15.369, BoxScaleLoss=6.915, ClassLoss=19.102
+[Epoch 6][Batch 6899], LR: 1.00E-04, Speed: 18.043 samples/sec, ObjLoss=31.028, BoxCenterLoss=15.369, BoxScaleLoss=6.913, ClassLoss=19.094
+[Epoch 6][Batch 6999], LR: 1.00E-04, Speed: 24.136 samples/sec, ObjLoss=31.017, BoxCenterLoss=15.368, BoxScaleLoss=6.910, ClassLoss=19.083
+[Epoch 6][Batch 7099], LR: 1.00E-04, Speed: 26.841 samples/sec, ObjLoss=31.008, BoxCenterLoss=15.367, BoxScaleLoss=6.907, ClassLoss=19.074
+[Epoch 6][Batch 7199], LR: 1.00E-04, Speed: 22.654 samples/sec, ObjLoss=30.997, BoxCenterLoss=15.366, BoxScaleLoss=6.904, ClassLoss=19.064
+[Epoch 6][Batch 7299], LR: 1.00E-04, Speed: 32.914 samples/sec, ObjLoss=30.989, BoxCenterLoss=15.366, BoxScaleLoss=6.902, ClassLoss=19.056
+[Epoch 6][Batch 7399], LR: 1.00E-04, Speed: 24.337 samples/sec, ObjLoss=30.980, BoxCenterLoss=15.366, BoxScaleLoss=6.900, ClassLoss=19.048
+[Epoch 6][Batch 7499], LR: 1.00E-04, Speed: 26.813 samples/sec, ObjLoss=30.971, BoxCenterLoss=15.365, BoxScaleLoss=6.897, ClassLoss=19.038
+[Epoch 6][Batch 7599], LR: 1.00E-04, Speed: 24.325 samples/sec, ObjLoss=30.961, BoxCenterLoss=15.364, BoxScaleLoss=6.894, ClassLoss=19.030
+[Epoch 6][Batch 7699], LR: 1.00E-04, Speed: 30.883 samples/sec, ObjLoss=30.953, BoxCenterLoss=15.365, BoxScaleLoss=6.892, ClassLoss=19.022
+[Epoch 6][Batch 7799], LR: 1.00E-04, Speed: 26.716 samples/sec, ObjLoss=30.942, BoxCenterLoss=15.363, BoxScaleLoss=6.889, ClassLoss=19.013
+[Epoch 6][Batch 7899], LR: 1.00E-04, Speed: 24.074 samples/sec, ObjLoss=30.934, BoxCenterLoss=15.363, BoxScaleLoss=6.886, ClassLoss=19.004
+[Epoch 6][Batch 7999], LR: 1.00E-04, Speed: 43.129 samples/sec, ObjLoss=30.926, BoxCenterLoss=15.363, BoxScaleLoss=6.884, ClassLoss=18.996
+[Epoch 6][Batch 8099], LR: 1.00E-04, Speed: 54.400 samples/sec, ObjLoss=30.915, BoxCenterLoss=15.362, BoxScaleLoss=6.881, ClassLoss=18.987
+[Epoch 6][Batch 8199], LR: 1.00E-04, Speed: 47.835 samples/sec, ObjLoss=30.905, BoxCenterLoss=15.360, BoxScaleLoss=6.878, ClassLoss=18.977
+[Epoch 6][Batch 8299], LR: 1.00E-04, Speed: 9.761 samples/sec, ObjLoss=30.897, BoxCenterLoss=15.360, BoxScaleLoss=6.875, ClassLoss=18.970
+[Epoch 6][Batch 8399], LR: 1.00E-04, Speed: 63.300 samples/sec, ObjLoss=30.886, BoxCenterLoss=15.359, BoxScaleLoss=6.873, ClassLoss=18.961
+[Epoch 6][Batch 8499], LR: 1.00E-04, Speed: 7.681 samples/sec, ObjLoss=30.876, BoxCenterLoss=15.358, BoxScaleLoss=6.869, ClassLoss=18.953
+[Epoch 6][Batch 8599], LR: 1.00E-04, Speed: 29.253 samples/sec, ObjLoss=30.866, BoxCenterLoss=15.357, BoxScaleLoss=6.866, ClassLoss=18.944
+[Epoch 6][Batch 8699], LR: 1.00E-04, Speed: 5.717 samples/sec, ObjLoss=30.856, BoxCenterLoss=15.356, BoxScaleLoss=6.864, ClassLoss=18.937
+[Epoch 6][Batch 8799], LR: 1.00E-04, Speed: 37.107 samples/sec, ObjLoss=30.846, BoxCenterLoss=15.356, BoxScaleLoss=6.862, ClassLoss=18.928
+[Epoch 6][Batch 8899], LR: 1.00E-04, Speed: 43.629 samples/sec, ObjLoss=30.838, BoxCenterLoss=15.356, BoxScaleLoss=6.859, ClassLoss=18.920
+[Epoch 6][Batch 8999], LR: 1.00E-04, Speed: 21.634 samples/sec, ObjLoss=30.832, BoxCenterLoss=15.357, BoxScaleLoss=6.857, ClassLoss=18.913
+[Epoch 6][Batch 9099], LR: 1.00E-04, Speed: 33.696 samples/sec, ObjLoss=30.823, BoxCenterLoss=15.356, BoxScaleLoss=6.855, ClassLoss=18.904
+[Epoch 6][Batch 9199], LR: 1.00E-04, Speed: 43.544 samples/sec, ObjLoss=30.815, BoxCenterLoss=15.355, BoxScaleLoss=6.851, ClassLoss=18.895
+[Epoch 6][Batch 9299], LR: 1.00E-04, Speed: 59.389 samples/sec, ObjLoss=30.810, BoxCenterLoss=15.357, BoxScaleLoss=6.850, ClassLoss=18.888
+[Epoch 6][Batch 9399], LR: 1.00E-04, Speed: 28.089 samples/sec, ObjLoss=30.801, BoxCenterLoss=15.356, BoxScaleLoss=6.847, ClassLoss=18.879
+[Epoch 6][Batch 9499], LR: 1.00E-04, Speed: 25.608 samples/sec, ObjLoss=30.793, BoxCenterLoss=15.356, BoxScaleLoss=6.845, ClassLoss=18.872
+[Epoch 6][Batch 9599], LR: 1.00E-04, Speed: 34.715 samples/sec, ObjLoss=30.783, BoxCenterLoss=15.355, BoxScaleLoss=6.842, ClassLoss=18.864
+[Epoch 6][Batch 9699], LR: 1.00E-04, Speed: 46.535 samples/sec, ObjLoss=30.776, BoxCenterLoss=15.354, BoxScaleLoss=6.840, ClassLoss=18.856
+[Epoch 6][Batch 9799], LR: 1.00E-04, Speed: 28.273 samples/sec, ObjLoss=30.764, BoxCenterLoss=15.353, BoxScaleLoss=6.837, ClassLoss=18.847
+[Epoch 6][Batch 9899], LR: 1.00E-04, Speed: 10.884 samples/sec, ObjLoss=30.756, BoxCenterLoss=15.353, BoxScaleLoss=6.835, ClassLoss=18.840
+[Epoch 6][Batch 9999], LR: 1.00E-04, Speed: 35.045 samples/sec, ObjLoss=30.746, BoxCenterLoss=15.352, BoxScaleLoss=6.832, ClassLoss=18.832
+[Epoch 6][Batch 10099], LR: 1.00E-04, Speed: 44.859 samples/sec, ObjLoss=30.736, BoxCenterLoss=15.351, BoxScaleLoss=6.830, ClassLoss=18.824
+[Epoch 6][Batch 10199], LR: 1.00E-04, Speed: 44.026 samples/sec, ObjLoss=30.727, BoxCenterLoss=15.350, BoxScaleLoss=6.827, ClassLoss=18.814
+[Epoch 6] Training cost: 4992.732, ObjLoss=30.722, BoxCenterLoss=15.350, BoxScaleLoss=6.826, ClassLoss=18.809
+[Epoch 6] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.083
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.180
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.066
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.020
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.074
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.120
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.107
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.149
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.152
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.039
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.133
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.225
+person=24.5
+bicycle=5.8
+car=12.1
+motorcycle=15.0
+airplane=20.5
+bus=30.1
+train=28.9
+truck=9.5
+boat=3.1
+traffic light=4.9
+fire hydrant=17.4
+stop sign=27.8
+parking meter=3.1
+bench=3.1
+bird=3.3
+cat=20.5
+dog=8.8
+horse=13.0
+sheep=10.9
+cow=8.5
+elephant=22.6
+bear=17.0
+zebra=31.9
+giraffe=32.9
+backpack=0.2
+umbrella=7.1
+handbag=0.4
+tie=3.7
+suitcase=2.1
+frisbee=6.8
+skis=2.9
+snowboard=0.9
+sports ball=10.6
+kite=10.5
+baseball bat=1.4
+baseball glove=3.2
+skateboard=5.8
+surfboard=3.2
+tennis racket=6.6
+bottle=4.9
+wine glass=5.5
+cup=8.7
+fork=0.2
+knife=0.4
+spoon=0.3
+bowl=6.8
+banana=1.1
+apple=1.0
+sandwich=3.9
+orange=3.5
+broccoli=3.5
+carrot=0.4
+hot dog=0.7
+pizza=20.8
+donut=5.5
+cake=2.8
+chair=4.7
+couch=8.4
+potted plant=2.9
+bed=11.6
+dining table=8.7
+toilet=21.1
+tv=18.7
+laptop=12.8
+mouse=0.7
+remote=0.4
+keyboard=8.9
+cell phone=2.1
+microwave=5.1
+oven=3.4
+toaster=0.0
+sink=5.5
+refrigerator=7.4
+book=1.5
+clock=19.5
+vase=2.3
+scissors=0.0
+teddy bear=6.3
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=8.3
+[Epoch 7][Batch 99], LR: 1.00E-04, Speed: 46.896 samples/sec, ObjLoss=30.711, BoxCenterLoss=15.348, BoxScaleLoss=6.824, ClassLoss=18.800
+[Epoch 7][Batch 199], LR: 1.00E-04, Speed: 27.595 samples/sec, ObjLoss=30.704, BoxCenterLoss=15.349, BoxScaleLoss=6.822, ClassLoss=18.794
+[Epoch 7][Batch 299], LR: 1.00E-04, Speed: 23.610 samples/sec, ObjLoss=30.699, BoxCenterLoss=15.350, BoxScaleLoss=6.820, ClassLoss=18.787
+[Epoch 7][Batch 399], LR: 1.00E-04, Speed: 36.746 samples/sec, ObjLoss=30.689, BoxCenterLoss=15.349, BoxScaleLoss=6.817, ClassLoss=18.778
+[Epoch 7][Batch 499], LR: 1.00E-04, Speed: 44.363 samples/sec, ObjLoss=30.682, BoxCenterLoss=15.350, BoxScaleLoss=6.816, ClassLoss=18.771
+[Epoch 7][Batch 599], LR: 1.00E-04, Speed: 27.953 samples/sec, ObjLoss=30.672, BoxCenterLoss=15.349, BoxScaleLoss=6.814, ClassLoss=18.763
+[Epoch 7][Batch 699], LR: 1.00E-04, Speed: 57.483 samples/sec, ObjLoss=30.662, BoxCenterLoss=15.348, BoxScaleLoss=6.811, ClassLoss=18.755
+[Epoch 7][Batch 799], LR: 1.00E-04, Speed: 39.453 samples/sec, ObjLoss=30.655, BoxCenterLoss=15.348, BoxScaleLoss=6.808, ClassLoss=18.746
+[Epoch 7][Batch 899], LR: 1.00E-04, Speed: 38.714 samples/sec, ObjLoss=30.648, BoxCenterLoss=15.348, BoxScaleLoss=6.806, ClassLoss=18.738
+[Epoch 7][Batch 999], LR: 1.00E-04, Speed: 20.658 samples/sec, ObjLoss=30.641, BoxCenterLoss=15.348, BoxScaleLoss=6.804, ClassLoss=18.731
+[Epoch 7][Batch 1099], LR: 1.00E-04, Speed: 57.143 samples/sec, ObjLoss=30.630, BoxCenterLoss=15.346, BoxScaleLoss=6.801, ClassLoss=18.722
+[Epoch 7][Batch 1199], LR: 1.00E-04, Speed: 22.455 samples/sec, ObjLoss=30.622, BoxCenterLoss=15.345, BoxScaleLoss=6.798, ClassLoss=18.714
+[Epoch 7][Batch 1299], LR: 1.00E-04, Speed: 6.925 samples/sec, ObjLoss=30.613, BoxCenterLoss=15.345, BoxScaleLoss=6.796, ClassLoss=18.706
+[Epoch 7][Batch 1399], LR: 1.00E-04, Speed: 62.807 samples/sec, ObjLoss=30.605, BoxCenterLoss=15.345, BoxScaleLoss=6.794, ClassLoss=18.699
+[Epoch 7][Batch 1499], LR: 1.00E-04, Speed: 25.477 samples/sec, ObjLoss=30.598, BoxCenterLoss=15.346, BoxScaleLoss=6.792, ClassLoss=18.692
+[Epoch 7][Batch 1599], LR: 1.00E-04, Speed: 24.325 samples/sec, ObjLoss=30.589, BoxCenterLoss=15.345, BoxScaleLoss=6.789, ClassLoss=18.684
+[Epoch 7][Batch 1699], LR: 1.00E-04, Speed: 25.173 samples/sec, ObjLoss=30.579, BoxCenterLoss=15.344, BoxScaleLoss=6.787, ClassLoss=18.676
+[Epoch 7][Batch 1799], LR: 1.00E-04, Speed: 34.701 samples/sec, ObjLoss=30.571, BoxCenterLoss=15.343, BoxScaleLoss=6.785, ClassLoss=18.668
+[Epoch 7][Batch 1899], LR: 1.00E-04, Speed: 35.403 samples/sec, ObjLoss=30.560, BoxCenterLoss=15.341, BoxScaleLoss=6.782, ClassLoss=18.659
+[Epoch 7][Batch 1999], LR: 1.00E-04, Speed: 63.826 samples/sec, ObjLoss=30.552, BoxCenterLoss=15.341, BoxScaleLoss=6.780, ClassLoss=18.651
+[Epoch 7][Batch 2099], LR: 1.00E-04, Speed: 49.619 samples/sec, ObjLoss=30.546, BoxCenterLoss=15.341, BoxScaleLoss=6.778, ClassLoss=18.644
+[Epoch 7][Batch 2199], LR: 1.00E-04, Speed: 27.974 samples/sec, ObjLoss=30.539, BoxCenterLoss=15.342, BoxScaleLoss=6.775, ClassLoss=18.636
+[Epoch 7][Batch 2299], LR: 1.00E-04, Speed: 33.677 samples/sec, ObjLoss=30.530, BoxCenterLoss=15.341, BoxScaleLoss=6.773, ClassLoss=18.629
+[Epoch 7][Batch 2399], LR: 1.00E-04, Speed: 38.295 samples/sec, ObjLoss=30.521, BoxCenterLoss=15.340, BoxScaleLoss=6.771, ClassLoss=18.620
+[Epoch 7][Batch 2499], LR: 1.00E-04, Speed: 42.970 samples/sec, ObjLoss=30.512, BoxCenterLoss=15.339, BoxScaleLoss=6.769, ClassLoss=18.612
+[Epoch 7][Batch 2599], LR: 1.00E-04, Speed: 25.962 samples/sec, ObjLoss=30.504, BoxCenterLoss=15.338, BoxScaleLoss=6.766, ClassLoss=18.604
+[Epoch 7][Batch 2699], LR: 1.00E-04, Speed: 44.383 samples/sec, ObjLoss=30.494, BoxCenterLoss=15.337, BoxScaleLoss=6.764, ClassLoss=18.595
+[Epoch 7][Batch 2799], LR: 1.00E-04, Speed: 24.114 samples/sec, ObjLoss=30.485, BoxCenterLoss=15.337, BoxScaleLoss=6.761, ClassLoss=18.587
+[Epoch 7][Batch 2899], LR: 1.00E-04, Speed: 11.568 samples/sec, ObjLoss=30.479, BoxCenterLoss=15.338, BoxScaleLoss=6.759, ClassLoss=18.580
+[Epoch 7][Batch 2999], LR: 1.00E-04, Speed: 24.400 samples/sec, ObjLoss=30.472, BoxCenterLoss=15.338, BoxScaleLoss=6.757, ClassLoss=18.573
+[Epoch 7][Batch 3099], LR: 1.00E-04, Speed: 45.231 samples/sec, ObjLoss=30.462, BoxCenterLoss=15.336, BoxScaleLoss=6.755, ClassLoss=18.565
+[Epoch 7][Batch 3199], LR: 1.00E-04, Speed: 31.478 samples/sec, ObjLoss=30.451, BoxCenterLoss=15.334, BoxScaleLoss=6.752, ClassLoss=18.556
+[Epoch 7][Batch 3299], LR: 1.00E-04, Speed: 31.135 samples/sec, ObjLoss=30.443, BoxCenterLoss=15.333, BoxScaleLoss=6.749, ClassLoss=18.549
+[Epoch 7][Batch 3399], LR: 1.00E-04, Speed: 37.727 samples/sec, ObjLoss=30.433, BoxCenterLoss=15.331, BoxScaleLoss=6.747, ClassLoss=18.540
+[Epoch 7][Batch 3499], LR: 1.00E-04, Speed: 68.548 samples/sec, ObjLoss=30.423, BoxCenterLoss=15.329, BoxScaleLoss=6.743, ClassLoss=18.531
+[Epoch 7][Batch 3599], LR: 1.00E-04, Speed: 47.563 samples/sec, ObjLoss=30.417, BoxCenterLoss=15.330, BoxScaleLoss=6.741, ClassLoss=18.524
+[Epoch 7][Batch 3699], LR: 1.00E-04, Speed: 12.870 samples/sec, ObjLoss=30.408, BoxCenterLoss=15.329, BoxScaleLoss=6.739, ClassLoss=18.516
+[Epoch 7][Batch 3799], LR: 1.00E-04, Speed: 15.395 samples/sec, ObjLoss=30.400, BoxCenterLoss=15.329, BoxScaleLoss=6.737, ClassLoss=18.509
+[Epoch 7][Batch 3899], LR: 1.00E-04, Speed: 24.748 samples/sec, ObjLoss=30.395, BoxCenterLoss=15.329, BoxScaleLoss=6.735, ClassLoss=18.502
+[Epoch 7][Batch 3999], LR: 1.00E-04, Speed: 34.485 samples/sec, ObjLoss=30.387, BoxCenterLoss=15.329, BoxScaleLoss=6.732, ClassLoss=18.494
+[Epoch 7][Batch 4099], LR: 1.00E-04, Speed: 51.063 samples/sec, ObjLoss=30.378, BoxCenterLoss=15.328, BoxScaleLoss=6.730, ClassLoss=18.485
+[Epoch 7][Batch 4199], LR: 1.00E-04, Speed: 59.601 samples/sec, ObjLoss=30.370, BoxCenterLoss=15.328, BoxScaleLoss=6.729, ClassLoss=18.478
+[Epoch 7][Batch 4299], LR: 1.00E-04, Speed: 23.295 samples/sec, ObjLoss=30.363, BoxCenterLoss=15.327, BoxScaleLoss=6.726, ClassLoss=18.470
+[Epoch 7][Batch 4399], LR: 1.00E-04, Speed: 21.056 samples/sec, ObjLoss=30.354, BoxCenterLoss=15.325, BoxScaleLoss=6.724, ClassLoss=18.462
+[Epoch 7][Batch 4499], LR: 1.00E-04, Speed: 32.089 samples/sec, ObjLoss=30.346, BoxCenterLoss=15.325, BoxScaleLoss=6.722, ClassLoss=18.455
+[Epoch 7][Batch 4599], LR: 1.00E-04, Speed: 24.686 samples/sec, ObjLoss=30.340, BoxCenterLoss=15.325, BoxScaleLoss=6.719, ClassLoss=18.448
+[Epoch 7][Batch 4699], LR: 1.00E-04, Speed: 29.219 samples/sec, ObjLoss=30.333, BoxCenterLoss=15.325, BoxScaleLoss=6.717, ClassLoss=18.441
+[Epoch 7][Batch 4799], LR: 1.00E-04, Speed: 9.105 samples/sec, ObjLoss=30.325, BoxCenterLoss=15.324, BoxScaleLoss=6.715, ClassLoss=18.434
+[Epoch 7][Batch 4899], LR: 1.00E-04, Speed: 36.260 samples/sec, ObjLoss=30.317, BoxCenterLoss=15.323, BoxScaleLoss=6.712, ClassLoss=18.426
+[Epoch 7][Batch 4999], LR: 1.00E-04, Speed: 22.658 samples/sec, ObjLoss=30.311, BoxCenterLoss=15.323, BoxScaleLoss=6.710, ClassLoss=18.419
+[Epoch 7][Batch 5099], LR: 1.00E-04, Speed: 56.887 samples/sec, ObjLoss=30.302, BoxCenterLoss=15.322, BoxScaleLoss=6.708, ClassLoss=18.411
+[Epoch 7][Batch 5199], LR: 1.00E-04, Speed: 50.541 samples/sec, ObjLoss=30.295, BoxCenterLoss=15.322, BoxScaleLoss=6.706, ClassLoss=18.404
+[Epoch 7][Batch 5299], LR: 1.00E-04, Speed: 26.217 samples/sec, ObjLoss=30.288, BoxCenterLoss=15.322, BoxScaleLoss=6.704, ClassLoss=18.397
+[Epoch 7][Batch 5399], LR: 1.00E-04, Speed: 37.166 samples/sec, ObjLoss=30.282, BoxCenterLoss=15.323, BoxScaleLoss=6.702, ClassLoss=18.390
+[Epoch 7][Batch 5499], LR: 1.00E-04, Speed: 31.515 samples/sec, ObjLoss=30.274, BoxCenterLoss=15.322, BoxScaleLoss=6.700, ClassLoss=18.383
+[Epoch 7][Batch 5599], LR: 1.00E-04, Speed: 5.980 samples/sec, ObjLoss=30.266, BoxCenterLoss=15.321, BoxScaleLoss=6.698, ClassLoss=18.375
+[Epoch 7][Batch 5699], LR: 1.00E-04, Speed: 27.595 samples/sec, ObjLoss=30.259, BoxCenterLoss=15.321, BoxScaleLoss=6.696, ClassLoss=18.369
+[Epoch 7][Batch 5799], LR: 1.00E-04, Speed: 2.516 samples/sec, ObjLoss=30.252, BoxCenterLoss=15.321, BoxScaleLoss=6.695, ClassLoss=18.363
+[Epoch 7][Batch 5899], LR: 1.00E-04, Speed: 28.414 samples/sec, ObjLoss=30.246, BoxCenterLoss=15.321, BoxScaleLoss=6.692, ClassLoss=18.356
+[Epoch 7][Batch 5999], LR: 1.00E-04, Speed: 58.254 samples/sec, ObjLoss=30.239, BoxCenterLoss=15.321, BoxScaleLoss=6.691, ClassLoss=18.350
+[Epoch 7][Batch 6099], LR: 1.00E-04, Speed: 40.627 samples/sec, ObjLoss=30.230, BoxCenterLoss=15.320, BoxScaleLoss=6.688, ClassLoss=18.342
+[Epoch 7][Batch 6199], LR: 1.00E-04, Speed: 15.140 samples/sec, ObjLoss=30.223, BoxCenterLoss=15.320, BoxScaleLoss=6.686, ClassLoss=18.335
+[Epoch 7][Batch 6299], LR: 1.00E-04, Speed: 31.331 samples/sec, ObjLoss=30.215, BoxCenterLoss=15.319, BoxScaleLoss=6.684, ClassLoss=18.328
+[Epoch 7][Batch 6399], LR: 1.00E-04, Speed: 25.315 samples/sec, ObjLoss=30.208, BoxCenterLoss=15.318, BoxScaleLoss=6.682, ClassLoss=18.321
+[Epoch 7][Batch 6499], LR: 1.00E-04, Speed: 21.926 samples/sec, ObjLoss=30.200, BoxCenterLoss=15.318, BoxScaleLoss=6.680, ClassLoss=18.314
+[Epoch 7][Batch 6599], LR: 1.00E-04, Speed: 10.466 samples/sec, ObjLoss=30.192, BoxCenterLoss=15.317, BoxScaleLoss=6.678, ClassLoss=18.307
+[Epoch 7][Batch 6699], LR: 1.00E-04, Speed: 30.236 samples/sec, ObjLoss=30.185, BoxCenterLoss=15.317, BoxScaleLoss=6.675, ClassLoss=18.300
+[Epoch 7][Batch 6799], LR: 1.00E-04, Speed: 24.643 samples/sec, ObjLoss=30.179, BoxCenterLoss=15.317, BoxScaleLoss=6.673, ClassLoss=18.293
+[Epoch 7][Batch 6899], LR: 1.00E-04, Speed: 28.694 samples/sec, ObjLoss=30.172, BoxCenterLoss=15.316, BoxScaleLoss=6.671, ClassLoss=18.287
+[Epoch 7][Batch 6999], LR: 1.00E-04, Speed: 26.222 samples/sec, ObjLoss=30.166, BoxCenterLoss=15.316, BoxScaleLoss=6.669, ClassLoss=18.281
+[Epoch 7][Batch 7099], LR: 1.00E-04, Speed: 4.954 samples/sec, ObjLoss=30.159, BoxCenterLoss=15.316, BoxScaleLoss=6.667, ClassLoss=18.273
+[Epoch 7][Batch 7199], LR: 1.00E-04, Speed: 26.520 samples/sec, ObjLoss=30.151, BoxCenterLoss=15.316, BoxScaleLoss=6.665, ClassLoss=18.266
+[Epoch 7][Batch 7299], LR: 1.00E-04, Speed: 29.585 samples/sec, ObjLoss=30.144, BoxCenterLoss=15.315, BoxScaleLoss=6.663, ClassLoss=18.259
+[Epoch 7][Batch 7399], LR: 1.00E-04, Speed: 36.662 samples/sec, ObjLoss=30.137, BoxCenterLoss=15.315, BoxScaleLoss=6.661, ClassLoss=18.252
+[Epoch 7][Batch 7499], LR: 1.00E-04, Speed: 48.438 samples/sec, ObjLoss=30.131, BoxCenterLoss=15.315, BoxScaleLoss=6.659, ClassLoss=18.246
+[Epoch 7][Batch 7599], LR: 1.00E-04, Speed: 69.245 samples/sec, ObjLoss=30.123, BoxCenterLoss=15.314, BoxScaleLoss=6.657, ClassLoss=18.239
+[Epoch 7][Batch 7699], LR: 1.00E-04, Speed: 68.960 samples/sec, ObjLoss=30.117, BoxCenterLoss=15.315, BoxScaleLoss=6.656, ClassLoss=18.233
+[Epoch 7][Batch 7799], LR: 1.00E-04, Speed: 6.089 samples/sec, ObjLoss=30.111, BoxCenterLoss=15.315, BoxScaleLoss=6.654, ClassLoss=18.227
+[Epoch 7][Batch 7899], LR: 1.00E-04, Speed: 17.738 samples/sec, ObjLoss=30.103, BoxCenterLoss=15.314, BoxScaleLoss=6.652, ClassLoss=18.221
+[Epoch 7][Batch 7999], LR: 1.00E-04, Speed: 26.237 samples/sec, ObjLoss=30.094, BoxCenterLoss=15.313, BoxScaleLoss=6.650, ClassLoss=18.213
+[Epoch 7][Batch 8099], LR: 1.00E-04, Speed: 21.908 samples/sec, ObjLoss=30.090, BoxCenterLoss=15.314, BoxScaleLoss=6.649, ClassLoss=18.206
+[Epoch 7][Batch 8199], LR: 1.00E-04, Speed: 61.407 samples/sec, ObjLoss=30.082, BoxCenterLoss=15.314, BoxScaleLoss=6.647, ClassLoss=18.199
+[Epoch 7][Batch 8299], LR: 1.00E-04, Speed: 24.499 samples/sec, ObjLoss=30.074, BoxCenterLoss=15.312, BoxScaleLoss=6.644, ClassLoss=18.193
+[Epoch 7][Batch 8399], LR: 1.00E-04, Speed: 23.485 samples/sec, ObjLoss=30.069, BoxCenterLoss=15.313, BoxScaleLoss=6.643, ClassLoss=18.187
+[Epoch 7][Batch 8499], LR: 1.00E-04, Speed: 8.938 samples/sec, ObjLoss=30.061, BoxCenterLoss=15.313, BoxScaleLoss=6.641, ClassLoss=18.180
+[Epoch 7][Batch 8599], LR: 1.00E-04, Speed: 29.072 samples/sec, ObjLoss=30.055, BoxCenterLoss=15.312, BoxScaleLoss=6.639, ClassLoss=18.173
+[Epoch 7][Batch 8699], LR: 1.00E-04, Speed: 29.805 samples/sec, ObjLoss=30.048, BoxCenterLoss=15.312, BoxScaleLoss=6.637, ClassLoss=18.165
+[Epoch 7][Batch 8799], LR: 1.00E-04, Speed: 3.675 samples/sec, ObjLoss=30.042, BoxCenterLoss=15.312, BoxScaleLoss=6.635, ClassLoss=18.159
+[Epoch 7][Batch 8899], LR: 1.00E-04, Speed: 12.134 samples/sec, ObjLoss=30.035, BoxCenterLoss=15.311, BoxScaleLoss=6.633, ClassLoss=18.152
+[Epoch 7][Batch 8999], LR: 1.00E-04, Speed: 43.938 samples/sec, ObjLoss=30.028, BoxCenterLoss=15.312, BoxScaleLoss=6.632, ClassLoss=18.146
+[Epoch 7][Batch 9099], LR: 1.00E-04, Speed: 22.410 samples/sec, ObjLoss=30.022, BoxCenterLoss=15.312, BoxScaleLoss=6.631, ClassLoss=18.141
+[Epoch 7][Batch 9199], LR: 1.00E-04, Speed: 47.237 samples/sec, ObjLoss=30.013, BoxCenterLoss=15.311, BoxScaleLoss=6.629, ClassLoss=18.133
+[Epoch 7][Batch 9299], LR: 1.00E-04, Speed: 35.197 samples/sec, ObjLoss=30.007, BoxCenterLoss=15.311, BoxScaleLoss=6.626, ClassLoss=18.126
+[Epoch 7][Batch 9399], LR: 1.00E-04, Speed: 24.945 samples/sec, ObjLoss=30.001, BoxCenterLoss=15.311, BoxScaleLoss=6.625, ClassLoss=18.119
+[Epoch 7][Batch 9499], LR: 1.00E-04, Speed: 26.392 samples/sec, ObjLoss=29.994, BoxCenterLoss=15.310, BoxScaleLoss=6.622, ClassLoss=18.112
+[Epoch 7][Batch 9599], LR: 1.00E-04, Speed: 9.786 samples/sec, ObjLoss=29.986, BoxCenterLoss=15.309, BoxScaleLoss=6.620, ClassLoss=18.106
+[Epoch 7][Batch 9699], LR: 1.00E-04, Speed: 55.957 samples/sec, ObjLoss=29.979, BoxCenterLoss=15.308, BoxScaleLoss=6.618, ClassLoss=18.100
+[Epoch 7][Batch 9799], LR: 1.00E-04, Speed: 32.887 samples/sec, ObjLoss=29.973, BoxCenterLoss=15.308, BoxScaleLoss=6.617, ClassLoss=18.093
+[Epoch 7][Batch 9899], LR: 1.00E-04, Speed: 28.594 samples/sec, ObjLoss=29.965, BoxCenterLoss=15.307, BoxScaleLoss=6.614, ClassLoss=18.086
+[Epoch 7][Batch 9999], LR: 1.00E-04, Speed: 31.490 samples/sec, ObjLoss=29.959, BoxCenterLoss=15.307, BoxScaleLoss=6.613, ClassLoss=18.079
+[Epoch 7][Batch 10099], LR: 1.00E-04, Speed: 40.008 samples/sec, ObjLoss=29.952, BoxCenterLoss=15.306, BoxScaleLoss=6.611, ClassLoss=18.073
+[Epoch 7][Batch 10199], LR: 1.00E-04, Speed: 38.776 samples/sec, ObjLoss=29.945, BoxCenterLoss=15.306, BoxScaleLoss=6.609, ClassLoss=18.067
+[Epoch 7] Training cost: 3861.116, ObjLoss=29.940, BoxCenterLoss=15.305, BoxScaleLoss=6.608, ClassLoss=18.063
+[Epoch 7] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.086
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.186
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.076
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.126
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.112
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.155
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.158
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.042
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.138
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.235
+person=24.9
+bicycle=6.3
+car=12.2
+motorcycle=16.1
+airplane=22.0
+bus=29.2
+train=27.8
+truck=9.9
+boat=4.0
+traffic light=5.5
+fire hydrant=18.3
+stop sign=27.4
+parking meter=3.5
+bench=3.6
+bird=3.2
+cat=16.4
+dog=9.1
+horse=14.4
+sheep=11.8
+cow=9.3
+elephant=23.6
+bear=14.6
+zebra=30.7
+giraffe=23.5
+backpack=0.4
+umbrella=7.9
+handbag=0.2
+tie=4.1
+suitcase=2.4
+frisbee=9.1
+skis=2.6
+snowboard=0.7
+sports ball=11.5
+kite=13.7
+baseball bat=1.6
+baseball glove=3.4
+skateboard=6.4
+surfboard=3.3
+tennis racket=8.5
+bottle=4.5
+wine glass=4.9
+cup=9.2
+fork=0.3
+knife=0.9
+spoon=0.3
+bowl=8.1
+banana=2.0
+apple=1.6
+sandwich=4.3
+orange=4.1
+broccoli=3.3
+carrot=0.4
+hot dog=1.0
+pizza=21.9
+donut=6.5
+cake=3.1
+chair=5.1
+couch=8.5
+potted plant=3.2
+bed=15.4
+dining table=12.9
+toilet=23.3
+tv=19.2
+laptop=11.2
+mouse=1.5
+remote=0.5
+keyboard=9.9
+cell phone=2.8
+microwave=4.3
+oven=4.1
+toaster=0.0
+sink=5.9
+refrigerator=7.5
+book=1.7
+clock=21.0
+vase=2.9
+scissors=0.7
+teddy bear=6.6
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=8.6
+[Epoch 8][Batch 99], LR: 1.00E-05, Speed: 14.856 samples/sec, ObjLoss=29.934, BoxCenterLoss=15.305, BoxScaleLoss=6.606, ClassLoss=18.056
+[Epoch 8][Batch 199], LR: 1.00E-05, Speed: 24.244 samples/sec, ObjLoss=29.927, BoxCenterLoss=15.304, BoxScaleLoss=6.603, ClassLoss=18.050
+[Epoch 8][Batch 299], LR: 1.00E-05, Speed: 36.559 samples/sec, ObjLoss=29.920, BoxCenterLoss=15.304, BoxScaleLoss=6.601, ClassLoss=18.043
+[Epoch 8][Batch 399], LR: 1.00E-05, Speed: 62.906 samples/sec, ObjLoss=29.911, BoxCenterLoss=15.303, BoxScaleLoss=6.599, ClassLoss=18.035
+[Epoch 8][Batch 499], LR: 1.00E-05, Speed: 33.867 samples/sec, ObjLoss=29.904, BoxCenterLoss=15.302, BoxScaleLoss=6.597, ClassLoss=18.030
+[Epoch 8][Batch 599], LR: 1.00E-05, Speed: 40.215 samples/sec, ObjLoss=29.897, BoxCenterLoss=15.302, BoxScaleLoss=6.595, ClassLoss=18.023
+[Epoch 8][Batch 699], LR: 1.00E-05, Speed: 22.390 samples/sec, ObjLoss=29.889, BoxCenterLoss=15.301, BoxScaleLoss=6.593, ClassLoss=18.016
+[Epoch 8][Batch 799], LR: 1.00E-05, Speed: 46.985 samples/sec, ObjLoss=29.882, BoxCenterLoss=15.301, BoxScaleLoss=6.592, ClassLoss=18.010
+[Epoch 8][Batch 899], LR: 1.00E-05, Speed: 20.047 samples/sec, ObjLoss=29.877, BoxCenterLoss=15.302, BoxScaleLoss=6.590, ClassLoss=18.004
+[Epoch 8][Batch 999], LR: 1.00E-05, Speed: 32.289 samples/sec, ObjLoss=29.871, BoxCenterLoss=15.302, BoxScaleLoss=6.589, ClassLoss=17.998
+[Epoch 8][Batch 1099], LR: 1.00E-05, Speed: 31.208 samples/sec, ObjLoss=29.863, BoxCenterLoss=15.301, BoxScaleLoss=6.586, ClassLoss=17.992
+[Epoch 8][Batch 1199], LR: 1.00E-05, Speed: 13.251 samples/sec, ObjLoss=29.859, BoxCenterLoss=15.302, BoxScaleLoss=6.585, ClassLoss=17.986
+[Epoch 8][Batch 1299], LR: 1.00E-05, Speed: 18.280 samples/sec, ObjLoss=29.851, BoxCenterLoss=15.302, BoxScaleLoss=6.583, ClassLoss=17.980
+[Epoch 8][Batch 1399], LR: 1.00E-05, Speed: 28.584 samples/sec, ObjLoss=29.845, BoxCenterLoss=15.302, BoxScaleLoss=6.581, ClassLoss=17.974
+[Epoch 8][Batch 1499], LR: 1.00E-05, Speed: 24.540 samples/sec, ObjLoss=29.837, BoxCenterLoss=15.301, BoxScaleLoss=6.579, ClassLoss=17.967
+[Epoch 8][Batch 1599], LR: 1.00E-05, Speed: 39.966 samples/sec, ObjLoss=29.830, BoxCenterLoss=15.300, BoxScaleLoss=6.577, ClassLoss=17.961
+[Epoch 8][Batch 1699], LR: 1.00E-05, Speed: 18.926 samples/sec, ObjLoss=29.825, BoxCenterLoss=15.301, BoxScaleLoss=6.575, ClassLoss=17.956
+[Epoch 8][Batch 1799], LR: 1.00E-05, Speed: 37.574 samples/sec, ObjLoss=29.820, BoxCenterLoss=15.301, BoxScaleLoss=6.573, ClassLoss=17.950
+[Epoch 8][Batch 1899], LR: 1.00E-05, Speed: 35.111 samples/sec, ObjLoss=29.813, BoxCenterLoss=15.301, BoxScaleLoss=6.571, ClassLoss=17.943
+[Epoch 8][Batch 1999], LR: 1.00E-05, Speed: 25.635 samples/sec, ObjLoss=29.806, BoxCenterLoss=15.301, BoxScaleLoss=6.569, ClassLoss=17.937
+[Epoch 8][Batch 2099], LR: 1.00E-05, Speed: 23.261 samples/sec, ObjLoss=29.799, BoxCenterLoss=15.300, BoxScaleLoss=6.567, ClassLoss=17.930
+[Epoch 8][Batch 2199], LR: 1.00E-05, Speed: 35.495 samples/sec, ObjLoss=29.794, BoxCenterLoss=15.300, BoxScaleLoss=6.565, ClassLoss=17.924
+[Epoch 8][Batch 2299], LR: 1.00E-05, Speed: 12.579 samples/sec, ObjLoss=29.788, BoxCenterLoss=15.300, BoxScaleLoss=6.563, ClassLoss=17.919
+[Epoch 8][Batch 2399], LR: 1.00E-05, Speed: 21.778 samples/sec, ObjLoss=29.780, BoxCenterLoss=15.299, BoxScaleLoss=6.561, ClassLoss=17.912
+[Epoch 8][Batch 2499], LR: 1.00E-05, Speed: 12.256 samples/sec, ObjLoss=29.772, BoxCenterLoss=15.298, BoxScaleLoss=6.559, ClassLoss=17.905
+[Epoch 8][Batch 2599], LR: 1.00E-05, Speed: 27.157 samples/sec, ObjLoss=29.766, BoxCenterLoss=15.298, BoxScaleLoss=6.557, ClassLoss=17.899
+[Epoch 8][Batch 2699], LR: 1.00E-05, Speed: 46.417 samples/sec, ObjLoss=29.760, BoxCenterLoss=15.298, BoxScaleLoss=6.556, ClassLoss=17.893
+[Epoch 8][Batch 2799], LR: 1.00E-05, Speed: 28.400 samples/sec, ObjLoss=29.753, BoxCenterLoss=15.298, BoxScaleLoss=6.554, ClassLoss=17.886
+[Epoch 8][Batch 2899], LR: 1.00E-05, Speed: 48.921 samples/sec, ObjLoss=29.745, BoxCenterLoss=15.297, BoxScaleLoss=6.552, ClassLoss=17.879
+[Epoch 8][Batch 2999], LR: 1.00E-05, Speed: 34.632 samples/sec, ObjLoss=29.739, BoxCenterLoss=15.296, BoxScaleLoss=6.549, ClassLoss=17.872
+[Epoch 8][Batch 3099], LR: 1.00E-05, Speed: 35.615 samples/sec, ObjLoss=29.734, BoxCenterLoss=15.296, BoxScaleLoss=6.547, ClassLoss=17.867
+[Epoch 8][Batch 3199], LR: 1.00E-05, Speed: 25.022 samples/sec, ObjLoss=29.730, BoxCenterLoss=15.297, BoxScaleLoss=6.546, ClassLoss=17.861
+[Epoch 8][Batch 3299], LR: 1.00E-05, Speed: 42.908 samples/sec, ObjLoss=29.723, BoxCenterLoss=15.296, BoxScaleLoss=6.543, ClassLoss=17.855
+[Epoch 8][Batch 3399], LR: 1.00E-05, Speed: 25.183 samples/sec, ObjLoss=29.717, BoxCenterLoss=15.295, BoxScaleLoss=6.541, ClassLoss=17.849
+[Epoch 8][Batch 3499], LR: 1.00E-05, Speed: 35.232 samples/sec, ObjLoss=29.711, BoxCenterLoss=15.295, BoxScaleLoss=6.539, ClassLoss=17.843
+[Epoch 8][Batch 3599], LR: 1.00E-05, Speed: 22.025 samples/sec, ObjLoss=29.703, BoxCenterLoss=15.294, BoxScaleLoss=6.537, ClassLoss=17.836
+[Epoch 8][Batch 3699], LR: 1.00E-05, Speed: 20.868 samples/sec, ObjLoss=29.696, BoxCenterLoss=15.294, BoxScaleLoss=6.535, ClassLoss=17.829
+[Epoch 8][Batch 3799], LR: 1.00E-05, Speed: 47.486 samples/sec, ObjLoss=29.690, BoxCenterLoss=15.293, BoxScaleLoss=6.533, ClassLoss=17.822
+[Epoch 8][Batch 3899], LR: 1.00E-05, Speed: 31.399 samples/sec, ObjLoss=29.683, BoxCenterLoss=15.292, BoxScaleLoss=6.530, ClassLoss=17.816
+[Epoch 8][Batch 3999], LR: 1.00E-05, Speed: 38.744 samples/sec, ObjLoss=29.676, BoxCenterLoss=15.292, BoxScaleLoss=6.529, ClassLoss=17.810
+[Epoch 8][Batch 4099], LR: 1.00E-05, Speed: 23.126 samples/sec, ObjLoss=29.668, BoxCenterLoss=15.291, BoxScaleLoss=6.526, ClassLoss=17.803
+[Epoch 8][Batch 4199], LR: 1.00E-05, Speed: 27.668 samples/sec, ObjLoss=29.660, BoxCenterLoss=15.290, BoxScaleLoss=6.525, ClassLoss=17.798
+[Epoch 8][Batch 4299], LR: 1.00E-05, Speed: 39.640 samples/sec, ObjLoss=29.655, BoxCenterLoss=15.290, BoxScaleLoss=6.523, ClassLoss=17.792
+[Epoch 8][Batch 4399], LR: 1.00E-05, Speed: 20.312 samples/sec, ObjLoss=29.648, BoxCenterLoss=15.289, BoxScaleLoss=6.521, ClassLoss=17.786
+[Epoch 8][Batch 4499], LR: 1.00E-05, Speed: 64.947 samples/sec, ObjLoss=29.641, BoxCenterLoss=15.288, BoxScaleLoss=6.519, ClassLoss=17.779
+[Epoch 8][Batch 4599], LR: 1.00E-05, Speed: 38.769 samples/sec, ObjLoss=29.634, BoxCenterLoss=15.288, BoxScaleLoss=6.517, ClassLoss=17.773
+[Epoch 8][Batch 4699], LR: 1.00E-05, Speed: 31.817 samples/sec, ObjLoss=29.630, BoxCenterLoss=15.288, BoxScaleLoss=6.515, ClassLoss=17.767
+[Epoch 8][Batch 4799], LR: 1.00E-05, Speed: 27.543 samples/sec, ObjLoss=29.625, BoxCenterLoss=15.288, BoxScaleLoss=6.513, ClassLoss=17.761
+[Epoch 8][Batch 4899], LR: 1.00E-05, Speed: 20.736 samples/sec, ObjLoss=29.620, BoxCenterLoss=15.288, BoxScaleLoss=6.511, ClassLoss=17.755
+[Epoch 8][Batch 4999], LR: 1.00E-05, Speed: 14.521 samples/sec, ObjLoss=29.613, BoxCenterLoss=15.287, BoxScaleLoss=6.509, ClassLoss=17.749
+[Epoch 8][Batch 5099], LR: 1.00E-05, Speed: 51.428 samples/sec, ObjLoss=29.609, BoxCenterLoss=15.288, BoxScaleLoss=6.507, ClassLoss=17.744
+[Epoch 8][Batch 5199], LR: 1.00E-05, Speed: 6.564 samples/sec, ObjLoss=29.603, BoxCenterLoss=15.288, BoxScaleLoss=6.505, ClassLoss=17.738
+[Epoch 8][Batch 5299], LR: 1.00E-05, Speed: 6.597 samples/sec, ObjLoss=29.597, BoxCenterLoss=15.288, BoxScaleLoss=6.504, ClassLoss=17.733
+[Epoch 8][Batch 5399], LR: 1.00E-05, Speed: 39.658 samples/sec, ObjLoss=29.592, BoxCenterLoss=15.289, BoxScaleLoss=6.503, ClassLoss=17.729
+[Epoch 8][Batch 5499], LR: 1.00E-05, Speed: 26.016 samples/sec, ObjLoss=29.585, BoxCenterLoss=15.288, BoxScaleLoss=6.501, ClassLoss=17.723
+[Epoch 8][Batch 5599], LR: 1.00E-05, Speed: 24.261 samples/sec, ObjLoss=29.580, BoxCenterLoss=15.288, BoxScaleLoss=6.499, ClassLoss=17.717
+[Epoch 8][Batch 5699], LR: 1.00E-05, Speed: 37.618 samples/sec, ObjLoss=29.572, BoxCenterLoss=15.287, BoxScaleLoss=6.497, ClassLoss=17.711
+[Epoch 8][Batch 5799], LR: 1.00E-05, Speed: 24.551 samples/sec, ObjLoss=29.566, BoxCenterLoss=15.286, BoxScaleLoss=6.495, ClassLoss=17.705
+[Epoch 8][Batch 5899], LR: 1.00E-05, Speed: 12.195 samples/sec, ObjLoss=29.557, BoxCenterLoss=15.285, BoxScaleLoss=6.493, ClassLoss=17.698
+[Epoch 8][Batch 5999], LR: 1.00E-05, Speed: 16.888 samples/sec, ObjLoss=29.551, BoxCenterLoss=15.285, BoxScaleLoss=6.491, ClassLoss=17.693
+[Epoch 8][Batch 6099], LR: 1.00E-05, Speed: 31.761 samples/sec, ObjLoss=29.545, BoxCenterLoss=15.285, BoxScaleLoss=6.490, ClassLoss=17.687
+[Epoch 8][Batch 6199], LR: 1.00E-05, Speed: 34.163 samples/sec, ObjLoss=29.541, BoxCenterLoss=15.286, BoxScaleLoss=6.488, ClassLoss=17.683
+[Epoch 8][Batch 6299], LR: 1.00E-05, Speed: 39.467 samples/sec, ObjLoss=29.536, BoxCenterLoss=15.286, BoxScaleLoss=6.487, ClassLoss=17.677
+[Epoch 8][Batch 6399], LR: 1.00E-05, Speed: 43.488 samples/sec, ObjLoss=29.529, BoxCenterLoss=15.285, BoxScaleLoss=6.485, ClassLoss=17.670
+[Epoch 8][Batch 6499], LR: 1.00E-05, Speed: 27.384 samples/sec, ObjLoss=29.522, BoxCenterLoss=15.285, BoxScaleLoss=6.483, ClassLoss=17.665
+[Epoch 8][Batch 6599], LR: 1.00E-05, Speed: 1.823 samples/sec, ObjLoss=29.516, BoxCenterLoss=15.284, BoxScaleLoss=6.482, ClassLoss=17.659
+[Epoch 8][Batch 6699], LR: 1.00E-05, Speed: 33.820 samples/sec, ObjLoss=29.510, BoxCenterLoss=15.285, BoxScaleLoss=6.480, ClassLoss=17.653
+[Epoch 8][Batch 6799], LR: 1.00E-05, Speed: 19.679 samples/sec, ObjLoss=29.503, BoxCenterLoss=15.283, BoxScaleLoss=6.478, ClassLoss=17.647
+[Epoch 8][Batch 6899], LR: 1.00E-05, Speed: 22.911 samples/sec, ObjLoss=29.497, BoxCenterLoss=15.283, BoxScaleLoss=6.476, ClassLoss=17.641
+[Epoch 8][Batch 6999], LR: 1.00E-05, Speed: 20.223 samples/sec, ObjLoss=29.491, BoxCenterLoss=15.283, BoxScaleLoss=6.474, ClassLoss=17.635
+[Epoch 8][Batch 7099], LR: 1.00E-05, Speed: 40.824 samples/sec, ObjLoss=29.484, BoxCenterLoss=15.282, BoxScaleLoss=6.472, ClassLoss=17.629
+[Epoch 8][Batch 7199], LR: 1.00E-05, Speed: 25.253 samples/sec, ObjLoss=29.478, BoxCenterLoss=15.282, BoxScaleLoss=6.470, ClassLoss=17.623
+[Epoch 8][Batch 7299], LR: 1.00E-05, Speed: 35.116 samples/sec, ObjLoss=29.473, BoxCenterLoss=15.282, BoxScaleLoss=6.469, ClassLoss=17.618
+[Epoch 8][Batch 7399], LR: 1.00E-05, Speed: 32.506 samples/sec, ObjLoss=29.467, BoxCenterLoss=15.282, BoxScaleLoss=6.467, ClassLoss=17.612
+[Epoch 8][Batch 7499], LR: 1.00E-05, Speed: 26.177 samples/sec, ObjLoss=29.460, BoxCenterLoss=15.281, BoxScaleLoss=6.465, ClassLoss=17.606
+[Epoch 8][Batch 7599], LR: 1.00E-05, Speed: 34.118 samples/sec, ObjLoss=29.453, BoxCenterLoss=15.280, BoxScaleLoss=6.463, ClassLoss=17.600
+[Epoch 8][Batch 7699], LR: 1.00E-05, Speed: 48.129 samples/sec, ObjLoss=29.447, BoxCenterLoss=15.280, BoxScaleLoss=6.462, ClassLoss=17.595
+[Epoch 8][Batch 7799], LR: 1.00E-05, Speed: 7.213 samples/sec, ObjLoss=29.441, BoxCenterLoss=15.280, BoxScaleLoss=6.461, ClassLoss=17.590
+[Epoch 8][Batch 7899], LR: 1.00E-05, Speed: 18.887 samples/sec, ObjLoss=29.437, BoxCenterLoss=15.281, BoxScaleLoss=6.459, ClassLoss=17.586
+[Epoch 8][Batch 7999], LR: 1.00E-05, Speed: 30.318 samples/sec, ObjLoss=29.431, BoxCenterLoss=15.281, BoxScaleLoss=6.458, ClassLoss=17.581
+[Epoch 8][Batch 8099], LR: 1.00E-05, Speed: 21.897 samples/sec, ObjLoss=29.426, BoxCenterLoss=15.281, BoxScaleLoss=6.457, ClassLoss=17.576
+[Epoch 8][Batch 8199], LR: 1.00E-05, Speed: 12.736 samples/sec, ObjLoss=29.419, BoxCenterLoss=15.280, BoxScaleLoss=6.454, ClassLoss=17.569
+[Epoch 8][Batch 8299], LR: 1.00E-05, Speed: 34.396 samples/sec, ObjLoss=29.412, BoxCenterLoss=15.278, BoxScaleLoss=6.452, ClassLoss=17.563
+[Epoch 8][Batch 8399], LR: 1.00E-05, Speed: 15.601 samples/sec, ObjLoss=29.408, BoxCenterLoss=15.279, BoxScaleLoss=6.450, ClassLoss=17.557
+[Epoch 8][Batch 8499], LR: 1.00E-05, Speed: 32.550 samples/sec, ObjLoss=29.403, BoxCenterLoss=15.279, BoxScaleLoss=6.449, ClassLoss=17.553
+[Epoch 8][Batch 8599], LR: 1.00E-05, Speed: 40.236 samples/sec, ObjLoss=29.395, BoxCenterLoss=15.278, BoxScaleLoss=6.447, ClassLoss=17.546
+[Epoch 8][Batch 8699], LR: 1.00E-05, Speed: 10.287 samples/sec, ObjLoss=29.388, BoxCenterLoss=15.277, BoxScaleLoss=6.445, ClassLoss=17.541
+[Epoch 8][Batch 8799], LR: 1.00E-05, Speed: 35.982 samples/sec, ObjLoss=29.383, BoxCenterLoss=15.277, BoxScaleLoss=6.444, ClassLoss=17.536
+[Epoch 8][Batch 8899], LR: 1.00E-05, Speed: 23.761 samples/sec, ObjLoss=29.377, BoxCenterLoss=15.277, BoxScaleLoss=6.442, ClassLoss=17.530
+[Epoch 8][Batch 8999], LR: 1.00E-05, Speed: 39.798 samples/sec, ObjLoss=29.370, BoxCenterLoss=15.276, BoxScaleLoss=6.440, ClassLoss=17.525
+[Epoch 8][Batch 9099], LR: 1.00E-05, Speed: 17.520 samples/sec, ObjLoss=29.364, BoxCenterLoss=15.275, BoxScaleLoss=6.439, ClassLoss=17.519
+[Epoch 8][Batch 9199], LR: 1.00E-05, Speed: 38.021 samples/sec, ObjLoss=29.358, BoxCenterLoss=15.275, BoxScaleLoss=6.437, ClassLoss=17.513
+[Epoch 8][Batch 9299], LR: 1.00E-05, Speed: 40.278 samples/sec, ObjLoss=29.353, BoxCenterLoss=15.275, BoxScaleLoss=6.436, ClassLoss=17.509
+[Epoch 8][Batch 9399], LR: 1.00E-05, Speed: 10.882 samples/sec, ObjLoss=29.346, BoxCenterLoss=15.274, BoxScaleLoss=6.434, ClassLoss=17.502
+[Epoch 8][Batch 9499], LR: 1.00E-05, Speed: 35.095 samples/sec, ObjLoss=29.340, BoxCenterLoss=15.274, BoxScaleLoss=6.432, ClassLoss=17.498
+[Epoch 8][Batch 9599], LR: 1.00E-05, Speed: 21.695 samples/sec, ObjLoss=29.334, BoxCenterLoss=15.273, BoxScaleLoss=6.431, ClassLoss=17.492
+[Epoch 8][Batch 9699], LR: 1.00E-05, Speed: 29.920 samples/sec, ObjLoss=29.329, BoxCenterLoss=15.274, BoxScaleLoss=6.429, ClassLoss=17.487
+[Epoch 8][Batch 9799], LR: 1.00E-05, Speed: 14.472 samples/sec, ObjLoss=29.323, BoxCenterLoss=15.273, BoxScaleLoss=6.428, ClassLoss=17.481
+[Epoch 8][Batch 9899], LR: 1.00E-05, Speed: 15.630 samples/sec, ObjLoss=29.318, BoxCenterLoss=15.273, BoxScaleLoss=6.426, ClassLoss=17.475
+[Epoch 8][Batch 9999], LR: 1.00E-05, Speed: 18.015 samples/sec, ObjLoss=29.311, BoxCenterLoss=15.271, BoxScaleLoss=6.424, ClassLoss=17.470
+[Epoch 8][Batch 10099], LR: 1.00E-05, Speed: 60.575 samples/sec, ObjLoss=29.304, BoxCenterLoss=15.270, BoxScaleLoss=6.422, ClassLoss=17.464
+[Epoch 8][Batch 10199], LR: 1.00E-05, Speed: 47.441 samples/sec, ObjLoss=29.299, BoxCenterLoss=15.271, BoxScaleLoss=6.420, ClassLoss=17.459
+[Epoch 8] Training cost: 4040.952, ObjLoss=29.295, BoxCenterLoss=15.270, BoxScaleLoss=6.419, ClassLoss=17.455
+[Epoch 8] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.097
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.195
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.087
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.086
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.121
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.167
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.171
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.045
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.152
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.251
+person=25.5
+bicycle=7.0
+car=14.3
+motorcycle=16.2
+airplane=23.5
+bus=32.6
+train=32.0
+truck=10.6
+boat=4.3
+traffic light=6.7
+fire hydrant=19.7
+stop sign=31.0
+parking meter=3.6
+bench=3.7
+bird=3.7
+cat=21.7
+dog=10.9
+horse=15.7
+sheep=13.9
+cow=10.7
+elephant=26.7
+bear=18.1
+zebra=36.9
+giraffe=35.5
+backpack=0.4
+umbrella=8.2
+handbag=0.4
+tie=5.0
+suitcase=2.7
+frisbee=8.9
+skis=3.6
+snowboard=1.4
+sports ball=12.1
+kite=14.4
+baseball bat=1.8
+baseball glove=3.8
+skateboard=6.9
+surfboard=3.9
+tennis racket=9.2
+bottle=5.2
+wine glass=5.7
+cup=10.0
+fork=0.5
+knife=0.9
+spoon=0.4
+bowl=8.6
+banana=1.8
+apple=1.7
+sandwich=4.9
+orange=4.4
+broccoli=4.3
+carrot=0.5
+hot dog=1.1
+pizza=23.8
+donut=7.1
+cake=3.5
+chair=5.3
+couch=9.5
+potted plant=3.2
+bed=14.4
+dining table=11.3
+toilet=25.6
+tv=20.9
+laptop=16.0
+mouse=1.9
+remote=0.4
+keyboard=10.2
+cell phone=2.9
+microwave=5.3
+oven=4.6
+toaster=0.0
+sink=7.6
+refrigerator=8.3
+book=2.1
+clock=22.5
+vase=3.0
+scissors=0.3
+teddy bear=7.5
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=9.7
+[Epoch 9][Batch 99], LR: 1.00E-05, Speed: 35.026 samples/sec, ObjLoss=29.291, BoxCenterLoss=15.271, BoxScaleLoss=6.418, ClassLoss=17.451
+[Epoch 9][Batch 199], LR: 1.00E-05, Speed: 28.192 samples/sec, ObjLoss=29.286, BoxCenterLoss=15.271, BoxScaleLoss=6.416, ClassLoss=17.446
+[Epoch 9][Batch 299], LR: 1.00E-05, Speed: 21.007 samples/sec, ObjLoss=29.278, BoxCenterLoss=15.269, BoxScaleLoss=6.414, ClassLoss=17.440
+[Epoch 9][Batch 399], LR: 1.00E-05, Speed: 37.841 samples/sec, ObjLoss=29.276, BoxCenterLoss=15.270, BoxScaleLoss=6.413, ClassLoss=17.436
+[Epoch 9][Batch 499], LR: 1.00E-05, Speed: 48.786 samples/sec, ObjLoss=29.269, BoxCenterLoss=15.269, BoxScaleLoss=6.411, ClassLoss=17.430
+[Epoch 9][Batch 599], LR: 1.00E-05, Speed: 5.223 samples/sec, ObjLoss=29.264, BoxCenterLoss=15.269, BoxScaleLoss=6.410, ClassLoss=17.425
+[Epoch 9][Batch 699], LR: 1.00E-05, Speed: 8.505 samples/sec, ObjLoss=29.259, BoxCenterLoss=15.269, BoxScaleLoss=6.408, ClassLoss=17.420
+[Epoch 9][Batch 799], LR: 1.00E-05, Speed: 32.280 samples/sec, ObjLoss=29.252, BoxCenterLoss=15.268, BoxScaleLoss=6.406, ClassLoss=17.415
+[Epoch 9][Batch 899], LR: 1.00E-05, Speed: 23.538 samples/sec, ObjLoss=29.246, BoxCenterLoss=15.267, BoxScaleLoss=6.405, ClassLoss=17.409
+[Epoch 9][Batch 999], LR: 1.00E-05, Speed: 15.826 samples/sec, ObjLoss=29.240, BoxCenterLoss=15.267, BoxScaleLoss=6.403, ClassLoss=17.404
+[Epoch 9][Batch 1099], LR: 1.00E-05, Speed: 17.701 samples/sec, ObjLoss=29.233, BoxCenterLoss=15.266, BoxScaleLoss=6.401, ClassLoss=17.399
+[Epoch 9][Batch 1199], LR: 1.00E-05, Speed: 41.287 samples/sec, ObjLoss=29.228, BoxCenterLoss=15.266, BoxScaleLoss=6.399, ClassLoss=17.393
+[Epoch 9][Batch 1299], LR: 1.00E-05, Speed: 47.478 samples/sec, ObjLoss=29.221, BoxCenterLoss=15.265, BoxScaleLoss=6.398, ClassLoss=17.388
+[Epoch 9][Batch 1399], LR: 1.00E-05, Speed: 42.940 samples/sec, ObjLoss=29.216, BoxCenterLoss=15.266, BoxScaleLoss=6.396, ClassLoss=17.382
+[Epoch 9][Batch 1499], LR: 1.00E-05, Speed: 41.792 samples/sec, ObjLoss=29.209, BoxCenterLoss=15.265, BoxScaleLoss=6.395, ClassLoss=17.377
+[Epoch 9][Batch 1599], LR: 1.00E-05, Speed: 31.050 samples/sec, ObjLoss=29.203, BoxCenterLoss=15.264, BoxScaleLoss=6.393, ClassLoss=17.371
+[Epoch 9][Batch 1699], LR: 1.00E-05, Speed: 53.733 samples/sec, ObjLoss=29.198, BoxCenterLoss=15.264, BoxScaleLoss=6.392, ClassLoss=17.366
+[Epoch 9][Batch 1799], LR: 1.00E-05, Speed: 41.188 samples/sec, ObjLoss=29.194, BoxCenterLoss=15.264, BoxScaleLoss=6.391, ClassLoss=17.362
+[Epoch 9][Batch 1899], LR: 1.00E-05, Speed: 17.436 samples/sec, ObjLoss=29.188, BoxCenterLoss=15.264, BoxScaleLoss=6.389, ClassLoss=17.357
+[Epoch 9][Batch 1999], LR: 1.00E-05, Speed: 61.527 samples/sec, ObjLoss=29.180, BoxCenterLoss=15.263, BoxScaleLoss=6.388, ClassLoss=17.351
+[Epoch 9][Batch 2099], LR: 1.00E-05, Speed: 34.383 samples/sec, ObjLoss=29.174, BoxCenterLoss=15.262, BoxScaleLoss=6.386, ClassLoss=17.346
+[Epoch 9][Batch 2199], LR: 1.00E-05, Speed: 36.563 samples/sec, ObjLoss=29.170, BoxCenterLoss=15.263, BoxScaleLoss=6.385, ClassLoss=17.342
+[Epoch 9][Batch 2299], LR: 1.00E-05, Speed: 32.795 samples/sec, ObjLoss=29.165, BoxCenterLoss=15.263, BoxScaleLoss=6.383, ClassLoss=17.337
+[Epoch 9][Batch 2399], LR: 1.00E-05, Speed: 30.798 samples/sec, ObjLoss=29.161, BoxCenterLoss=15.264, BoxScaleLoss=6.382, ClassLoss=17.333
+[Epoch 9][Batch 2499], LR: 1.00E-05, Speed: 38.684 samples/sec, ObjLoss=29.153, BoxCenterLoss=15.262, BoxScaleLoss=6.380, ClassLoss=17.328
+[Epoch 9][Batch 2599], LR: 1.00E-05, Speed: 18.520 samples/sec, ObjLoss=29.149, BoxCenterLoss=15.262, BoxScaleLoss=6.379, ClassLoss=17.323
+[Epoch 9][Batch 2699], LR: 1.00E-05, Speed: 24.541 samples/sec, ObjLoss=29.143, BoxCenterLoss=15.262, BoxScaleLoss=6.377, ClassLoss=17.319
+[Epoch 9][Batch 2799], LR: 1.00E-05, Speed: 23.542 samples/sec, ObjLoss=29.137, BoxCenterLoss=15.261, BoxScaleLoss=6.376, ClassLoss=17.313
+[Epoch 9][Batch 2899], LR: 1.00E-05, Speed: 41.878 samples/sec, ObjLoss=29.131, BoxCenterLoss=15.260, BoxScaleLoss=6.374, ClassLoss=17.308
+[Epoch 9][Batch 2999], LR: 1.00E-05, Speed: 25.330 samples/sec, ObjLoss=29.126, BoxCenterLoss=15.260, BoxScaleLoss=6.372, ClassLoss=17.303
+[Epoch 9][Batch 3099], LR: 1.00E-05, Speed: 25.625 samples/sec, ObjLoss=29.120, BoxCenterLoss=15.259, BoxScaleLoss=6.370, ClassLoss=17.298
+[Epoch 9][Batch 3199], LR: 1.00E-05, Speed: 8.031 samples/sec, ObjLoss=29.116, BoxCenterLoss=15.259, BoxScaleLoss=6.368, ClassLoss=17.293
+[Epoch 9][Batch 3299], LR: 1.00E-05, Speed: 62.339 samples/sec, ObjLoss=29.112, BoxCenterLoss=15.259, BoxScaleLoss=6.367, ClassLoss=17.288
+[Epoch 9][Batch 3399], LR: 1.00E-05, Speed: 10.990 samples/sec, ObjLoss=29.106, BoxCenterLoss=15.259, BoxScaleLoss=6.366, ClassLoss=17.283
+[Epoch 9][Batch 3499], LR: 1.00E-05, Speed: 27.935 samples/sec, ObjLoss=29.100, BoxCenterLoss=15.258, BoxScaleLoss=6.364, ClassLoss=17.277
+[Epoch 9][Batch 3599], LR: 1.00E-05, Speed: 50.296 samples/sec, ObjLoss=29.093, BoxCenterLoss=15.257, BoxScaleLoss=6.362, ClassLoss=17.271
+[Epoch 9][Batch 3699], LR: 1.00E-05, Speed: 22.962 samples/sec, ObjLoss=29.087, BoxCenterLoss=15.256, BoxScaleLoss=6.360, ClassLoss=17.266
+[Epoch 9][Batch 3799], LR: 1.00E-05, Speed: 55.896 samples/sec, ObjLoss=29.082, BoxCenterLoss=15.256, BoxScaleLoss=6.359, ClassLoss=17.261
+[Epoch 9][Batch 3899], LR: 1.00E-05, Speed: 35.692 samples/sec, ObjLoss=29.075, BoxCenterLoss=15.255, BoxScaleLoss=6.357, ClassLoss=17.256
+[Epoch 9][Batch 3999], LR: 1.00E-05, Speed: 24.965 samples/sec, ObjLoss=29.070, BoxCenterLoss=15.254, BoxScaleLoss=6.356, ClassLoss=17.251
+[Epoch 9][Batch 4099], LR: 1.00E-05, Speed: 23.541 samples/sec, ObjLoss=29.065, BoxCenterLoss=15.254, BoxScaleLoss=6.354, ClassLoss=17.247
+[Epoch 9][Batch 4199], LR: 1.00E-05, Speed: 20.834 samples/sec, ObjLoss=29.060, BoxCenterLoss=15.254, BoxScaleLoss=6.353, ClassLoss=17.242
+[Epoch 9][Batch 4299], LR: 1.00E-05, Speed: 19.756 samples/sec, ObjLoss=29.057, BoxCenterLoss=15.255, BoxScaleLoss=6.351, ClassLoss=17.238
+[Epoch 9][Batch 4399], LR: 1.00E-05, Speed: 54.179 samples/sec, ObjLoss=29.053, BoxCenterLoss=15.255, BoxScaleLoss=6.349, ClassLoss=17.233
+[Epoch 9][Batch 4499], LR: 1.00E-05, Speed: 12.608 samples/sec, ObjLoss=29.047, BoxCenterLoss=15.253, BoxScaleLoss=6.347, ClassLoss=17.227
+[Epoch 9][Batch 4599], LR: 1.00E-05, Speed: 33.311 samples/sec, ObjLoss=29.043, BoxCenterLoss=15.254, BoxScaleLoss=6.347, ClassLoss=17.223
+[Epoch 9][Batch 4699], LR: 1.00E-05, Speed: 23.347 samples/sec, ObjLoss=29.040, BoxCenterLoss=15.255, BoxScaleLoss=6.346, ClassLoss=17.219
+[Epoch 9][Batch 4799], LR: 1.00E-05, Speed: 14.664 samples/sec, ObjLoss=29.034, BoxCenterLoss=15.255, BoxScaleLoss=6.344, ClassLoss=17.214
+[Epoch 9][Batch 4899], LR: 1.00E-05, Speed: 32.613 samples/sec, ObjLoss=29.032, BoxCenterLoss=15.256, BoxScaleLoss=6.344, ClassLoss=17.211
+[Epoch 9][Batch 4999], LR: 1.00E-05, Speed: 59.969 samples/sec, ObjLoss=29.028, BoxCenterLoss=15.257, BoxScaleLoss=6.342, ClassLoss=17.206
+[Epoch 9][Batch 5099], LR: 1.00E-05, Speed: 37.539 samples/sec, ObjLoss=29.023, BoxCenterLoss=15.257, BoxScaleLoss=6.341, ClassLoss=17.202
+[Epoch 9][Batch 5199], LR: 1.00E-05, Speed: 20.210 samples/sec, ObjLoss=29.018, BoxCenterLoss=15.256, BoxScaleLoss=6.339, ClassLoss=17.196
+[Epoch 9][Batch 5299], LR: 1.00E-05, Speed: 38.819 samples/sec, ObjLoss=29.013, BoxCenterLoss=15.256, BoxScaleLoss=6.338, ClassLoss=17.191
+[Epoch 9][Batch 5399], LR: 1.00E-05, Speed: 25.589 samples/sec, ObjLoss=29.007, BoxCenterLoss=15.256, BoxScaleLoss=6.337, ClassLoss=17.186
+[Epoch 9][Batch 5499], LR: 1.00E-05, Speed: 15.893 samples/sec, ObjLoss=29.002, BoxCenterLoss=15.255, BoxScaleLoss=6.335, ClassLoss=17.181
+[Epoch 9][Batch 5599], LR: 1.00E-05, Speed: 24.709 samples/sec, ObjLoss=28.997, BoxCenterLoss=15.255, BoxScaleLoss=6.333, ClassLoss=17.176
+[Epoch 9][Batch 5699], LR: 1.00E-05, Speed: 10.390 samples/sec, ObjLoss=28.991, BoxCenterLoss=15.254, BoxScaleLoss=6.332, ClassLoss=17.171
+[Epoch 9][Batch 5799], LR: 1.00E-05, Speed: 23.566 samples/sec, ObjLoss=28.987, BoxCenterLoss=15.255, BoxScaleLoss=6.331, ClassLoss=17.167
+[Epoch 9][Batch 5899], LR: 1.00E-05, Speed: 27.686 samples/sec, ObjLoss=28.983, BoxCenterLoss=15.255, BoxScaleLoss=6.330, ClassLoss=17.164
+[Epoch 9][Batch 5999], LR: 1.00E-05, Speed: 33.002 samples/sec, ObjLoss=28.978, BoxCenterLoss=15.254, BoxScaleLoss=6.328, ClassLoss=17.159
+[Epoch 9][Batch 6099], LR: 1.00E-05, Speed: 16.010 samples/sec, ObjLoss=28.972, BoxCenterLoss=15.254, BoxScaleLoss=6.327, ClassLoss=17.154
+[Epoch 9][Batch 6199], LR: 1.00E-05, Speed: 29.519 samples/sec, ObjLoss=28.966, BoxCenterLoss=15.254, BoxScaleLoss=6.325, ClassLoss=17.149
+[Epoch 9][Batch 6299], LR: 1.00E-05, Speed: 11.571 samples/sec, ObjLoss=28.963, BoxCenterLoss=15.254, BoxScaleLoss=6.324, ClassLoss=17.144
+[Epoch 9][Batch 6399], LR: 1.00E-05, Speed: 13.847 samples/sec, ObjLoss=28.956, BoxCenterLoss=15.252, BoxScaleLoss=6.322, ClassLoss=17.139
+[Epoch 9][Batch 6499], LR: 1.00E-05, Speed: 37.655 samples/sec, ObjLoss=28.950, BoxCenterLoss=15.252, BoxScaleLoss=6.320, ClassLoss=17.134
+[Epoch 9][Batch 6599], LR: 1.00E-05, Speed: 52.966 samples/sec, ObjLoss=28.945, BoxCenterLoss=15.251, BoxScaleLoss=6.319, ClassLoss=17.130
+[Epoch 9][Batch 6699], LR: 1.00E-05, Speed: 59.429 samples/sec, ObjLoss=28.939, BoxCenterLoss=15.250, BoxScaleLoss=6.317, ClassLoss=17.124
+[Epoch 9][Batch 6799], LR: 1.00E-05, Speed: 26.924 samples/sec, ObjLoss=28.933, BoxCenterLoss=15.250, BoxScaleLoss=6.316, ClassLoss=17.119
+[Epoch 9][Batch 6899], LR: 1.00E-05, Speed: 41.657 samples/sec, ObjLoss=28.929, BoxCenterLoss=15.250, BoxScaleLoss=6.315, ClassLoss=17.114
+[Epoch 9][Batch 6999], LR: 1.00E-05, Speed: 22.237 samples/sec, ObjLoss=28.925, BoxCenterLoss=15.250, BoxScaleLoss=6.313, ClassLoss=17.111
+[Epoch 9][Batch 7099], LR: 1.00E-05, Speed: 25.227 samples/sec, ObjLoss=28.919, BoxCenterLoss=15.250, BoxScaleLoss=6.312, ClassLoss=17.106
+[Epoch 9][Batch 7199], LR: 1.00E-05, Speed: 24.496 samples/sec, ObjLoss=28.914, BoxCenterLoss=15.249, BoxScaleLoss=6.310, ClassLoss=17.102
+[Epoch 9][Batch 7299], LR: 1.00E-05, Speed: 43.589 samples/sec, ObjLoss=28.910, BoxCenterLoss=15.250, BoxScaleLoss=6.309, ClassLoss=17.098
+[Epoch 9][Batch 7399], LR: 1.00E-05, Speed: 14.085 samples/sec, ObjLoss=28.904, BoxCenterLoss=15.249, BoxScaleLoss=6.308, ClassLoss=17.093
+[Epoch 9][Batch 7499], LR: 1.00E-05, Speed: 28.057 samples/sec, ObjLoss=28.899, BoxCenterLoss=15.249, BoxScaleLoss=6.307, ClassLoss=17.089
+[Epoch 9][Batch 7599], LR: 1.00E-05, Speed: 36.066 samples/sec, ObjLoss=28.893, BoxCenterLoss=15.248, BoxScaleLoss=6.305, ClassLoss=17.084
+[Epoch 9][Batch 7699], LR: 1.00E-05, Speed: 31.636 samples/sec, ObjLoss=28.887, BoxCenterLoss=15.247, BoxScaleLoss=6.304, ClassLoss=17.079
+[Epoch 9][Batch 7799], LR: 1.00E-05, Speed: 41.042 samples/sec, ObjLoss=28.882, BoxCenterLoss=15.246, BoxScaleLoss=6.302, ClassLoss=17.074
+[Epoch 9][Batch 7899], LR: 1.00E-05, Speed: 23.835 samples/sec, ObjLoss=28.877, BoxCenterLoss=15.246, BoxScaleLoss=6.300, ClassLoss=17.069
+[Epoch 9][Batch 7999], LR: 1.00E-05, Speed: 30.380 samples/sec, ObjLoss=28.872, BoxCenterLoss=15.245, BoxScaleLoss=6.299, ClassLoss=17.065
+[Epoch 9][Batch 8099], LR: 1.00E-05, Speed: 30.091 samples/sec, ObjLoss=28.865, BoxCenterLoss=15.244, BoxScaleLoss=6.297, ClassLoss=17.059
+[Epoch 9][Batch 8199], LR: 1.00E-05, Speed: 30.123 samples/sec, ObjLoss=28.860, BoxCenterLoss=15.243, BoxScaleLoss=6.295, ClassLoss=17.054
+[Epoch 9][Batch 8299], LR: 1.00E-05, Speed: 40.781 samples/sec, ObjLoss=28.855, BoxCenterLoss=15.242, BoxScaleLoss=6.293, ClassLoss=17.049
+[Epoch 9][Batch 8399], LR: 1.00E-05, Speed: 38.022 samples/sec, ObjLoss=28.850, BoxCenterLoss=15.242, BoxScaleLoss=6.292, ClassLoss=17.044
+[Epoch 9][Batch 8499], LR: 1.00E-05, Speed: 37.239 samples/sec, ObjLoss=28.846, BoxCenterLoss=15.242, BoxScaleLoss=6.290, ClassLoss=17.040
+[Epoch 9][Batch 8599], LR: 1.00E-05, Speed: 19.121 samples/sec, ObjLoss=28.843, BoxCenterLoss=15.243, BoxScaleLoss=6.289, ClassLoss=17.036
+[Epoch 9][Batch 8699], LR: 1.00E-05, Speed: 19.952 samples/sec, ObjLoss=28.840, BoxCenterLoss=15.243, BoxScaleLoss=6.288, ClassLoss=17.031
+[Epoch 9][Batch 8799], LR: 1.00E-05, Speed: 22.342 samples/sec, ObjLoss=28.837, BoxCenterLoss=15.243, BoxScaleLoss=6.287, ClassLoss=17.028
+[Epoch 9][Batch 8899], LR: 1.00E-05, Speed: 44.977 samples/sec, ObjLoss=28.833, BoxCenterLoss=15.244, BoxScaleLoss=6.286, ClassLoss=17.024
+[Epoch 9][Batch 8999], LR: 1.00E-05, Speed: 45.487 samples/sec, ObjLoss=28.828, BoxCenterLoss=15.243, BoxScaleLoss=6.285, ClassLoss=17.019
+[Epoch 9][Batch 9099], LR: 1.00E-05, Speed: 28.024 samples/sec, ObjLoss=28.823, BoxCenterLoss=15.243, BoxScaleLoss=6.283, ClassLoss=17.014
+[Epoch 9][Batch 9199], LR: 1.00E-05, Speed: 38.695 samples/sec, ObjLoss=28.819, BoxCenterLoss=15.244, BoxScaleLoss=6.282, ClassLoss=17.010
+[Epoch 9][Batch 9299], LR: 1.00E-05, Speed: 36.764 samples/sec, ObjLoss=28.813, BoxCenterLoss=15.243, BoxScaleLoss=6.280, ClassLoss=17.005
+[Epoch 9][Batch 9399], LR: 1.00E-05, Speed: 20.087 samples/sec, ObjLoss=28.810, BoxCenterLoss=15.243, BoxScaleLoss=6.279, ClassLoss=17.003
+[Epoch 9][Batch 9499], LR: 1.00E-05, Speed: 8.189 samples/sec, ObjLoss=28.803, BoxCenterLoss=15.242, BoxScaleLoss=6.278, ClassLoss=16.997
+[Epoch 9][Batch 9599], LR: 1.00E-05, Speed: 22.454 samples/sec, ObjLoss=28.799, BoxCenterLoss=15.242, BoxScaleLoss=6.276, ClassLoss=16.994
+[Epoch 9][Batch 9699], LR: 1.00E-05, Speed: 59.280 samples/sec, ObjLoss=28.794, BoxCenterLoss=15.242, BoxScaleLoss=6.275, ClassLoss=16.989
+[Epoch 9][Batch 9799], LR: 1.00E-05, Speed: 29.463 samples/sec, ObjLoss=28.788, BoxCenterLoss=15.241, BoxScaleLoss=6.274, ClassLoss=16.985
+[Epoch 9][Batch 9899], LR: 1.00E-05, Speed: 26.385 samples/sec, ObjLoss=28.785, BoxCenterLoss=15.241, BoxScaleLoss=6.272, ClassLoss=16.981
+[Epoch 9][Batch 9999], LR: 1.00E-05, Speed: 28.845 samples/sec, ObjLoss=28.779, BoxCenterLoss=15.240, BoxScaleLoss=6.270, ClassLoss=16.976
+[Epoch 9][Batch 10099], LR: 1.00E-05, Speed: 24.079 samples/sec, ObjLoss=28.774, BoxCenterLoss=15.239, BoxScaleLoss=6.269, ClassLoss=16.972
+[Epoch 9][Batch 10199], LR: 1.00E-05, Speed: 24.476 samples/sec, ObjLoss=28.769, BoxCenterLoss=15.239, BoxScaleLoss=6.268, ClassLoss=16.968
+[Epoch 9] Training cost: 3973.570, ObjLoss=28.766, BoxCenterLoss=15.239, BoxScaleLoss=6.267, ClassLoss=16.966
+[Epoch 9] Validation: 
+~~~~ Summary metrics ~~~~
+=Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.099
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.199
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.089
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.026
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.088
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.143
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.124
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.172
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.047
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.156
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.258
+person=26.0
+bicycle=6.9
+car=14.4
+motorcycle=16.6
+airplane=23.6
+bus=32.9
+train=31.8
+truck=11.0
+boat=4.3
+traffic light=7.1
+fire hydrant=19.5
+stop sign=31.1
+parking meter=3.4
+bench=4.0
+bird=4.1
+cat=22.5
+dog=11.3
+horse=16.1
+sheep=14.1
+cow=10.8
+elephant=28.1
+bear=18.5
+zebra=36.8
+giraffe=35.8
+backpack=0.4
+umbrella=8.4
+handbag=0.3
+tie=5.1
+suitcase=3.0
+frisbee=9.3
+skis=3.7
+snowboard=1.0
+sports ball=12.5
+kite=14.4
+baseball bat=2.0
+baseball glove=3.6
+skateboard=6.7
+surfboard=4.1
+tennis racket=9.0
+bottle=5.8
+wine glass=6.0
+cup=10.3
+fork=0.5
+knife=0.7
+spoon=0.4
+bowl=9.4
+banana=1.7
+apple=1.6
+sandwich=5.1
+orange=4.3
+broccoli=4.6
+carrot=0.5
+hot dog=1.2
+pizza=24.0
+donut=7.4
+cake=3.7
+chair=5.4
+couch=9.8
+potted plant=3.4
+bed=14.6
+dining table=12.4
+toilet=25.5
+tv=20.8
+laptop=16.8
+mouse=2.4
+remote=0.8
+keyboard=10.9
+cell phone=3.3
+microwave=6.0
+oven=4.9
+toaster=0.0
+sink=7.7
+refrigerator=8.5
+book=2.0
+clock=22.6
+vase=3.5
+scissors=0.3
+teddy bear=8.1
+hair drier=0.0
+toothbrush=0.0
+~~~~ MeanAP @ IoU=[0.50,0.95] ~~~~
+=9.9
