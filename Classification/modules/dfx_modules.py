@@ -169,7 +169,7 @@ class QBatchNorm2d(nn.Module):
             exponential_average_factor = self.momentum
 
         if self.training and self.track_running_stats:
-            # TODO: if statement only here to tell the jit to skip emitting this when it is None
+            # if statement only here to tell the jit to skip emitting this when it is None
             if self.num_batches_tracked is not None:
                 self.num_batches_tracked += 1
                 if self.momentum is None:  # use cumulative moving average

@@ -1,6 +1,8 @@
 """Transforms for YOLO series."""
 from __future__ import absolute_import
 import copy
+import torch
+import torch.nn as nn 
 import numpy as np
 import torchvision.transforms.functional as F 
 
@@ -48,8 +50,11 @@ class YOLO3DefaultTrainTransform(object):
         if net is None:
             return
 
-        # TODO : add Train Transform (need YOLOV3PrefetchTargetGenerator, and Net )
+        
 
+        # TODO : add Train Transform (need YOLOV3PrefetchTargetGenerator, and Net )
+        # generate fake image and lable;
+        self._fake_x = 
 
 class YOLO3DefaultValTransform(object):
     """Default YOLO validation transform.
